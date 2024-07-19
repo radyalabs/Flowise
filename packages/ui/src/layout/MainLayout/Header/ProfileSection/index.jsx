@@ -254,42 +254,7 @@ const ProfileSection = ({ username, handleLogout }) => {
                                                         mt: 0.5
                                                     }
                                                 }}
-                                            >
-                                                <ListItemButton
-                                                    sx={{ borderRadius: `${customization.borderRadius}px` }}
-                                                    onClick={() => {
-                                                        getAllChatflowsApi.request()
-                                                    }}
-                                                >
-                                                    <ListItemIcon>
-                                                        <IconFileExport stroke={1.5} size='1.3rem' />
-                                                    </ListItemIcon>
-                                                    <ListItemText primary={<Typography variant='body2'>Export Chatflows</Typography>} />
-                                                </ListItemButton>
-                                                <ListItemButton
-                                                    sx={{ borderRadius: `${customization.borderRadius}px` }}
-                                                    onClick={() => {
-                                                        importAllChatflows()
-                                                    }}
-                                                >
-                                                    <ListItemIcon>
-                                                        <IconFileUpload stroke={1.5} size='1.3rem' />
-                                                    </ListItemIcon>
-                                                    <ListItemText primary={<Typography variant='body2'>Import Chatflows</Typography>} />
-                                                </ListItemButton>
-                                                <input ref={inputRef} type='file' hidden onChange={fileChange} />
-                                                <ListItemButton
-                                                    sx={{ borderRadius: `${customization.borderRadius}px` }}
-                                                    onClick={() => {
-                                                        setOpen(false)
-                                                        setAboutDialogOpen(true)
-                                                    }}
-                                                >
-                                                    <ListItemIcon>
-                                                        <IconInfoCircle stroke={1.5} size='1.3rem' />
-                                                    </ListItemIcon>
-                                                    <ListItemText primary={<Typography variant='body2'>About Flowise</Typography>} />
-                                                </ListItemButton>
+                                       
                                                 {localStorage.getItem('username') && localStorage.getItem('password') && (
                                                     <ListItemButton
                                                         sx={{ borderRadius: `${customization.borderRadius}px` }}

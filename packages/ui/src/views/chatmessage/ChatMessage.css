@@ -17,7 +17,7 @@
 
 .usermessagewaiting-light {
     padding: 1rem 1.5rem 1rem 1.5rem;
-    background: linear-gradient(to left, #ede7f6, #e3f2fd, #ede7f6);
+    background: linear-gradient(to left, #e7eaf6, #e3f2fd, #e7eaf6);
     background-size: 200% 200%;
     background-position: -100% 0;
     animation: loading-gradient 2s ease-in-out infinite;
@@ -28,7 +28,7 @@
 .usermessagewaiting-dark {
     padding: 1rem 1.5rem 1rem 1.5rem;
     color: #ececf1;
-    background: linear-gradient(to left, #2e2352, #1d3d60, #2e2352);
+    background: linear-gradient(to left, #232c52, #1d3d60, #232c52);
     background-size: 200% 200%;
     background-position: -100% 0;
     animation: loading-gradient 2s ease-in-out infinite;
