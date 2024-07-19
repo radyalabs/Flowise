@@ -16,7 +16,7 @@ import { CodeEditor } from '@/ui-component/editor/CodeEditor'
 import HowToUseFunctionDialog from './HowToUseFunctionDialog'
 
 // Icons
-import { IconX, IconFileDownload, IconPlus } from '@tabler/icons'
+import { IconX, IconFileDownload, IconPlus } from '@tabler/icons-react'
 
 // API
 import toolsApi from '@/api/tools'
@@ -161,7 +161,7 @@ const ToolDialog = ({ show, dialogProps, onUseTemplate, onCancel, onConfirm, set
     }, [getSpecificToolApi.data])
 
     useEffect(() => {
-        if (getSpecificToolApi.error) {
+        if (getSpecificToolApi.error && setError) {
             setError(getSpecificToolApi.error)
         }
         // eslint-disable-next-line react-hooks/exhaustive-deps

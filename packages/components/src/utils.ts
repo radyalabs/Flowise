@@ -48,6 +48,7 @@ export const availableDependencies = [
     'langchain',
     'langfuse',
     'langsmith',
+    'langwatch',
     'linkifyjs',
     'lunary',
     'mammoth',
@@ -308,7 +309,7 @@ function getURLsFromHTML(htmlBody: string, baseURL: string): string[] {
  */
 function normalizeURL(urlString: string): string {
     const urlObj = new URL(urlString)
-    const hostPath = urlObj.hostname + urlObj.pathname
+    const hostPath = urlObj.hostname + urlObj.pathname + urlObj.search
     if (hostPath.length > 0 && hostPath.slice(-1) == '/') {
         // handling trailing slash
         return hostPath.slice(0, -1)
@@ -660,6 +661,8 @@ export const convertSchemaToZod = (schema: string | object): ICommonObject => {
 export const flattenObject = (obj: ICommonObject, parentKey?: string) => {
     let result: any = {}
 
+    if (!obj) return result
+
     Object.keys(obj).forEach((key) => {
         const value = obj[key]
         const _key = parentKey ? parentKey + '.' + key : key
@@ -770,9 +773,27 @@ export const prepareSandboxVars = (variables: IVariable[]) => {
     return vars
 }
 
-/**
- * Prepare storage path
- */
-export const getStoragePath = (): string => {
-    return process.env.BLOB_STORAGE_PATH ? path.join(process.env.BLOB_STORAGE_PATH) : path.join(getUserHome(), '.flowise', 'storage')
+let version: string
+export const getVersion: () => Promise<{ version: string }> = async () => {
+    if (version != null) return { version }
+
+    const checkPaths = [
+        path.join(__dirname, '..', 'package.json'),
+        path.join(__dirname, '..', '..', 'package.json'),
+        path.join(__dirname, '..', '..', '..', 'package.json'),
+        path.join(__dirname, '..', '..', '..', '..', 'package.json'),
+        path.join(__dirname, '..', '..', '..', '..', '..', 'package.json')
+    ]
+    for (const checkPath of checkPaths) {
+        try {
+            const content = await fs.promises.readFile(checkPath, 'utf8')
+            const parsedContent = JSON.parse(content)
+            version = parsedContent.version
+            return { version }
+        } catch {
+            continue
+        }
+    }
+
+    throw new Error('None of the package.json paths could be parsed')
 }
