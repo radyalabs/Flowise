@@ -54,8 +54,20 @@ function a11yProps(index) {
     }
 }
 
-const blacklistCategoriesForAgentCanvas = ['Agents', 'Memory', 'Record Manager']
-const allowedAgentModel = {}
+const blacklistCategoriesForAgentCanvas = ['Agents', 'Memory', 'Record Manager', 'Utilities']
+
+const agentMemoryNodes = ['agentMemory', 'sqliteAgentMemory', 'postgresAgentMemory', 'mySQLAgentMemory']
+
+// Show blacklisted nodes (exceptions) for agent canvas
+const exceptionsForAgentCanvas = {
+    Memory: agentMemoryNodes,
+    Utilities: ['getVariable', 'setVariable', 'stickyNote']
+}
+
+// Hide some nodes from the chatflow canvas
+const blacklistForChatflowCanvas = {
+    Memory: agentMemoryNodes
+}
 
 const AddNodes = ({ nodesData, node, isAgentCanvas }) => {
     const theme = useTheme()
@@ -84,21 +96,44 @@ const AddNodes = ({ nodesData, node, isAgentCanvas }) => {
         filterSearch(searchValue, newValue)
     }
 
+    const addException = (category) => {
+        let nodes = []
+        if (category) {
+            const nodeNames = exceptionsForAgentCanvas[category] || []
+            nodes = nodesData.filter((nd) => nd.category === category && nodeNames.includes(nd.name))
+        } else {
+            for (const category in exceptionsForAgentCanvas) {
+                const nodeNames = exceptionsForAgentCanvas[category]
+                nodes.push(...nodesData.filter((nd) => nd.category === category && nodeNames.includes(nd.name)))
+            }
+        }
+        return nodes
+    }
+
     const getSearchedNodes = (value) => {
         if (isAgentCanvas) {
             const nodes = nodesData.filter((nd) => !blacklistCategoriesForAgentCanvas.includes(nd.category))
+            nodes.push(...addException())
             const passed = nodes.filter((nd) => {
-                const passesQuery = nd.name.toLowerCase().includes(value.toLowerCase())
+                const passesName = nd.name.toLowerCase().includes(value.toLowerCase())
+                const passesLabel = nd.label.toLowerCase().includes(value.toLowerCase())
                 const passesCategory = nd.category.toLowerCase().includes(value.toLowerCase())
-                return passesQuery || passesCategory
+                return passesName || passesCategory || passesLabel
             })
             return passed
         }
-        const nodes = nodesData.filter((nd) => nd.category !== 'Multi Agents')
+        let nodes = nodesData.filter((nd) => nd.category !== 'Multi Agents' && nd.category !== 'Sequential Agents')
+
+        for (const category in blacklistForChatflowCanvas) {
+            const nodeNames = blacklistForChatflowCanvas[category]
+            nodes = nodes.filter((nd) => !nodeNames.includes(nd.name))
+        }
+
         const passed = nodes.filter((nd) => {
-            const passesQuery = nd.name.toLowerCase().includes(value.toLowerCase())
+            const passesName = nd.name.toLowerCase().includes(value.toLowerCase())
+            const passesLabel = nd.label.toLowerCase().includes(value.toLowerCase())
             const passesCategory = nd.category.toLowerCase().includes(value.toLowerCase())
-            return passesQuery || passesCategory
+            return passesName || passesCategory || passesLabel
         })
         return passed
     }
@@ -148,17 +183,18 @@ const AddNodes = ({ nodesData, node, isAgentCanvas }) => {
                     const nodes = result[category].filter((nd) => !nd.tags || !nd.tags.includes('LlamaIndex'))
                     if (!nodes.length) continue
 
-                    // Only allow specific models for specific categories
-                    if (Object.keys(allowedAgentModel).includes(category)) {
-                        const allowedModels = allowedAgentModel[category]
-                        filteredResult[category] = nodes.filter((nd) => allowedModels.includes(nd.name))
-                    } else {
-                        filteredResult[category] = nodes
-                    }
+                    filteredResult[category] = nodes
+                }
+
+                // Allow exceptionsForAgentCanvas
+                if (Object.keys(exceptionsForAgentCanvas).includes(category)) {
+                    filteredResult[category] = addException(category)
                 }
             }
             setNodes(filteredResult)
             accordianCategories['Multi Agents'] = true
+            accordianCategories['Sequential Agents'] = true
+            accordianCategories['Memory'] = true
             setCategoryExpanded(accordianCategories)
         } else {
             const taggedNodes = groupByTags(nodes, newTabValue)
@@ -172,11 +208,16 @@ const AddNodes = ({ nodesData, node, isAgentCanvas }) => {
 
             const filteredResult = {}
             for (const category in result) {
-                if (category === 'Multi Agents') {
+                if (category === 'Multi Agents' || category === 'Sequential Agents') {
                     continue
+                }
+                if (Object.keys(blacklistForChatflowCanvas).includes(category)) {
+                    const nodes = blacklistForChatflowCanvas[category]
+                    result[category] = result[category].filter((nd) => !nodes.includes(nd.name))
                 }
                 filteredResult[category] = result[category]
             }
+
             setNodes(filteredResult)
             setCategoryExpanded(accordianCategories)
         }
@@ -277,6 +318,8 @@ const AddNodes = ({ nodesData, node, isAgentCanvas }) => {
                                             <Typography variant='h4'>Add Nodes</Typography>
                                         </Stack>
                                         <OutlinedInput
+                                            // eslint-disable-next-line
+                                            autoFocus
                                             sx={{ width: '100%', pr: 2, pl: 2, my: 2 }}
                                             id='input-search-node'
                                             value={searchValue}
@@ -470,35 +513,49 @@ const AddNodes = ({ nodesData, node, isAgentCanvas }) => {
                                                                                 <ListItemText
                                                                                     sx={{ ml: 1 }}
                                                                                     primary={
-                                                                                        <div
-                                                                                            style={{
-                                                                                                display: 'flex',
-                                                                                                flexDirection: 'row',
-                                                                                                alignItems: 'center'
-                                                                                            }}
-                                                                                        >
-                                                                                            <span>{node.label}</span>
-                                                                                            &nbsp;
-                                                                                            {node.badge && (
-                                                                                                <Chip
-                                                                                                    sx={{
-                                                                                                        width: 'max-content',
-                                                                                                        fontWeight: 700,
+                                                                                        <>
+                                                                                            <div
+                                                                                                style={{
+                                                                                                    display: 'flex',
+                                                                                                    flexDirection: 'row',
+                                                                                                    alignItems: 'center'
+                                                                                                }}
+                                                                                            >
+                                                                                                <span>{node.label}</span>
+                                                                                                &nbsp;
+                                                                                                {node.badge && (
+                                                                                                    <Chip
+                                                                                                        sx={{
+                                                                                                            width: 'max-content',
+                                                                                                            fontWeight: 700,
+                                                                                                            fontSize: '0.65rem',
+                                                                                                            background:
+                                                                                                                node.badge === 'DEPRECATING'
+                                                                                                                    ? theme.palette.warning
+                                                                                                                          .main
+                                                                                                                    : theme.palette.teal
+                                                                                                                          .main,
+                                                                                                            color:
+                                                                                                                node.badge !== 'DEPRECATING'
+                                                                                                                    ? 'white'
+                                                                                                                    : 'inherit'
+                                                                                                        }}
+                                                                                                        size='small'
+                                                                                                        label={node.badge}
+                                                                                                    />
+                                                                                                )}
+                                                                                            </div>
+                                                                                            {node.author && (
+                                                                                                <span
+                                                                                                    style={{
                                                                                                         fontSize: '0.65rem',
-                                                                                                        background:
-                                                                                                            node.badge === 'DEPRECATING'
-                                                                                                                ? theme.palette.warning.main
-                                                                                                                : theme.palette.teal.main,
-                                                                                                        color:
-                                                                                                            node.badge !== 'DEPRECATING'
-                                                                                                                ? 'white'
-                                                                                                                : 'inherit'
+                                                                                                        fontWeight: 700
                                                                                                     }}
-                                                                                                    size='small'
-                                                                                                    label={node.badge}
-                                                                                                />
+                                                                                                >
+                                                                                                    By {node.author}
+                                                                                                </span>
                                                                                             )}
-                                                                                        </div>
+                                                                                        </>
                                                                                     }
                                                                                     secondary={node.description}
                                                                                 />

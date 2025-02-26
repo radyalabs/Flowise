@@ -30,12 +30,13 @@ const dashboard = {
             breadcrumbs: true
         },
         {
-            id: 'tools',
-            title: 'Tools',
+            id: 'agentflows',
+            title: 'Agentflows',
             type: 'item',
-            url: '/tools',
-            icon: icons.IconTool,
-            breadcrumbs: true
+            url: '/agentflows',
+            icon: icons.IconUsersGroup,
+            breadcrumbs: true,
+            isBeta: true
         },
         {
             id: 'assistants',
@@ -43,6 +44,22 @@ const dashboard = {
             type: 'item',
             url: '/assistants',
             icon: icons.IconRobot,
+            breadcrumbs: true
+        },
+        {
+            id: 'marketplaces',
+            title: 'Marketplaces',
+            type: 'item',
+            url: '/marketplaces',
+            icon: icons.IconBuildingStore,
+            breadcrumbs: true
+        },
+        {
+            id: 'tools',
+            title: 'Tools',
+            type: 'item',
+            url: '/tools',
+            icon: icons.IconTool,
             breadcrumbs: true
         },
         {
