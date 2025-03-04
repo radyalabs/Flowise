@@ -158,7 +158,7 @@ function i(e, r = {}, o = {}) {
 const d = Symbol('solid-proxy'),
     n = Symbol('solid-track'),
     m = { equals: (e, r) => e === r }
-let s = O
+let s = f
 const g = 1,
     x = 2,
     c = { owned: null, cleanups: null, context: null, owner: null }
@@ -189,7 +189,7 @@ function P(e, r, o) {
     B(C(e, r, !1, g))
 }
 function T(e, r, o) {
-    ;(s = f), ((e = C(e, r, !1, g)).user = !0), v ? v.push(e) : B(e)
+    ;(s = O), ((e = C(e, r, !1, g)).user = !0), v ? v.push(e) : B(e)
 }
 function b(e, r, o) {
     return (
@@ -308,7 +308,7 @@ function N(e, r) {
         var t = e()
         return (
             (function (e) {
-                if ((h && (O(h), (h = null)), !e)) {
+                if ((h && (f(h), (h = null)), !e)) {
                     const e = v
                     ;(v = null), e.length && N(() => s(e), !1)
                 }
@@ -319,10 +319,10 @@ function N(e, r) {
         o || (v = null), (h = null), R(e)
     }
 }
-function O(e) {
+function f(e) {
     for (let r = 0; r < e.length; r++) E(e[r])
 }
-function f(e) {
+function O(e) {
     let r,
         o = 0
     for (r = 0; r < e.length; r++) {
@@ -939,7 +939,7 @@ function ve(e, r, o) {
 }
 const $e = { chatflowid: '', apiHost: void 0, chatflowConfig: void 0, theme: void 0, observersConfig: void 0 }
 var Ae =
-    '/*! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}html{-webkit-text-size-adjust:100%;font-feature-settings:normal;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-variation-settings:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.prose{color:var(--tw-prose-body);max-width:65ch}.prose :where(p):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:1.25em;margin-top:1.25em}.prose :where([class~=lead]):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-lead);font-size:1.25em;line-height:1.6;margin-bottom:1.2em;margin-top:1.2em}.prose :where(a):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-links);font-weight:500;text-decoration:underline}.prose :where(strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-bold);font-weight:600}.prose :where(a strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(blockquote strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(thead th strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(ol):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:decimal;margin-bottom:1.25em;margin-top:1.25em;padding-inline-start:1.625em}.prose :where(ol[type=A]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:upper-alpha}.prose :where(ol[type=a]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:lower-alpha}.prose :where(ol[type=A s]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:upper-alpha}.prose :where(ol[type=a s]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:lower-alpha}.prose :where(ol[type=I]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:upper-roman}.prose :where(ol[type=i]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:lower-roman}.prose :where(ol[type=I s]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:upper-roman}.prose :where(ol[type=i s]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:lower-roman}.prose :where(ol[type="1"]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:decimal}.prose :where(ul):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:disc;margin-bottom:1.25em;margin-top:1.25em;padding-inline-start:1.625em}.prose :where(ol>li):not(:where([class~=not-prose],[class~=not-prose] *))::marker{color:var(--tw-prose-counters);font-weight:400}.prose :where(ul>li):not(:where([class~=not-prose],[class~=not-prose] *))::marker{color:var(--tw-prose-bullets)}.prose :where(dt):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-headings);font-weight:600;margin-top:1.25em}.prose :where(hr):not(:where([class~=not-prose],[class~=not-prose] *)){border-color:var(--tw-prose-hr);border-top-width:1px;margin-bottom:3em;margin-top:3em}.prose :where(blockquote):not(:where([class~=not-prose],[class~=not-prose] *)){border-inline-start-color:var(--tw-prose-quote-borders);border-inline-start-width:.25rem;color:var(--tw-prose-quotes);font-style:italic;font-weight:500;margin-bottom:1.6em;margin-top:1.6em;padding-inline-start:1em;quotes:"\\201C""\\201D""\\2018""\\2019"}.prose :where(blockquote p:first-of-type):not(:where([class~=not-prose],[class~=not-prose] *)):before{content:open-quote}.prose :where(blockquote p:last-of-type):not(:where([class~=not-prose],[class~=not-prose] *)):after{content:close-quote}.prose :where(h1):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-headings);font-size:2.25em;font-weight:800;line-height:1.1111111;margin-bottom:.8888889em;margin-top:0}.prose :where(h1 strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit;font-weight:900}.prose :where(h2):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-headings);font-size:1.5em;font-weight:700;line-height:1.3333333;margin-bottom:1em;margin-top:2em}.prose :where(h2 strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit;font-weight:800}.prose :where(h3):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-headings);font-size:1.25em;font-weight:600;line-height:1.6;margin-bottom:.6em;margin-top:1.6em}.prose :where(h3 strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit;font-weight:700}.prose :where(h4):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-headings);font-weight:600;line-height:1.5;margin-bottom:.5em;margin-top:1.5em}.prose :where(h4 strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit;font-weight:700}.prose :where(img):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:2em;margin-top:2em}.prose :where(picture):not(:where([class~=not-prose],[class~=not-prose] *)){display:block;margin-bottom:2em;margin-top:2em}.prose :where(video):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:2em;margin-top:2em}.prose :where(kbd):not(:where([class~=not-prose],[class~=not-prose] *)){border-radius:.3125rem;box-shadow:0 0 0 1px rgb(var(--tw-prose-kbd-shadows)/10%),0 3px 0 rgb(var(--tw-prose-kbd-shadows)/10%);color:var(--tw-prose-kbd);font-family:inherit;font-size:.875em;font-weight:500;padding-inline-end:.375em;padding-bottom:.1875em;padding-top:.1875em;padding-inline-start:.375em}.prose :where(code):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-code);font-size:.875em;font-weight:600}.prose :where(code):not(:where([class~=not-prose],[class~=not-prose] *)):before{content:"`"}.prose :where(code):not(:where([class~=not-prose],[class~=not-prose] *)):after{content:"`"}.prose :where(a code):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(h1 code):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(h2 code):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit;font-size:.875em}.prose :where(h3 code):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit;font-size:.9em}.prose :where(h4 code):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(blockquote code):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(thead th code):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(pre):not(:where([class~=not-prose],[class~=not-prose] *)){background-color:var(--tw-prose-pre-bg);border-radius:.375rem;color:var(--tw-prose-pre-code);font-size:.875em;font-weight:400;line-height:1.7142857;margin-bottom:1.7142857em;margin-top:1.7142857em;overflow-x:auto;padding-inline-end:1.1428571em;padding-bottom:.8571429em;padding-top:.8571429em;padding-inline-start:1.1428571em}.prose :where(pre code):not(:where([class~=not-prose],[class~=not-prose] *)){background-color:transparent;border-radius:0;border-width:0;color:inherit;font-family:inherit;font-size:inherit;font-weight:inherit;line-height:inherit;padding:0}.prose :where(pre code):not(:where([class~=not-prose],[class~=not-prose] *)):before{content:none}.prose :where(pre code):not(:where([class~=not-prose],[class~=not-prose] *)):after{content:none}.prose :where(table):not(:where([class~=not-prose],[class~=not-prose] *)){font-size:.875em;line-height:1.7142857;margin-bottom:2em;margin-top:2em;table-layout:auto;text-align:start;width:100%}.prose :where(thead):not(:where([class~=not-prose],[class~=not-prose] *)){border-bottom-color:var(--tw-prose-th-borders);border-bottom-width:1px}.prose :where(thead th):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-headings);font-weight:600;padding-inline-end:.5714286em;padding-bottom:.5714286em;padding-inline-start:.5714286em;vertical-align:bottom}.prose :where(tbody tr):not(:where([class~=not-prose],[class~=not-prose] *)){border-bottom-color:var(--tw-prose-td-borders);border-bottom-width:1px}.prose :where(tbody tr:last-child):not(:where([class~=not-prose],[class~=not-prose] *)){border-bottom-width:0}.prose :where(tbody td):not(:where([class~=not-prose],[class~=not-prose] *)){vertical-align:baseline}.prose :where(tfoot):not(:where([class~=not-prose],[class~=not-prose] *)){border-top-color:var(--tw-prose-th-borders);border-top-width:1px}.prose :where(tfoot td):not(:where([class~=not-prose],[class~=not-prose] *)){vertical-align:top}.prose :where(figure>*):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:0;margin-top:0}.prose :where(figcaption):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-captions);font-size:.875em;line-height:1.4285714;margin-top:.8571429em}.prose{--tw-prose-body:#374151;--tw-prose-headings:#111827;--tw-prose-lead:#4b5563;--tw-prose-links:#111827;--tw-prose-bold:#111827;--tw-prose-counters:#6b7280;--tw-prose-bullets:#d1d5db;--tw-prose-hr:#e5e7eb;--tw-prose-quotes:#111827;--tw-prose-quote-borders:#e5e7eb;--tw-prose-captions:#6b7280;--tw-prose-kbd:#111827;--tw-prose-kbd-shadows:17 24 39;--tw-prose-code:#111827;--tw-prose-pre-code:#e5e7eb;--tw-prose-pre-bg:#1f2937;--tw-prose-th-borders:#d1d5db;--tw-prose-td-borders:#e5e7eb;--tw-prose-invert-body:#d1d5db;--tw-prose-invert-headings:#fff;--tw-prose-invert-lead:#9ca3af;--tw-prose-invert-links:#fff;--tw-prose-invert-bold:#fff;--tw-prose-invert-counters:#9ca3af;--tw-prose-invert-bullets:#4b5563;--tw-prose-invert-hr:#374151;--tw-prose-invert-quotes:#f3f4f6;--tw-prose-invert-quote-borders:#374151;--tw-prose-invert-captions:#9ca3af;--tw-prose-invert-kbd:#fff;--tw-prose-invert-kbd-shadows:255 255 255;--tw-prose-invert-code:#fff;--tw-prose-invert-pre-code:#d1d5db;--tw-prose-invert-pre-bg:rgba(0,0,0,.5);--tw-prose-invert-th-borders:#4b5563;--tw-prose-invert-td-borders:#374151;font-size:1rem;line-height:1.75}.prose :where(picture>img):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:0;margin-top:0}.prose :where(li):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:.5em;margin-top:.5em}.prose :where(ol>li):not(:where([class~=not-prose],[class~=not-prose] *)){padding-inline-start:.375em}.prose :where(ul>li):not(:where([class~=not-prose],[class~=not-prose] *)){padding-inline-start:.375em}.prose :where(.prose>ul>li p):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:.75em;margin-top:.75em}.prose :where(.prose>ul>li>:first-child):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:1.25em}.prose :where(.prose>ul>li>:last-child):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:1.25em}.prose :where(.prose>ol>li>:first-child):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:1.25em}.prose :where(.prose>ol>li>:last-child):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:1.25em}.prose :where(ul ul,ul ol,ol ul,ol ol):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:.75em;margin-top:.75em}.prose :where(dl):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:1.25em;margin-top:1.25em}.prose :where(dd):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:.5em;padding-inline-start:1.625em}.prose :where(hr+*):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:0}.prose :where(h2+*):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:0}.prose :where(h3+*):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:0}.prose :where(h4+*):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:0}.prose :where(thead th:first-child):not(:where([class~=not-prose],[class~=not-prose] *)){padding-inline-start:0}.prose :where(thead th:last-child):not(:where([class~=not-prose],[class~=not-prose] *)){padding-inline-end:0}.prose :where(tbody td,tfoot td):not(:where([class~=not-prose],[class~=not-prose] *)){padding-inline-end:.5714286em;padding-bottom:.5714286em;padding-top:.5714286em;padding-inline-start:.5714286em}.prose :where(tbody td:first-child,tfoot td:first-child):not(:where([class~=not-prose],[class~=not-prose] *)){padding-inline-start:0}.prose :where(tbody td:last-child,tfoot td:last-child):not(:where([class~=not-prose],[class~=not-prose] *)){padding-inline-end:0}.prose :where(figure):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:2em;margin-top:2em}.prose :where(.prose>:first-child):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:0}.prose :where(.prose>:last-child):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:0}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.bottom-0{bottom:0}.bottom-20{bottom:80px}.bottom-24{bottom:96px}.left-0{left:0}.right-0{right:0}.top-0{top:0}.z-0{z-index:0}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.z-\\[1001\\]{z-index:1001}.z-\\[1002\\]{z-index:1002}.float-right{float:right}.m-0{margin:0}.m-auto{margin:auto}.mx-auto{margin-left:auto;margin-right:auto}.my-2{margin-bottom:8px;margin-top:8px}.my-6{margin-bottom:24px;margin-top:24px}.-ml-1{margin-left:-4px}.mb-1{margin-bottom:4px}.mb-2{margin-bottom:8px}.ml-1{margin-left:4px}.ml-1\\.5{margin-left:6px}.ml-2{margin-left:8px}.ml-auto{margin-left:auto}.mr-1{margin-right:4px}.mr-2{margin-right:8px}.mr-3{margin-right:12px}.mr-\\[10px\\]{margin-right:10px}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.hidden{display:none}.h-10{height:40px}.h-12{height:48px}.h-14{height:56px}.h-16{height:64px}.h-2{height:8px}.h-32{height:128px}.h-4{height:16px}.h-5{height:20px}.h-6{height:24px}.h-7{height:28px}.h-9{height:36px}.h-\\[50px\\]{height:50px}.h-\\[58px\\]{height:58px}.h-auto{height:auto}.h-full{height:100%}.max-h-\\[128px\\]{max-height:128px}.max-h-\\[704px\\]{max-height:704px}.min-h-\\[56px\\]{min-height:56px}.min-h-full{min-height:100%}.w-10{width:40px}.w-12{width:48px}.w-16{width:64px}.w-2{width:8px}.w-4{width:16px}.w-5{width:20px}.w-6{width:24px}.w-7{width:28px}.w-9{width:36px}.w-\\[200px\\]{width:200px}.w-full{width:100%}.min-w-full{min-width:100%}.max-w-3xl{max-width:768px}.max-w-\\[128px\\]{max-width:128px}.max-w-full{max-width:100%}.flex-1{flex:1 1 0%}.flex-auto{flex:1 1 auto}.flex-shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}.flex-grow-0{flex-grow:0}.basis-auto{flex-basis:auto}.-rotate-180{--tw-rotate:-180deg}.-rotate-180,.rotate-0{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-0{--tw-rotate:0deg}.scale-0{--tw-scale-x:0;--tw-scale-y:0}.scale-0,.scale-100{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-100{--tw-scale-x:1;--tw-scale-y:1}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes fade-in{0%{opacity:0}to{opacity:1}}.animate-fade-in{animation:fade-in .3s ease-out}@keyframes spin{to{transform:rotate(1turn)}}.animate-spin{animation:spin 1s linear infinite}.resize{resize:both}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:8px}.gap-3{gap:12px}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.overflow-x-hidden{overflow-x:hidden}.overflow-y-scroll{overflow-y:scroll}.scroll-smooth{scroll-behavior:smooth}.whitespace-pre-wrap{white-space:pre-wrap}.rounded{border-radius:4px}.rounded-\\[10px\\]{border-radius:10px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:8px}.rounded-md{border-radius:6px}.rounded-none{border-radius:0}.rounded-xl{border-radius:12px}.rounded-b{border-bottom-left-radius:4px;border-bottom-right-radius:4px}.rounded-t{border-top-left-radius:4px;border-top-right-radius:4px}.border{border-width:1px}.border-0{border-width:0}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-solid{border-style:solid}.border-dashed{border-style:dashed}.border-\\[\\#eeeeee\\]{--tw-border-opacity:1;border-color:rgb(238 238 238/var(--tw-border-opacity))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.bg-black\\/10{background-color:rgba(0,0,0,.1)}.bg-black\\/60{background-color:rgba(0,0,0,.6)}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129/var(--tw-bg-opacity))}.bg-gray-500{--tw-bg-opacity:1;background-color:rgb(107 114 128/var(--tw-bg-opacity))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68/var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-opacity-50{--tw-bg-opacity:0.5}.bg-cover{background-size:cover}.bg-center{background-position:50%}.fill-transparent{fill:transparent}.stroke-2{stroke-width:2}.object-cover{-o-object-fit:cover;object-fit:cover}.p-0{padding:0}.p-1{padding:4px}.p-2{padding:8px}.p-2\\.5{padding:10px}.p-4{padding:16px}.p-5{padding:20px}.p-6{padding:24px}.px-2{padding-left:8px;padding-right:8px}.px-3{padding-left:12px;padding-right:12px}.px-4{padding-left:16px;padding-right:16px}.px-5{padding-left:20px;padding-right:20px}.px-\\[10px\\]{padding-left:10px;padding-right:10px}.py-1{padding-bottom:4px;padding-top:4px}.py-2{padding-bottom:8px;padding-top:8px}.py-4{padding-bottom:16px;padding-top:16px}.py-\\[10px\\]{padding-bottom:10px;padding-top:10px}.pb-1{padding-bottom:4px}.pb-\\[10px\\]{padding-bottom:10px}.pl-4{padding-left:16px}.pr-0{padding-right:0}.pt-2{padding-top:8px}.pt-\\[6px\\]{padding-top:6px}.pt-\\[70px\\]{padding-top:70px}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:24px;line-height:32px}.text-\\[13px\\]{font-size:13px}.text-base{font-size:16px;line-height:24px}.text-sm{font-size:14px;line-height:20px}.text-xl{font-size:20px;line-height:28px}.font-bold{font-weight:700}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-none{line-height:1}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.opacity-0{opacity:0}.opacity-100{opacity:1}.opacity-25{opacity:.25}.opacity-75{opacity:.75}.shadow{--tw-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color)}.shadow,.shadow-lg{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-md{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color)}.shadow-md,.shadow-xl{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-opacity{transition-duration:.15s;transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-150,.transition-transform{transition-duration:.15s}.duration-200{transition-duration:.2s}.ease-linear{transition-timing-function:linear}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}:host{--chatbot-container-bg-image:none;--chatbot-container-bg-color:transparent;--chatbot-container-font-family:"Open Sans";--chatbot-button-bg-color:#0042da;--chatbot-button-color:#fff;--chatbot-host-bubble-bg-color:#f7f8ff;--chatbot-host-bubble-color:#303235;--chatbot-guest-bubble-bg-color:#3b81f6;--chatbot-guest-bubble-color:#fff;--chatbot-input-bg-color:#fff;--chatbot-input-color:#303235;--chatbot-input-placeholder-color:#9095a0;--chatbot-header-bg-color:#fff;--chatbot-header-color:#303235;--chatbot-border-radius:6px;--PhoneInputCountryFlag-borderColor:transparent;--PhoneInput-color--focus:transparent}a{color:#16bed7;font-weight:500}a:hover{text-decoration:underline}pre{word-wrap:break-word;font-size:13px;margin:5px;overflow:auto;padding:5px;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;width:auto}.string{color:green}.number{color:#ff8c00}.boolean{color:blue}.null{color:#f0f}.key{color:#002b36}.scrollable-container::-webkit-scrollbar{display:none}.scrollable-container{-ms-overflow-style:none;scrollbar-width:none}.text-fade-in{transition:opacity .4s ease-in .2s}.bubble-typing{transition:width .4s ease-out,height .4s ease-out}.bubble1,.bubble2,.bubble3{background-color:var(--chatbot-host-bubble-color);opacity:.5}.bubble1,.bubble2{animation:chatBubbles 1s ease-in-out infinite}.bubble2{animation-delay:.3s}.bubble3{animation:chatBubbles 1s ease-in-out infinite;animation-delay:.5s}@keyframes chatBubbles{0%{transform:translateY(0)}50%{transform:translateY(-5px)}to{transform:translateY(0)}}button,input,textarea{font-weight:300}.slate-a{text-decoration:underline}.slate-html-container>div{min-height:24px}.slate-bold{font-weight:700}.slate-italic{font-style:oblique}.slate-underline{text-decoration:underline}.text-input::-moz-placeholder{color:#9095a0!important;opacity:1!important}.text-input::placeholder{color:#9095a0!important;opacity:1!important}.chatbot-container{background-color:var(--chatbot-container-bg-color);background-image:var(--chatbot-container-bg-image);font-family:Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}.file-annotation-button{background-color:#02a0a0c2;border:1px solid #02a0a0c2;border-radius:var(--chatbot-border-radius);color:var(--chatbot-button-color)}.chatbot-button{background-color:#0042da;border:1px solid #0042da;border-radius:var(--chatbot-border-radius);color:var(--chatbot-button-color)}.chatbot-button.selectable{border:1px solid #0042da}.chatbot-button.selectable,.chatbot-host-bubble{background-color:#f7f8ff;color:var(--chatbot-host-bubble-color)}.chatbot-host-bubble>.bubble-typing{background-color:#f7f8ff;border:var(--chatbot-host-bubble-border);border-radius:6px}.chatbot-host-bubble iframe,.chatbot-host-bubble img,.chatbot-host-bubble video{border-radius:var(--chatbot-border-radius)}.chatbot-guest-bubble{background-color:#3b81f6;border-radius:6px;color:var(--chatbot-guest-bubble-color)}.chatbot-input,.feedback-input{background-color:#fff;border-radius:var(--chatbot-border-radius);box-shadow:0 2px 6px -1px rgba(0,0,0,.1);color:#303235}.chatbot-input-error-message{color:#303235}.chatbot-button>.send-icon{fill:var(--chatbot-button-color);stroke:var(--chatbot-button-color)}.chatbot-chat-view{max-width:800px}.ping span{background-color:#0042da}.rating-icon-container svg{stroke:#0042da;fill:#f7f8ff;height:42px;transition:fill .1s ease-out;width:42px}.rating-icon-container.selected svg{fill:#0042da}.rating-icon-container:hover svg{filter:brightness(.9)}.rating-icon-container:active svg{filter:brightness(.75)}.upload-progress-bar{background-color:#0042da;border-radius:var(--chatbot-border-radius)}.total-files-indicator{background-color:#0042da;color:var(--chatbot-button-color);font-size:10px}.chatbot-upload-input{transition:border-color .1s ease-out}.chatbot-upload-input.dragging-over{border-color:#0042da}.secondary-button{background-color:#f7f8ff;border-radius:var(--chatbot-border-radius);color:var(--chatbot-host-bubble-color)}.chatbot-country-select{color:#303235}.chatbot-country-select,.chatbot-date-input{background-color:#fff;border-radius:var(--chatbot-border-radius)}.chatbot-date-input{color:#303235;color-scheme:light}.chatbot-popup-blocked-toast{border-radius:var(--chatbot-border-radius)}.messagelist{border-radius:.5rem;height:100%;overflow-y:scroll;width:100%}.messagelistloading{display:flex;justify-content:center;margin-top:1rem;width:100%}.usermessage{padding:1rem 1.5rem}.usermessagewaiting-light{background:linear-gradient(270deg,#ede7f6,#e3f2fd,#ede7f6);background-position:-100% 0;background-size:200% 200%}.usermessagewaiting-dark,.usermessagewaiting-light{animation:loading-gradient 2s ease-in-out infinite;animation-direction:alternate;animation-name:loading-gradient;padding:1rem 1.5rem}.usermessagewaiting-dark{background:linear-gradient(270deg,#2e2352,#1d3d60,#2e2352);background-position:-100% 0;background-size:200% 200%;color:#ececf1}@keyframes loading-gradient{0%{background-position:-100% 0}to{background-position:100% 0}}.apimessage{animation:fadein .5s;padding:1rem 1.5rem}@keyframes fadein{0%{opacity:0}to{opacity:1}}.apimessage,.usermessage,.usermessagewaiting{display:flex}.markdownanswer{line-height:1.75}.markdownanswer a:hover{opacity:.8}.markdownanswer a{color:#16bed7;font-weight:500}.markdownanswer code{color:#15cb19;font-weight:500;white-space:pre-wrap!important}.markdownanswer ol,.markdownanswer ul{margin:1rem}.boticon,.usericon{border-radius:1rem;margin-right:1rem}.markdownanswer h1,.markdownanswer h2,.markdownanswer h3{font-size:inherit}.center{flex-direction:column;padding:10px;position:relative}.center,.cloud{align-items:center;display:flex;justify-content:center}.cloud{border-radius:.5rem;height:calc(100% - 50px);width:400px}input,textarea{background-color:transparent;border:none;font-family:Poppins,sans-serif;padding:10px}.hover\\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.hover\\:brightness-90:hover{--tw-brightness:brightness(.9);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.focus\\:border-blue-500:focus{--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity))}.focus\\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\\:ring-blue-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246/var(--tw-ring-opacity))}.active\\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\\:bg-emerald-600:active{--tw-bg-opacity:1;background-color:rgb(5 150 105/var(--tw-bg-opacity))}.active\\:brightness-75:active{--tw-brightness:brightness(.75);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.disabled\\:cursor-not-allowed:disabled{cursor:not-allowed}.disabled\\:opacity-50:disabled{opacity:.5}.disabled\\:brightness-100:disabled{--tw-brightness:brightness(1);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.group:hover .group-hover\\:flex{display:flex}@media (min-width:640px){.sm\\:right-5{right:20px}.sm\\:my-8{margin-bottom:32px;margin-top:32px}.sm\\:w-\\[400px\\]{width:400px}.sm\\:w-full{width:100%}.sm\\:max-w-lg{max-width:512px}.sm\\:p-0{padding:0}}'
+    '/*! tailwindcss v3.3.1 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:""}html{-webkit-text-size-adjust:100%;font-feature-settings:normal;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;font-variation-settings:normal;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;font-weight:inherit;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.prose{color:var(--tw-prose-body);max-width:65ch}.prose :where(p):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:1.25em;margin-top:1.25em}.prose :where([class~=lead]):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-lead);font-size:1.25em;line-height:1.6;margin-bottom:1.2em;margin-top:1.2em}.prose :where(a):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-links);font-weight:500;text-decoration:underline}.prose :where(strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-bold);font-weight:600}.prose :where(a strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(blockquote strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(thead th strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(ol):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:decimal;margin-bottom:1.25em;margin-top:1.25em;padding-left:1.625em}.prose :where(ol[type=A]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:upper-alpha}.prose :where(ol[type=a]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:lower-alpha}.prose :where(ol[type=A s]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:upper-alpha}.prose :where(ol[type=a s]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:lower-alpha}.prose :where(ol[type=I]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:upper-roman}.prose :where(ol[type=i]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:lower-roman}.prose :where(ol[type=I s]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:upper-roman}.prose :where(ol[type=i s]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:lower-roman}.prose :where(ol[type="1"]):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:decimal}.prose :where(ul):not(:where([class~=not-prose],[class~=not-prose] *)){list-style-type:disc;margin-bottom:1.25em;margin-top:1.25em;padding-left:1.625em}.prose :where(ol>li):not(:where([class~=not-prose],[class~=not-prose] *))::marker{color:var(--tw-prose-counters);font-weight:400}.prose :where(ul>li):not(:where([class~=not-prose],[class~=not-prose] *))::marker{color:var(--tw-prose-bullets)}.prose :where(dt):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-headings);font-weight:600;margin-top:1.25em}.prose :where(hr):not(:where([class~=not-prose],[class~=not-prose] *)){border-color:var(--tw-prose-hr);border-top-width:1px;margin-bottom:3em;margin-top:3em}.prose :where(blockquote):not(:where([class~=not-prose],[class~=not-prose] *)){border-left-color:var(--tw-prose-quote-borders);border-left-width:.25rem;color:var(--tw-prose-quotes);font-style:italic;font-weight:500;margin-bottom:1.6em;margin-top:1.6em;padding-left:1em;quotes:"\\201C""\\201D""\\2018""\\2019"}.prose :where(blockquote p:first-of-type):not(:where([class~=not-prose],[class~=not-prose] *)):before{content:open-quote}.prose :where(blockquote p:last-of-type):not(:where([class~=not-prose],[class~=not-prose] *)):after{content:close-quote}.prose :where(h1):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-headings);font-size:2.25em;font-weight:800;line-height:1.1111111;margin-bottom:.8888889em;margin-top:0}.prose :where(h1 strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit;font-weight:900}.prose :where(h2):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-headings);font-size:1.5em;font-weight:700;line-height:1.3333333;margin-bottom:1em;margin-top:2em}.prose :where(h2 strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit;font-weight:800}.prose :where(h3):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-headings);font-size:1.25em;font-weight:600;line-height:1.6;margin-bottom:.6em;margin-top:1.6em}.prose :where(h3 strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit;font-weight:700}.prose :where(h4):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-headings);font-weight:600;line-height:1.5;margin-bottom:.5em;margin-top:1.5em}.prose :where(h4 strong):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit;font-weight:700}.prose :where(img):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:2em;margin-top:2em}.prose :where(picture):not(:where([class~=not-prose],[class~=not-prose] *)){display:block;margin-bottom:2em;margin-top:2em}.prose :where(kbd):not(:where([class~=not-prose],[class~=not-prose] *)){border-radius:.3125rem;box-shadow:0 0 0 1px rgb(var(--tw-prose-kbd-shadows)/10%),0 3px 0 rgb(var(--tw-prose-kbd-shadows)/10%);color:var(--tw-prose-kbd);font-family:inherit;font-size:.875em;font-weight:500;padding:.1875em .375em}.prose :where(code):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-code);font-size:.875em;font-weight:600}.prose :where(code):not(:where([class~=not-prose],[class~=not-prose] *)):before{content:"`"}.prose :where(code):not(:where([class~=not-prose],[class~=not-prose] *)):after{content:"`"}.prose :where(a code):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(h1 code):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(h2 code):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit;font-size:.875em}.prose :where(h3 code):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit;font-size:.9em}.prose :where(h4 code):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(blockquote code):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(thead th code):not(:where([class~=not-prose],[class~=not-prose] *)){color:inherit}.prose :where(pre):not(:where([class~=not-prose],[class~=not-prose] *)){background-color:var(--tw-prose-pre-bg);border-radius:.375rem;color:var(--tw-prose-pre-code);font-size:.875em;font-weight:400;line-height:1.7142857;margin-bottom:1.7142857em;margin-top:1.7142857em;overflow-x:auto;padding:.8571429em 1.1428571em}.prose :where(pre code):not(:where([class~=not-prose],[class~=not-prose] *)){background-color:transparent;border-radius:0;border-width:0;color:inherit;font-family:inherit;font-size:inherit;font-weight:inherit;line-height:inherit;padding:0}.prose :where(pre code):not(:where([class~=not-prose],[class~=not-prose] *)):before{content:none}.prose :where(pre code):not(:where([class~=not-prose],[class~=not-prose] *)):after{content:none}.prose :where(table):not(:where([class~=not-prose],[class~=not-prose] *)){font-size:.875em;line-height:1.7142857;margin-bottom:2em;margin-top:2em;table-layout:auto;text-align:left;width:100%}.prose :where(thead):not(:where([class~=not-prose],[class~=not-prose] *)){border-bottom-color:var(--tw-prose-th-borders);border-bottom-width:1px}.prose :where(thead th):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-headings);font-weight:600;padding-bottom:.5714286em;padding-left:.5714286em;padding-right:.5714286em;vertical-align:bottom}.prose :where(tbody tr):not(:where([class~=not-prose],[class~=not-prose] *)){border-bottom-color:var(--tw-prose-td-borders);border-bottom-width:1px}.prose :where(tbody tr:last-child):not(:where([class~=not-prose],[class~=not-prose] *)){border-bottom-width:0}.prose :where(tbody td):not(:where([class~=not-prose],[class~=not-prose] *)){vertical-align:baseline}.prose :where(tfoot):not(:where([class~=not-prose],[class~=not-prose] *)){border-top-color:var(--tw-prose-th-borders);border-top-width:1px}.prose :where(tfoot td):not(:where([class~=not-prose],[class~=not-prose] *)){vertical-align:top}.prose :where(figure>*):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:0;margin-top:0}.prose :where(figcaption):not(:where([class~=not-prose],[class~=not-prose] *)){color:var(--tw-prose-captions);font-size:.875em;line-height:1.4285714;margin-top:.8571429em}.prose{--tw-prose-body:#374151;--tw-prose-headings:#111827;--tw-prose-lead:#4b5563;--tw-prose-links:#111827;--tw-prose-bold:#111827;--tw-prose-counters:#6b7280;--tw-prose-bullets:#d1d5db;--tw-prose-hr:#e5e7eb;--tw-prose-quotes:#111827;--tw-prose-quote-borders:#e5e7eb;--tw-prose-captions:#6b7280;--tw-prose-kbd:#111827;--tw-prose-kbd-shadows:17 24 39;--tw-prose-code:#111827;--tw-prose-pre-code:#e5e7eb;--tw-prose-pre-bg:#1f2937;--tw-prose-th-borders:#d1d5db;--tw-prose-td-borders:#e5e7eb;--tw-prose-invert-body:#d1d5db;--tw-prose-invert-headings:#fff;--tw-prose-invert-lead:#9ca3af;--tw-prose-invert-links:#fff;--tw-prose-invert-bold:#fff;--tw-prose-invert-counters:#9ca3af;--tw-prose-invert-bullets:#4b5563;--tw-prose-invert-hr:#374151;--tw-prose-invert-quotes:#f3f4f6;--tw-prose-invert-quote-borders:#374151;--tw-prose-invert-captions:#9ca3af;--tw-prose-invert-kbd:#fff;--tw-prose-invert-kbd-shadows:255 255 255;--tw-prose-invert-code:#fff;--tw-prose-invert-pre-code:#d1d5db;--tw-prose-invert-pre-bg:rgba(0,0,0,.5);--tw-prose-invert-th-borders:#4b5563;--tw-prose-invert-td-borders:#374151;font-size:1rem;line-height:1.75}.prose :where(picture>img):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:0;margin-top:0}.prose :where(video):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:2em;margin-top:2em}.prose :where(li):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:.5em;margin-top:.5em}.prose :where(ol>li):not(:where([class~=not-prose],[class~=not-prose] *)){padding-left:.375em}.prose :where(ul>li):not(:where([class~=not-prose],[class~=not-prose] *)){padding-left:.375em}.prose :where(.prose>ul>li p):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:.75em;margin-top:.75em}.prose :where(.prose>ul>li>:first-child):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:1.25em}.prose :where(.prose>ul>li>:last-child):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:1.25em}.prose :where(.prose>ol>li>:first-child):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:1.25em}.prose :where(.prose>ol>li>:last-child):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:1.25em}.prose :where(ul ul,ul ol,ol ul,ol ol):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:.75em;margin-top:.75em}.prose :where(dl):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:1.25em;margin-top:1.25em}.prose :where(dd):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:.5em;padding-left:1.625em}.prose :where(hr+*):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:0}.prose :where(h2+*):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:0}.prose :where(h3+*):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:0}.prose :where(h4+*):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:0}.prose :where(thead th:first-child):not(:where([class~=not-prose],[class~=not-prose] *)){padding-left:0}.prose :where(thead th:last-child):not(:where([class~=not-prose],[class~=not-prose] *)){padding-right:0}.prose :where(tbody td,tfoot td):not(:where([class~=not-prose],[class~=not-prose] *)){padding:.5714286em}.prose :where(tbody td:first-child,tfoot td:first-child):not(:where([class~=not-prose],[class~=not-prose] *)){padding-left:0}.prose :where(tbody td:last-child,tfoot td:last-child):not(:where([class~=not-prose],[class~=not-prose] *)){padding-right:0}.prose :where(figure):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:2em;margin-top:2em}.prose :where(.prose>:first-child):not(:where([class~=not-prose],[class~=not-prose] *)){margin-top:0}.prose :where(.prose>:last-child):not(:where([class~=not-prose],[class~=not-prose] *)){margin-bottom:0}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0}.bottom-0{bottom:0}.bottom-20{bottom:80px}.bottom-24{bottom:96px}.left-0{left:0}.right-0{right:0}.top-0{top:0}.z-0{z-index:0}.z-10{z-index:10}.z-40{z-index:40}.z-50{z-index:50}.z-\\[1001\\]{z-index:1001}.z-\\[1002\\]{z-index:1002}.float-right{float:right}.m-0{margin:0}.m-auto{margin:auto}.mx-auto{margin-left:auto;margin-right:auto}.my-2{margin-bottom:8px;margin-top:8px}.my-6{margin-bottom:24px;margin-top:24px}.-ml-1{margin-left:-4px}.mb-1{margin-bottom:4px}.mb-2{margin-bottom:8px}.ml-1{margin-left:4px}.ml-1\\.5{margin-left:6px}.ml-2{margin-left:8px}.ml-auto{margin-left:auto}.mr-1{margin-right:4px}.mr-2{margin-right:8px}.mr-3{margin-right:12px}.mr-\\[10px\\]{margin-right:10px}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.hidden{display:none}.h-10{height:40px}.h-12{height:48px}.h-14{height:56px}.h-16{height:64px}.h-2{height:8px}.h-32{height:128px}.h-4{height:16px}.h-5{height:20px}.h-6{height:24px}.h-7{height:28px}.h-9{height:36px}.h-\\[50px\\]{height:50px}.h-\\[58px\\]{height:58px}.h-auto{height:auto}.h-full{height:100%}.max-h-\\[128px\\]{max-height:128px}.max-h-\\[704px\\]{max-height:704px}.min-h-\\[56px\\]{min-height:56px}.min-h-full{min-height:100%}.w-10{width:40px}.w-12{width:48px}.w-16{width:64px}.w-2{width:8px}.w-4{width:16px}.w-5{width:20px}.w-6{width:24px}.w-7{width:28px}.w-9{width:36px}.w-\\[200px\\]{width:200px}.w-full{width:100%}.min-w-full{min-width:100%}.max-w-3xl{max-width:768px}.max-w-\\[128px\\]{max-width:128px}.max-w-full{max-width:100%}.flex-1{flex:1 1 0%}.flex-auto{flex:1 1 auto}.flex-shrink-0{flex-shrink:0}.flex-grow{flex-grow:1}.flex-grow-0{flex-grow:0}.basis-auto{flex-basis:auto}.-rotate-180{--tw-rotate:-180deg}.-rotate-180,.rotate-0{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.rotate-0{--tw-rotate:0deg}.scale-0{--tw-scale-x:0;--tw-scale-y:0}.scale-0,.scale-100{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.scale-100{--tw-scale-x:1;--tw-scale-y:1}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes fade-in{0%{opacity:0}to{opacity:1}}.animate-fade-in{animation:fade-in .3s ease-out}@keyframes spin{to{transform:rotate(1turn)}}.animate-spin{animation:spin 1s linear infinite}.resize{resize:both}.flex-row{flex-direction:row}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-start{justify-content:flex-start}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-2{gap:8px}.gap-3{gap:12px}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.overflow-x-hidden{overflow-x:hidden}.overflow-y-scroll{overflow-y:scroll}.scroll-smooth{scroll-behavior:smooth}.whitespace-pre-wrap{white-space:pre-wrap}.rounded{border-radius:4px}.rounded-\\[10px\\]{border-radius:10px}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:8px}.rounded-md{border-radius:6px}.rounded-none{border-radius:0}.rounded-xl{border-radius:12px}.rounded-b{border-bottom-left-radius:4px;border-bottom-right-radius:4px}.rounded-t{border-top-left-radius:4px;border-top-right-radius:4px}.border{border-width:1px}.border-0{border-width:0}.border-2{border-width:2px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-solid{border-style:solid}.border-dashed{border-style:dashed}.border-\\[\\#eeeeee\\]{--tw-border-opacity:1;border-color:rgb(238 238 238/var(--tw-border-opacity))}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.bg-black\\/10{background-color:rgba(0,0,0,.1)}.bg-black\\/60{background-color:rgba(0,0,0,.6)}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129/var(--tw-bg-opacity))}.bg-gray-500{--tw-bg-opacity:1;background-color:rgb(107 114 128/var(--tw-bg-opacity))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68/var(--tw-bg-opacity))}.bg-transparent{background-color:transparent}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-opacity-50{--tw-bg-opacity:0.5}.bg-cover{background-size:cover}.bg-center{background-position:50%}.fill-transparent{fill:transparent}.stroke-2{stroke-width:2}.object-cover{-o-object-fit:cover;object-fit:cover}.p-0{padding:0}.p-1{padding:4px}.p-2{padding:8px}.p-2\\.5{padding:10px}.p-4{padding:16px}.p-5{padding:20px}.p-6{padding:24px}.px-2{padding-left:8px;padding-right:8px}.px-3{padding-left:12px;padding-right:12px}.px-4{padding-left:16px;padding-right:16px}.px-5{padding-left:20px;padding-right:20px}.px-\\[10px\\]{padding-left:10px;padding-right:10px}.py-1{padding-bottom:4px;padding-top:4px}.py-2{padding-bottom:8px;padding-top:8px}.py-4{padding-bottom:16px;padding-top:16px}.py-\\[10px\\]{padding-bottom:10px;padding-top:10px}.pb-1{padding-bottom:4px}.pb-\\[10px\\]{padding-bottom:10px}.pl-4{padding-left:16px}.pr-0{padding-right:0}.pt-2{padding-top:8px}.pt-\\[6px\\]{padding-top:6px}.pt-\\[70px\\]{padding-top:70px}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:24px;line-height:32px}.text-\\[13px\\]{font-size:13px}.text-base{font-size:16px;line-height:24px}.text-sm{font-size:14px;line-height:20px}.text-xl{font-size:20px;line-height:28px}.font-bold{font-weight:700}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-none{line-height:1}.text-black{--tw-text-opacity:1;color:rgb(0 0 0/var(--tw-text-opacity))}.text-transparent{color:transparent}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.opacity-0{opacity:0}.opacity-100{opacity:1}.opacity-25{opacity:.25}.opacity-75{opacity:.75}.shadow{--tw-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color)}.shadow,.shadow-lg{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-md{--tw-shadow:0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color),0 2px 4px -2px var(--tw-shadow-color)}.shadow-md,.shadow-xl{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-all{transition-duration:.15s;transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-opacity{transition-duration:.15s;transition-property:opacity;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-150,.transition-transform{transition-duration:.15s}.duration-200{transition-duration:.2s}.ease-linear{transition-timing-function:linear}.ease-out{transition-timing-function:cubic-bezier(0,0,.2,1)}:host{--chatbot-container-bg-image:none;--chatbot-container-bg-color:transparent;--chatbot-container-font-family:"Open Sans";--chatbot-button-bg-color:#0042da;--chatbot-button-color:#fff;--chatbot-host-bubble-bg-color:#f7f8ff;--chatbot-host-bubble-color:#303235;--chatbot-guest-bubble-bg-color:#3b81f6;--chatbot-guest-bubble-color:#fff;--chatbot-input-bg-color:#fff;--chatbot-input-color:#303235;--chatbot-input-placeholder-color:#9095a0;--chatbot-header-bg-color:#fff;--chatbot-header-color:#303235;--chatbot-border-radius:6px;--PhoneInputCountryFlag-borderColor:transparent;--PhoneInput-color--focus:transparent}a{color:#16bed7;font-weight:500}a:hover{text-decoration:underline}pre{word-wrap:break-word;font-size:13px;margin:5px;overflow:auto;padding:5px;white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;width:auto}.string{color:green}.number{color:#ff8c00}.boolean{color:blue}.null{color:#f0f}.key{color:#002b36}.scrollable-container::-webkit-scrollbar{display:none}.scrollable-container{-ms-overflow-style:none;scrollbar-width:none}.text-fade-in{transition:opacity .4s ease-in .2s}.bubble-typing{transition:width .4s ease-out,height .4s ease-out}.bubble1,.bubble2,.bubble3{background-color:var(--chatbot-host-bubble-color);opacity:.5}.bubble1,.bubble2{animation:chatBubbles 1s ease-in-out infinite}.bubble2{animation-delay:.3s}.bubble3{animation:chatBubbles 1s ease-in-out infinite;animation-delay:.5s}@keyframes chatBubbles{0%{transform:translateY(0)}50%{transform:translateY(-5px)}to{transform:translateY(0)}}button,input,textarea{font-weight:300}.slate-a{text-decoration:underline}.slate-html-container>div{min-height:24px}.slate-bold{font-weight:700}.slate-italic{font-style:oblique}.slate-underline{text-decoration:underline}.text-input::-moz-placeholder{color:#9095a0!important;opacity:1!important}.text-input::placeholder{color:#9095a0!important;opacity:1!important}.chatbot-container{background-color:var(--chatbot-container-bg-color);background-image:var(--chatbot-container-bg-image);font-family:Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol}.file-annotation-button{background-color:#02a0a0c2;border:1px solid #02a0a0c2;border-radius:var(--chatbot-border-radius);color:var(--chatbot-button-color)}.chatbot-button{background-color:#0042da;border:1px solid #0042da;border-radius:var(--chatbot-border-radius);color:var(--chatbot-button-color)}.chatbot-button.selectable{border:1px solid #0042da}.chatbot-button.selectable,.chatbot-host-bubble{background-color:#f7f8ff;color:var(--chatbot-host-bubble-color)}.chatbot-host-bubble>.bubble-typing{background-color:#f7f8ff;border:var(--chatbot-host-bubble-border);border-radius:6px}.chatbot-host-bubble iframe,.chatbot-host-bubble img,.chatbot-host-bubble video{border-radius:var(--chatbot-border-radius)}.chatbot-guest-bubble{background-color:#3b81f6;border-radius:6px;color:var(--chatbot-guest-bubble-color)}.chatbot-input,.feedback-input{background-color:#fff;border-radius:var(--chatbot-border-radius);box-shadow:0 2px 6px -1px rgba(0,0,0,.1);color:#303235}.chatbot-input-error-message{color:#303235}.chatbot-button>.send-icon{fill:var(--chatbot-button-color);stroke:var(--chatbot-button-color)}.chatbot-chat-view{max-width:800px}.ping span{background-color:#0042da}.rating-icon-container svg{stroke:#0042da;fill:#f7f8ff;height:42px;transition:fill .1s ease-out;width:42px}.rating-icon-container.selected svg{fill:#0042da}.rating-icon-container:hover svg{filter:brightness(.9)}.rating-icon-container:active svg{filter:brightness(.75)}.upload-progress-bar{background-color:#0042da;border-radius:var(--chatbot-border-radius)}.total-files-indicator{background-color:#0042da;color:var(--chatbot-button-color);font-size:10px}.chatbot-upload-input{transition:border-color .1s ease-out}.chatbot-upload-input.dragging-over{border-color:#0042da}.secondary-button{background-color:#f7f8ff;border-radius:var(--chatbot-border-radius);color:var(--chatbot-host-bubble-color)}.chatbot-country-select{color:#303235}.chatbot-country-select,.chatbot-date-input{background-color:#fff;border-radius:var(--chatbot-border-radius)}.chatbot-date-input{color:#303235;color-scheme:light}.chatbot-popup-blocked-toast{border-radius:var(--chatbot-border-radius)}.messagelist{border-radius:.5rem;height:100%;overflow-y:scroll;width:100%}.messagelistloading{display:flex;justify-content:center;margin-top:1rem;width:100%}.usermessage{padding:1rem 1.5rem}.usermessagewaiting-light{background:linear-gradient(270deg,#ede7f6,#e3f2fd,#ede7f6);background-position:-100% 0;background-size:200% 200%}.usermessagewaiting-dark,.usermessagewaiting-light{animation:loading-gradient 2s ease-in-out infinite;animation-direction:alternate;animation-name:loading-gradient;padding:1rem 1.5rem}.usermessagewaiting-dark{background:linear-gradient(270deg,#2e2352,#1d3d60,#2e2352);background-position:-100% 0;background-size:200% 200%;color:#ececf1}@keyframes loading-gradient{0%{background-position:-100% 0}to{background-position:100% 0}}.apimessage{animation:fadein .5s;padding:1rem 1.5rem}@keyframes fadein{0%{opacity:0}to{opacity:1}}.apimessage,.usermessage,.usermessagewaiting{display:flex}.markdownanswer{line-height:1.75}.markdownanswer a:hover{opacity:.8}.markdownanswer a{color:#16bed7;font-weight:500}.markdownanswer code{color:#15cb19;font-weight:500;white-space:pre-wrap!important}.markdownanswer ol,.markdownanswer ul{margin:1rem}.boticon,.usericon{border-radius:1rem;margin-right:1rem}.markdownanswer h1,.markdownanswer h2,.markdownanswer h3{font-size:inherit}.center{flex-direction:column;padding:10px;position:relative}.center,.cloud{align-items:center;display:flex;justify-content:center}.cloud{border-radius:.5rem;height:calc(100% - 50px);width:400px}input,textarea{background-color:transparent;border:none;font-family:Poppins,sans-serif;padding:10px}div.w-full.px-5.pt-2.pb-1{padding-bottom:20px!important}.hover\\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.hover\\:brightness-90:hover{--tw-brightness:brightness(.9);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.focus\\:border-blue-500:focus{--tw-border-opacity:1;border-color:rgb(59 130 246/var(--tw-border-opacity))}.focus\\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\\:ring-blue-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(59 130 246/var(--tw-ring-opacity))}.active\\:scale-95:active{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.active\\:bg-emerald-600:active{--tw-bg-opacity:1;background-color:rgb(5 150 105/var(--tw-bg-opacity))}.active\\:brightness-75:active{--tw-brightness:brightness(.75);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.disabled\\:cursor-not-allowed:disabled{cursor:not-allowed}.disabled\\:opacity-50:disabled{opacity:.5}.disabled\\:brightness-100:disabled{--tw-brightness:brightness(1);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.group:hover .group-hover\\:flex{display:flex}@media (min-width:640px){.sm\\:right-5{right:20px}.sm\\:my-8{margin-bottom:32px;margin-top:32px}.sm\\:w-\\[400px\\]{width:400px}.sm\\:w-full{width:100%}.sm\\:max-w-lg{max-width:512px}.sm\\:p-0{padding:0}}'
 const Me = (e) => null == e,
     Pe = (e) => null != e,
     Te = async (e) => {
@@ -1086,9 +1086,9 @@ const Ce = []
 for (let e = 0; e < 256; ++e) Ce.push((e + 256).toString(16).slice(1))
 var Ee,
     Ne,
-    Oe = { randomUUID: 'undefined' != typeof crypto && crypto.randomUUID && crypto.randomUUID.bind(crypto) }
-function fe(e, r, o) {
-    if (Oe.randomUUID && !r && !e) return Oe.randomUUID()
+    fe = { randomUUID: 'undefined' != typeof crypto && crypto.randomUUID && crypto.randomUUID.bind(crypto) }
+function Oe(e, r, o) {
+    if (fe.randomUUID && !r && !e) return fe.randomUUID()
     var t = (e = e || {}).random || (e.rng || Be)()
     if (((t[6] = (15 & t[6]) | 64), (t[8] = (63 & t[8]) | 128), r)) {
         o = o || 0
@@ -1177,41 +1177,21 @@ const Ie = ({ chatflowid: e, apiHost: r = 'http://localhost:3000', body: o }) =>
         }
     },
     Ue = te(
-        '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-refresh w-4 h-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 14V2"></path><path d="M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22h0a3.13 3.13 0 0 1-3-3.88Z">'
+        '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-refresh w-4 h-4" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 14V2"></path><path d="M9 18.12 10 14H4.17a2 2 0 0 1-1.92-2.56l2.33-8A2 2 0 0 1 6.5 2H20a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.76a2 2 0 0 0-1.79 1.11L12 22h0a3.13 3.13 0 0 1-3-3.88Z">'
     ),
     Ke = (e) => {
         {
             const r = Ue()
-            return (
-                P(
-                    (o) => {
-                        var t = e.color ?? 'none',
-                            l = e.color ?? '#3B81F6'
-                        return t !== o._v$ && ae(r, 'fill', (o._v$ = t)), l !== o._v$2 && ae(r, 'stroke', (o._v$2 = l)), o
-                    },
-                    { _v$: void 0, _v$2: void 0 }
-                ),
-                r
-            )
+            return P(() => ae(r, 'stroke', e.color ?? '#3B81F6')), r
         }
     },
     We = te(
-        '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-refresh w-4 h-4" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v12"></path><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z">'
+        '<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-refresh w-4 h-4" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v12"></path><path d="M15 5.88 14 10h5.83a2 2 0 0 1 1.92 2.56l-2.33 8A2 2 0 0 1 17.5 22H4a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2h2.76a2 2 0 0 0 1.79-1.11L12 2h0a3.13 3.13 0 0 1 3 3.88Z">'
     ),
     Qe = (e) => {
         {
             const r = We()
-            return (
-                P(
-                    (o) => {
-                        var t = e.color ?? 'none',
-                            l = e.color ?? '#3B81F6'
-                        return t !== o._v$ && ae(r, 'fill', (o._v$ = t)), l !== o._v$2 && ae(r, 'stroke', (o._v$2 = l)), o
-                    },
-                    { _v$: void 0, _v$2: void 0 }
-                ),
-                r
-            )
+            return P(() => ae(r, 'stroke', e.color ?? '#3B81F6')), r
         }
     },
     Ze = te(
@@ -1778,13 +1758,13 @@ class Cr {
 }
 const Er = /[&<>"']/,
     Nr = /[&<>"']/g,
-    Or = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' },
-    fr = /[<>"']|&(?!#?\w+;)/,
+    fr = { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' },
+    Or = /[<>"']|&(?!#?\w+;)/,
     Ir = /[<>"']|&(?!#?\w+;)/g
 function Xr(e, r) {
     if (r) {
-        if (Er.test(e)) return e.replace(Nr, (e) => Or[e])
-    } else if (fr.test(e)) return e.replace(Ir, (e) => Or[e])
+        if (Er.test(e)) return e.replace(Nr, (e) => fr[e])
+    } else if (Or.test(e)) return e.replace(Ir, (e) => fr[e])
     return e
 }
 function Dr(e) {
@@ -2595,7 +2575,8 @@ const Wr = te(
         }),
     jr = te('<button>'),
     qr = te('<button type="submit">'),
-    eo = (e) => {
+    eo = '#3B81F6',
+    ro = (e) => {
         return (
             de(
                 (r = jr()),
@@ -2632,7 +2613,7 @@ const Wr = te(
                     get children() {
                         return V(He, {
                             get color() {
-                                return e.sendButtonColor
+                                return e.feedbackColor ?? eo
                             },
                             get class() {
                                 return 'send-icon flex ' + (e.disableIcon ? 'hidden' : '')
@@ -2645,7 +2626,7 @@ const Wr = te(
         )
         var r
     },
-    ro = (e) => {
+    oo = (e) => {
         return (
             de(
                 (r = qr()),
@@ -2682,7 +2663,7 @@ const Wr = te(
                     get children() {
                         return V(Qe, {
                             get color() {
-                                return e.sendButtonColor
+                                return e.feedbackColor ?? eo
                             },
                             get class() {
                                 return 'send-icon flex ' + (e.disableIcon ? 'hidden' : '')
@@ -2695,7 +2676,7 @@ const Wr = te(
         )
         var r
     },
-    oo = (e) => {
+    to = (e) => {
         return (
             de(
                 (r = qr()),
@@ -2732,7 +2713,7 @@ const Wr = te(
                     get children() {
                         return V(Ke, {
                             get color() {
-                                return e.sendButtonColor
+                                return e.feedbackColor ?? eo
                             },
                             get class() {
                                 return 'send-icon flex ' + (e.disableIcon ? 'hidden' : '')
@@ -2745,12 +2726,12 @@ const Wr = te(
         )
         var r
     },
-    to = te(
+    lo = te(
         '<div class="flex overflow-x-hidden overflow-y-auto fixed inset-0 z-[1002] outline-none focus:outline-none justify-center items-center"><div class="relative w-full my-6 mx-auto max-w-3xl"><div class="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none"><div class="flex items-start justify-between p-5 border-b border-solid border-blueGray-200 rounded-t"><h3 class="text-2xl font-semibold">Provide additional feedback</h3><button class="p-1 ml-auto bg-transparent border-0 text-black float-right text-xl leading-none font-semibold outline-none focus:outline-none" type="button"><span class="bg-transparent block outline-none focus:outline-none"><svg xmlns="http://www.w3.org/2000/svg" class="text-black h-6 w-6" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg></span></button></div><div class="relative p-6 flex-auto"><textarea rows="4" class="block p-2.5 rounded-lg border focus:ring-blue-500 focus:border-blue-500 bg-transparent flex-1 w-full feedback-input disabled:opacity-50 disabled:cursor-not-allowed disabled:brightness-100 font-normal" placeholder="What do you think of the response?"></textarea></div><div class="flex items-center justify-end p-4 border-t border-solid border-blueGray-200 rounded-b"><button class="bg-emerald-500 text-white active:bg-emerald-600 font-bold uppercase text-sm px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150" type="button">Submit Feedback'
     ),
-    lo = te('<div class="flex opacity-25 fixed inset-0 z-[1001] bg-black">'),
-    ao = '#303235',
-    io = (e) => {
+    ao = te('<div class="flex opacity-25 fixed inset-0 z-[1001] bg-black">'),
+    io = '#303235',
+    no = (e) => {
         const [r, o] = M('')
         let t
         const l = () => {
@@ -2761,7 +2742,7 @@ const Wr = te(
             }
         return [
             (() => {
-                const i = to(),
+                const i = lo(),
                     d = i.firstChild.firstChild,
                     n = d.firstChild,
                     m = n.firstChild.nextSibling,
@@ -2777,8 +2758,8 @@ const Wr = te(
                     P(
                         (r) => {
                             var o = e.backgroundColor ?? '#ffffff',
-                                t = e.textColor ?? ao,
-                                l = e.textColor ?? ao
+                                t = e.textColor ?? io,
+                                l = e.textColor ?? io
                             return (
                                 o !== r._v$ &&
                                     (null != (r._v$ = o)
@@ -2795,13 +2776,13 @@ const Wr = te(
                     i
                 )
             })(),
-            lo()
+            ao()
         ]
     },
-    no = (le(['click', 'input']), te('<div class="flex flex-col justify-start mb-2 items-start host-container">')),
-    mo = te('<span class="px-4 py-2 ml-2 max-w-full chatbot-host-bubble prose" data-testid="host-bubble">'),
-    so = te('<div class="flex items-center px-2">'),
-    go =
+    mo = (le(['click', 'input']), te('<div class="flex flex-col justify-start mb-2 items-start host-container">')),
+    so = te('<span class="px-4 py-2 ml-2 max-w-full chatbot-host-bubble prose" data-testid="host-bubble">'),
+    go = te('<div class="flex items-center px-2">'),
+    xo =
         (Ur.setOptions({ isNoP: !0 }),
         (e) => {
             let r
@@ -2890,7 +2871,7 @@ const Wr = te(
                                 r.appendChild(o)
                         }
                 }),
-                (g = no()).style.setProperty('margin-right', '50px'),
+                (g = mo()).style.setProperty('margin-right', '50px'),
                 me(
                     g,
                     V(Y, {
@@ -2914,7 +2895,7 @@ const Wr = te(
                         return () =>
                             o() &&
                             (() => {
-                                const o = mo()
+                                const o = so()
                                 return (
                                     'function' == typeof r ? ne(r, o) : (r = o),
                                     o.style.setProperty('border-radius', '6px'),
@@ -2955,8 +2936,11 @@ const Wr = te(
                             return (
                                 t() && [
                                     (me(
-                                        (l = so()),
-                                        V(eo, {
+                                        (l = go()),
+                                        V(ro, {
+                                            get feedbackColor() {
+                                                return e.feedbackColor
+                                            },
                                             onClick: () =>
                                                 (async () => {
                                                     try {
@@ -2972,10 +2956,13 @@ const Wr = te(
                                     me(
                                         l,
                                         (() => {
-                                            const e = b(() => !('' !== o() && 'THUMBS_UP' !== o()))
+                                            const r = b(() => !('' !== o() && 'THUMBS_UP' !== o()))
                                             return () =>
-                                                e()
-                                                    ? V(ro, {
+                                                r()
+                                                    ? V(oo, {
+                                                          get feedbackColor() {
+                                                              return e.feedbackColor
+                                                          },
                                                           get isDisabled() {
                                                               return 'THUMBS_UP' === o()
                                                           },
@@ -2991,10 +2978,13 @@ const Wr = te(
                                     me(
                                         l,
                                         (() => {
-                                            const e = b(() => !('' !== o() && 'THUMBS_DOWN' !== o()))
+                                            const r = b(() => !('' !== o() && 'THUMBS_DOWN' !== o()))
                                             return () =>
-                                                e()
-                                                    ? V(oo, {
+                                                r()
+                                                    ? V(to, {
+                                                          get feedbackColor() {
+                                                              return e.feedbackColor
+                                                          },
                                                           get isDisabled() {
                                                               return 'THUMBS_DOWN' === o()
                                                           },
@@ -3013,7 +3003,7 @@ const Wr = te(
                                             return i()
                                         },
                                         get children() {
-                                            return V(io, {
+                                            return V(no, {
                                                 get isOpen() {
                                                     return i()
                                                 },
@@ -3039,23 +3029,23 @@ const Wr = te(
             )
             var g
         }),
-    xo = te(
+    co = te(
         '<div class="flex items-center"><div class="w-2 h-2 mr-1 rounded-full bubble1"></div><div class="w-2 h-2 mr-1 rounded-full bubble2"></div><div class="w-2 h-2 rounded-full bubble3">'
     ),
-    co = () => xo(),
-    uo = te(
+    uo = () => co(),
+    So = te(
         '<div class="flex justify-start mb-2 items-start animate-fade-in host-container"><span class="px-4 py-4 ml-2 whitespace-pre-wrap max-w-full chatbot-host-bubble" data-testid="host-bubble">'
     ),
-    So = () => {
-        return me((e = uo()).firstChild, V(co, {})), e
+    po = () => {
+        return me((e = So()).firstChild, V(uo, {})), e
         var e
     },
-    po = te(
+    ho = te(
         '<div data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="flex justify-start mb-2 items-start animate-fade-in host-container hover:brightness-90 active:brightness-75"><span class="px-2 py-1 ml-1 whitespace-pre-wrap max-w-full chatbot-host-bubble" data-testid="host-bubble">'
     ),
-    ho = (e) => {
+    vo = (e) => {
         return (
-            (o = (r = po()).firstChild),
+            (o = (r = ho()).firstChild),
             (r.$$click = () => e.onSourceClick?.()),
             o.style.setProperty('width', 'max-content'),
             o.style.setProperty('max-width', '80px'),
@@ -3070,14 +3060,14 @@ const Wr = te(
         )
         var r, o
     },
-    vo =
+    $o =
         (le(['click']),
         te(
             '<div data-modal-target="defaultModal" data-modal-toggle="defaultModal" class="flex justify-start items-start animate-fade-in host-container hover:brightness-90 active:brightness-75"><span class="px-2 py-1 ml-1 whitespace-pre-wrap max-w-full chatbot-host-bubble" data-testid="host-bubble">'
         )),
-    $o = (e) => {
+    Ao = (e) => {
         return (
-            (o = (r = vo()).firstChild),
+            (o = (r = $o()).firstChild),
             (r.$$click = () => e.onPromptClick?.()),
             o.style.setProperty('width', 'max-content'),
             o.style.setProperty('font-size', '15px'),
@@ -3088,71 +3078,35 @@ const Wr = te(
         )
         var r, o
     },
-    Ao = (le(['click']), te('<span class="w-full text-center px-[10px] pt-[6px] pb-[10px] m-auto text-[13px]">Ask me everything')),
-    Mo = (e) => {
-        let r
-        const o = (e) => {
-            e.forEach((e) => {
-                e.removedNodes.forEach((e) => {})
-            })
-        }
-        _(() => {
-            document && e.botContainer && (r = new MutationObserver(o)).observe(e.botContainer, { subtree: !1, childList: !0 })
-        }),
-            L(() => {
-                r && r.disconnect()
-            })
-        {
-            const r = Ao()
-            return (
-                P(
-                    (o) => {
-                        var t = e.poweredByTextColor ?? '#303235',
-                            l = e.badgeBackgroundColor ?? '#ffffff'
-                        return (
-                            t !== o._v$ && (null != (o._v$ = t) ? r.style.setProperty('color', t) : r.style.removeProperty('color')),
-                            l !== o._v$2 &&
-                                (null != (o._v$2 = l)
-                                    ? r.style.setProperty('background-color', l)
-                                    : r.style.removeProperty('background-color')),
-                            o
-                        )
-                    },
-                    { _v$: void 0, _v$2: void 0 }
-                ),
-                r
-            )
-        }
-    },
-    Po = Object.create(null),
-    To =
-        ((Po.open = '0'),
-        (Po.close = '1'),
-        (Po.ping = '2'),
-        (Po.pong = '3'),
-        (Po.message = '4'),
-        (Po.upgrade = '5'),
-        (Po.noop = '6'),
+    Mo = (le(['click']), Object.create(null)),
+    Po =
+        ((Mo.open = '0'),
+        (Mo.close = '1'),
+        (Mo.ping = '2'),
+        (Mo.pong = '3'),
+        (Mo.message = '4'),
+        (Mo.upgrade = '5'),
+        (Mo.noop = '6'),
         Object.create(null)),
-    bo =
-        (Object.keys(Po).forEach((e) => {
-            To[Po[e]] = e
+    To =
+        (Object.keys(Mo).forEach((e) => {
+            Po[Mo[e]] = e
         }),
         { type: 'error', data: 'parser error' }),
-    Go = 'function' == typeof Blob || ('undefined' != typeof Blob && '[object BlobConstructor]' === Object.prototype.toString.call(Blob)),
-    _o = 'function' == typeof ArrayBuffer,
-    Lo = (e) => ('function' == typeof ArrayBuffer.isView ? ArrayBuffer.isView(e) : e && e.buffer instanceof ArrayBuffer),
-    wo = ({ type: e, data: r }, o, t) =>
-        Go && r instanceof Blob
+    bo = 'function' == typeof Blob || ('undefined' != typeof Blob && '[object BlobConstructor]' === Object.prototype.toString.call(Blob)),
+    Go = 'function' == typeof ArrayBuffer,
+    _o = (e) => ('function' == typeof ArrayBuffer.isView ? ArrayBuffer.isView(e) : e && e.buffer instanceof ArrayBuffer),
+    Lo = ({ type: e, data: r }, o, t) =>
+        bo && r instanceof Blob
             ? o
                 ? t(r)
-                : yo(r, t)
-            : _o && (r instanceof ArrayBuffer || Lo(r))
+                : wo(r, t)
+            : Go && (r instanceof ArrayBuffer || _o(r))
             ? o
                 ? t(r)
-                : yo(new Blob([r]), t)
-            : t(Po[e] + (r || '')),
-    yo = (e, r) => {
+                : wo(new Blob([r]), t)
+            : t(Mo[e] + (r || '')),
+    wo = (e, r) => {
         const o = new FileReader()
         return (
             (o.onload = function () {
@@ -3162,29 +3116,29 @@ const Wr = te(
             o.readAsDataURL(e)
         )
     }
-function Bo(e) {
+function yo(e) {
     return e instanceof Uint8Array ? e : e instanceof ArrayBuffer ? new Uint8Array(e) : new Uint8Array(e.buffer, e.byteOffset, e.byteLength)
 }
-let Co
-const Eo = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/',
-    No = 'undefined' == typeof Uint8Array ? [] : new Uint8Array(256)
-for (let e = 0; e < 64; e++) No[Eo.charCodeAt(e)] = e
-const Oo = 'function' == typeof ArrayBuffer,
+let Bo
+const Co = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/',
+    Eo = 'undefined' == typeof Uint8Array ? [] : new Uint8Array(256)
+for (let e = 0; e < 64; e++) Eo[Co.charCodeAt(e)] = e
+const No = 'function' == typeof ArrayBuffer,
     fo = (e, r) => {
         var o
         return 'string' != typeof e
-            ? { type: 'message', data: Xo(e, r) }
+            ? { type: 'message', data: Io(e, r) }
             : 'b' === (o = e.charAt(0))
-            ? { type: 'message', data: Io(e.substring(1), r) }
-            : To[o]
+            ? { type: 'message', data: Oo(e.substring(1), r) }
+            : Po[o]
             ? 1 < e.length
-                ? { type: To[o], data: e.substring(1) }
-                : { type: To[o] }
-            : bo
+                ? { type: Po[o], data: e.substring(1) }
+                : { type: Po[o] }
+            : To
     },
-    Io = (e, r) => {
+    Oo = (e, r) => {
         var o
-        return Oo
+        return No
             ? ((o = ((e) => {
                   let r,
                       o,
@@ -3198,30 +3152,30 @@ const Oo = 'function' == typeof ArrayBuffer,
                   var m = new ArrayBuffer(i),
                       s = new Uint8Array(m)
                   for (r = 0; r < d; r += 4)
-                      (o = No[e.charCodeAt(r)]),
-                          (t = No[e.charCodeAt(r + 1)]),
-                          (l = No[e.charCodeAt(r + 2)]),
-                          (a = No[e.charCodeAt(r + 3)]),
+                      (o = Eo[e.charCodeAt(r)]),
+                          (t = Eo[e.charCodeAt(r + 1)]),
+                          (l = Eo[e.charCodeAt(r + 2)]),
+                          (a = Eo[e.charCodeAt(r + 3)]),
                           (s[n++] = (o << 2) | (t >> 4)),
                           (s[n++] = ((15 & t) << 4) | (l >> 2)),
                           (s[n++] = ((3 & l) << 6) | (63 & a))
                   return m
               })(e)),
-              Xo(o, r))
+              Io(o, r))
             : { base64: !0, data: e }
     },
-    Xo = (e, r) => ('blob' !== r ? (e instanceof ArrayBuffer ? e : e.buffer) : e instanceof Blob ? e : new Blob([e])),
-    Do = String.fromCharCode(30)
-function Ro() {
+    Io = (e, r) => ('blob' !== r ? (e instanceof ArrayBuffer ? e : e.buffer) : e instanceof Blob ? e : new Blob([e])),
+    Xo = String.fromCharCode(30)
+function Do() {
     return new TransformStream({
         transform(e, r) {
             !(function (e, r) {
-                Go && e.data instanceof Blob
-                    ? e.data.arrayBuffer().then(Bo).then(r)
-                    : _o && (e.data instanceof ArrayBuffer || Lo(e.data))
-                    ? r(Bo(e.data))
-                    : wo(e, !1, (e) => {
-                          ;(Co = Co || new TextEncoder()), r(Co.encode(e))
+                bo && e.data instanceof Blob
+                    ? e.data.arrayBuffer().then(yo).then(r)
+                    : Go && (e.data instanceof ArrayBuffer || _o(e.data))
+                    ? r(yo(e.data))
+                    : Lo(e, !1, (e) => {
+                          ;(Bo = Bo || new TextEncoder()), r(Bo.encode(e))
                       })
             })(e, (o) => {
                 var t,
@@ -3239,38 +3193,38 @@ function Ro() {
         }
     })
 }
-let Fo
-function ko(e) {
+let Ro
+function Fo(e) {
     return e.reduce((e, r) => e + r.length, 0)
 }
-function Vo(e, r) {
+function ko(e, r) {
     if (e[0].length === r) return e.shift()
     var o = new Uint8Array(r)
     let t = 0
     for (let l = 0; l < r; l++) (o[l] = e[0][t++]), t === e[0].length && (e.shift(), (t = 0))
     return e.length && t < e[0].length && (e[0] = e[0].slice(t)), o
 }
-function Ho(e) {
+function Vo(e) {
     if (e)
         return (function (e) {
-            for (var r in Ho.prototype) e[r] = Ho.prototype[r]
+            for (var r in Vo.prototype) e[r] = Vo.prototype[r]
             return e
         })(e)
 }
-;(Ho.prototype.on = Ho.prototype.addEventListener =
+;(Vo.prototype.on = Vo.prototype.addEventListener =
     function (e, r) {
         return (this._callbacks = this._callbacks || {}), (this._callbacks['$' + e] = this._callbacks['$' + e] || []).push(r), this
     }),
-    (Ho.prototype.once = function (e, r) {
+    (Vo.prototype.once = function (e, r) {
         function o() {
             this.off(e, o), r.apply(this, arguments)
         }
         return (o.fn = r), this.on(e, o), this
     }),
-    (Ho.prototype.off =
-        Ho.prototype.removeListener =
-        Ho.prototype.removeAllListeners =
-        Ho.prototype.removeEventListener =
+    (Vo.prototype.off =
+        Vo.prototype.removeListener =
+        Vo.prototype.removeAllListeners =
+        Vo.prototype.removeEventListener =
             function (e, r) {
                 if (((this._callbacks = this._callbacks || {}), 0 == arguments.length)) this._callbacks = {}
                 else {
@@ -3288,7 +3242,7 @@ function Ho(e) {
                 }
                 return this
             }),
-    (Ho.prototype.emit = function (e) {
+    (Vo.prototype.emit = function (e) {
         this._callbacks = this._callbacks || {}
         for (var r = new Array(arguments.length - 1), o = this._callbacks['$' + e], t = 1; t < arguments.length; t++)
             r[t - 1] = arguments[t]
@@ -3298,25 +3252,25 @@ function Ho(e) {
         }
         return this
     }),
-    (Ho.prototype.emitReserved = Ho.prototype.emit),
-    (Ho.prototype.listeners = function (e) {
+    (Vo.prototype.emitReserved = Vo.prototype.emit),
+    (Vo.prototype.listeners = function (e) {
         return (this._callbacks = this._callbacks || {}), this._callbacks['$' + e] || []
     }),
-    (Ho.prototype.hasListeners = function (e) {
+    (Vo.prototype.hasListeners = function (e) {
         return !!this.listeners(e).length
     })
-const Uo = 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : Function('return this')()
-function Ko(e, ...r) {
+const Ho = 'undefined' != typeof self ? self : 'undefined' != typeof window ? window : Function('return this')()
+function Uo(e, ...r) {
     return r.reduce((r, o) => (e.hasOwnProperty(o) && (r[o] = e[o]), r), {})
 }
-const Wo = Uo.setTimeout,
-    Qo = Uo.clearTimeout
-function Zo(e, r) {
+const Ko = Ho.setTimeout,
+    Wo = Ho.clearTimeout
+function Qo(e, r) {
     r.useNativeTimers
-        ? ((e.setTimeoutFn = Wo.bind(Uo)), (e.clearTimeoutFn = Qo.bind(Uo)))
-        : ((e.setTimeoutFn = Uo.setTimeout.bind(Uo)), (e.clearTimeoutFn = Uo.clearTimeout.bind(Uo)))
+        ? ((e.setTimeoutFn = Ko.bind(Ho)), (e.clearTimeoutFn = Wo.bind(Ho)))
+        : ((e.setTimeoutFn = Ho.setTimeout.bind(Ho)), (e.clearTimeoutFn = Ho.clearTimeout.bind(Ho)))
 }
-function Yo(e) {
+function Zo(e) {
     return 'string' == typeof e
         ? (function (e) {
               let r,
@@ -3327,17 +3281,17 @@ function Yo(e) {
           })(e)
         : Math.ceil(1.33 * (e.byteLength || e.size))
 }
-class zo extends Error {
+class Yo extends Error {
     constructor(e, r, o) {
         super(e), (this.description = r), (this.context = o), (this.type = 'TransportError')
     }
 }
-class Jo extends Ho {
+class zo extends Vo {
     constructor(e) {
-        super(), (this.writable = !1), Zo(this, e), (this.opts = e), (this.query = e.query), (this.socket = e.socket)
+        super(), (this.writable = !1), Qo(this, e), (this.opts = e), (this.query = e.query), (this.socket = e.socket)
     }
     onError(e, r, o) {
-        return super.emitReserved('error', new zo(e, r, o)), this
+        return super.emitReserved('error', new Yo(e, r, o)), this
     }
     open() {
         return (this.readyState = 'opening'), this.doOpen(), this
@@ -3384,43 +3338,43 @@ class Jo extends Ho {
             : ''
     }
 }
-const jo = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'.split(''),
-    qo = 64,
-    et = {}
-let rt,
-    ot = 0,
-    tt = 0
-function lt(e) {
+const Jo = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_'.split(''),
+    jo = 64,
+    qo = {}
+let et,
+    rt = 0,
+    ot = 0
+function tt(e) {
     let r = ''
-    for (; (r = jo[e % qo] + r), 0 < (e = Math.floor(e / qo)); );
+    for (; (r = Jo[e % jo] + r), 0 < (e = Math.floor(e / jo)); );
     return r
 }
-function at() {
-    var e = lt(+new Date())
-    return e !== rt ? ((ot = 0), (rt = e)) : e + '.' + lt(ot++)
+function lt() {
+    var e = tt(+new Date())
+    return e !== et ? ((rt = 0), (et = e)) : e + '.' + tt(rt++)
 }
-for (; tt < qo; tt++) et[jo[tt]] = tt
-let it = !1
+for (; ot < jo; ot++) qo[Jo[ot]] = ot
+let at = !1
 try {
-    it = 'undefined' != typeof XMLHttpRequest && 'withCredentials' in new XMLHttpRequest()
+    at = 'undefined' != typeof XMLHttpRequest && 'withCredentials' in new XMLHttpRequest()
 } catch (Rr) {}
-const dt = it
-function nt(e) {
+const it = at
+function dt(e) {
     e = e.xdomain
     try {
-        if ('undefined' != typeof XMLHttpRequest && (!e || dt)) return new XMLHttpRequest()
+        if ('undefined' != typeof XMLHttpRequest && (!e || it)) return new XMLHttpRequest()
     } catch (e) {}
     if (!e)
         try {
-            return new Uo[['Active'].concat('Object').join('X')]('Microsoft.XMLHTTP')
+            return new Ho[['Active'].concat('Object').join('X')]('Microsoft.XMLHTTP')
         } catch (e) {}
 }
-function mt() {}
-const st = null != new nt({ xdomain: !1 }).responseType
-class gt extends Ho {
+function nt() {}
+const mt = null != new dt({ xdomain: !1 }).responseType
+class st extends Vo {
     constructor(e, r) {
         super(),
-            Zo(this, r),
+            Qo(this, r),
             (this.opts = r),
             (this.method = r.method || 'GET'),
             (this.uri = e),
@@ -3429,9 +3383,9 @@ class gt extends Ho {
     }
     create() {
         var e,
-            r = Ko(this.opts, 'agent', 'pfx', 'key', 'passphrase', 'cert', 'ca', 'ciphers', 'rejectUnauthorized', 'autoUnref')
+            r = Uo(this.opts, 'agent', 'pfx', 'key', 'passphrase', 'cert', 'ca', 'ciphers', 'rejectUnauthorized', 'autoUnref')
         r.xdomain = !!this.opts.xd
-        const o = (this.xhr = new nt(r))
+        const o = (this.xhr = new dt(r))
         try {
             o.open(this.method, this.uri, !0)
             try {
@@ -3465,18 +3419,18 @@ class gt extends Ho {
                 this.onError(e)
             }, 0)
         }
-        'undefined' != typeof document && ((this.index = gt.requestsCount++), (gt.requests[this.index] = this))
+        'undefined' != typeof document && ((this.index = st.requestsCount++), (st.requests[this.index] = this))
     }
     onError(e) {
         this.emitReserved('error', e, this.xhr), this.cleanup(!0)
     }
     cleanup(e) {
         if (void 0 !== this.xhr && null !== this.xhr) {
-            if (((this.xhr.onreadystatechange = mt), e))
+            if (((this.xhr.onreadystatechange = nt), e))
                 try {
                     this.xhr.abort()
                 } catch (e) {}
-            'undefined' != typeof document && delete gt.requests[this.index], (this.xhr = null)
+            'undefined' != typeof document && delete st.requests[this.index], (this.xhr = null)
         }
     }
     onLoad() {
@@ -3487,19 +3441,19 @@ class gt extends Ho {
         this.cleanup()
     }
 }
-if (((gt.requestsCount = 0), (gt.requests = {}), 'undefined' != typeof document))
-    if ('function' == typeof attachEvent) attachEvent('onunload', xt)
+if (((st.requestsCount = 0), (st.requests = {}), 'undefined' != typeof document))
+    if ('function' == typeof attachEvent) attachEvent('onunload', gt)
     else if ('function' == typeof addEventListener) {
-        addEventListener('onpagehide' in Uo ? 'pagehide' : 'unload', xt, !1)
+        addEventListener('onpagehide' in Ho ? 'pagehide' : 'unload', gt, !1)
     }
-function xt() {
-    for (var e in gt.requests) gt.requests.hasOwnProperty(e) && gt.requests[e].abort()
+function gt() {
+    for (var e in st.requests) st.requests.hasOwnProperty(e) && st.requests[e].abort()
 }
-const ct = 'function' == typeof Promise && 'function' == typeof Promise.resolve ? (e) => Promise.resolve().then(e) : (e, r) => r(e, 0),
-    ut = Uo.WebSocket || Uo.MozWebSocket,
-    St = 'undefined' != typeof navigator && 'string' == typeof navigator.product && 'reactnative' === navigator.product.toLowerCase()
-const pt = {
-        websocket: class extends Jo {
+const xt = 'function' == typeof Promise && 'function' == typeof Promise.resolve ? (e) => Promise.resolve().then(e) : (e, r) => r(e, 0),
+    ct = Ho.WebSocket || Ho.MozWebSocket,
+    ut = 'undefined' != typeof navigator && 'string' == typeof navigator.product && 'reactnative' === navigator.product.toLowerCase()
+const St = {
+        websocket: class extends zo {
             constructor(e) {
                 super(e), (this.supportsBinary = !e.forceBase64)
             }
@@ -3510,9 +3464,9 @@ const pt = {
                 if (this.check()) {
                     var e = this.uri(),
                         r = this.opts.protocols,
-                        o = St
+                        o = ut
                             ? {}
-                            : Ko(
+                            : Uo(
                                   this.opts,
                                   'agent',
                                   'perMessageDeflate',
@@ -3532,7 +3486,7 @@ const pt = {
                               )
                     this.opts.extraHeaders && (o.headers = this.opts.extraHeaders)
                     try {
-                        this.ws = St ? new ut(e, r, o) : r ? new ut(e, r) : new ut(e)
+                        this.ws = ut ? new ct(e, r, o) : r ? new ct(e, r) : new ct(e)
                     } catch (e) {
                         return this.emitReserved('error', e)
                     }
@@ -3552,12 +3506,12 @@ const pt = {
                 for (let o = 0; o < e.length; o++) {
                     var r = e[o]
                     const t = o === e.length - 1
-                    wo(r, this.supportsBinary, (e) => {
+                    Lo(r, this.supportsBinary, (e) => {
                         try {
                             this.ws.send(e)
                         } catch (e) {}
                         t &&
-                            ct(() => {
+                            xt(() => {
                                 ;(this.writable = !0), this.emitReserved('drain')
                             }, this.setTimeoutFn)
                     })
@@ -3570,16 +3524,16 @@ const pt = {
                 var e = this.opts.secure ? 'wss' : 'ws',
                     r = this.query || {}
                 return (
-                    this.opts.timestampRequests && (r[this.opts.timestampParam] = at()),
+                    this.opts.timestampRequests && (r[this.opts.timestampParam] = lt()),
                     this.supportsBinary || (r.b64 = 1),
                     this.createUri(e, r)
                 )
             }
             check() {
-                return !!ut
+                return !!ct
             }
         },
-        webtransport: class extends Jo {
+        webtransport: class extends zo {
             get name() {
                 return 'webtransport'
             }
@@ -3596,7 +3550,7 @@ const pt = {
                     this.transport.ready.then(() => {
                         this.transport.createBidirectionalStream().then((e) => {
                             var r = (function (e, r) {
-                                Fo = Fo || new TextDecoder()
+                                Ro = Ro || new TextDecoder()
                                 const o = []
                                 let t = 0,
                                     l = -1,
@@ -3605,27 +3559,27 @@ const pt = {
                                     transform(i, d) {
                                         for (o.push(i); ; ) {
                                             if (0 === t) {
-                                                if (ko(o) < 1) break
-                                                var n = Vo(o, 1)
-                                                ;(a = !(128 & ~n[0])), (l = 127 & n[0]), (t = l < 126 ? 3 : 126 === l ? 1 : 2)
+                                                if (Fo(o) < 1) break
+                                                var n = ko(o, 1)
+                                                ;(a = 128 == (128 & n[0])), (l = 127 & n[0]), (t = l < 126 ? 3 : 126 === l ? 1 : 2)
                                             } else if (1 === t) {
-                                                if (ko(o) < 2) break
-                                                ;(n = Vo(o, 2)), (l = new DataView(n.buffer, n.byteOffset, n.length).getUint16(0)), (t = 3)
+                                                if (Fo(o) < 2) break
+                                                ;(n = ko(o, 2)), (l = new DataView(n.buffer, n.byteOffset, n.length).getUint16(0)), (t = 3)
                                             } else if (2 === t) {
-                                                if (ko(o) < 8) break
-                                                var m = Vo(o, 8),
+                                                if (Fo(o) < 8) break
+                                                var m = ko(o, 8),
                                                     s = (m = new DataView(m.buffer, m.byteOffset, m.length)).getUint32(0)
                                                 if (s > Math.pow(2, 21) - 1) {
-                                                    d.enqueue(bo)
+                                                    d.enqueue(To)
                                                     break
                                                 }
                                                 ;(l = s * Math.pow(2, 32) + m.getUint32(4)), (t = 3)
                                             } else {
-                                                if (ko(o) < l) break
-                                                ;(s = Vo(o, l)), d.enqueue(fo(a ? s : Fo.decode(s), r)), (t = 0)
+                                                if (Fo(o) < l) break
+                                                ;(s = ko(o, l)), d.enqueue(fo(a ? s : Ro.decode(s), r)), (t = 0)
                                             }
                                             if (0 === l || l > e) {
-                                                d.enqueue(bo)
+                                                d.enqueue(To)
                                                 break
                                             }
                                         }
@@ -3633,7 +3587,7 @@ const pt = {
                                 })
                             })(Number.MAX_SAFE_INTEGER, this.socket.binaryType)
                             const o = e.readable.pipeThrough(r).getReader()
-                            ;(r = Ro()).readable.pipeTo(e.writable), (this.writer = r.writable.getWriter())
+                            ;(r = Do()).readable.pipeTo(e.writable), (this.writer = r.writable.getWriter())
                             const t = () => {
                                 o.read()
                                     .then(({ done: e, value: r }) => {
@@ -3655,7 +3609,7 @@ const pt = {
                     const t = o === e.length - 1
                     this.writer.write(r).then(() => {
                         t &&
-                            ct(() => {
+                            xt(() => {
                                 ;(this.writable = !0), this.emitReserved('drain')
                             }, this.setTimeoutFn)
                     })
@@ -3666,7 +3620,7 @@ const pt = {
                 null != (e = this.transport) && e.close()
             }
         },
-        polling: class extends Jo {
+        polling: class extends zo {
             constructor(e) {
                 if ((super(e), (this.polling = !1), 'undefined' != typeof location)) {
                     var r = 'https:' === location.protocol
@@ -3674,7 +3628,7 @@ const pt = {
                     ;(o = o || (r ? '443' : '80')),
                         (this.xd = ('undefined' != typeof location && e.hostname !== location.hostname) || o !== e.port)
                 }
-                ;(r = e && e.forceBase64), (this.supportsBinary = st && !r), this.opts.withCredentials && (this.cookieJar = void 0)
+                ;(r = e && e.forceBase64), (this.supportsBinary = mt && !r), this.opts.withCredentials && (this.cookieJar = void 0)
             }
             get name() {
                 return 'polling'
@@ -3706,7 +3660,7 @@ const pt = {
             }
             onData(e) {
                 ;((e, r) => {
-                    var o = e.split(Do),
+                    var o = e.split(Xo),
                         t = []
                     for (let e = 0; e < o.length; e++) {
                         var l = fo(o[e], r)
@@ -3735,8 +3689,8 @@ const pt = {
                             t = new Array(o)
                         let l = 0
                         e.forEach((e, a) => {
-                            wo(e, !1, (e) => {
-                                ;(t[a] = e), ++l === o && r(t.join(Do))
+                            Lo(e, !1, (e) => {
+                                ;(t[a] = e), ++l === o && r(t.join(Xo))
                             })
                         })
                     })(e, (e) => {
@@ -3749,13 +3703,13 @@ const pt = {
                 var e = this.opts.secure ? 'https' : 'http',
                     r = this.query || {}
                 return (
-                    !1 !== this.opts.timestampRequests && (r[this.opts.timestampParam] = at()),
+                    !1 !== this.opts.timestampRequests && (r[this.opts.timestampParam] = lt()),
                     this.supportsBinary || r.sid || (r.b64 = 1),
                     this.createUri(e, r)
                 )
             }
             request(e = {}) {
-                return Object.assign(e, { xd: this.xd, cookieJar: this.cookieJar }, this.opts), new gt(this.uri(), e)
+                return Object.assign(e, { xd: this.xd, cookieJar: this.cookieJar }, this.opts), new st(this.uri(), e)
             }
             doWrite(e, r) {
                 ;(e = this.request({ method: 'POST', data: e })).on('success', r),
@@ -3773,9 +3727,9 @@ const pt = {
             }
         }
     },
-    ht =
+    pt =
         /^(?:(?![^:@\/?#]+:[^:@\/]*@)(http|https|ws|wss):\/\/)?((?:(([^:@\/?#]*)(?::([^:@\/?#]*))?)?@)?((?:[a-f0-9]{0,4}:){2,7}[a-f0-9]{0,4}|[^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/,
-    vt = [
+    ht = [
         'source',
         'protocol',
         'authority',
@@ -3791,16 +3745,15 @@ const pt = {
         'query',
         'anchor'
     ]
-function $t(e) {
-    if (2e3 < e.length) throw 'URI too long'
+function vt(e) {
     var r = e,
         o = e.indexOf('['),
         t = e.indexOf(']')
     ;-1 != o && -1 != t && (e = e.substring(0, o) + e.substring(o, t).replace(/:/g, ';') + e.substring(t, e.length))
-    let l = ht.exec(e || ''),
+    let l = pt.exec(e || ''),
         a = {},
         i = 14
-    for (; i--; ) a[vt[i]] = l[i] || ''
+    for (; i--; ) a[ht[i]] = l[i] || ''
     return (
         -1 != o &&
             -1 != t &&
@@ -3824,20 +3777,20 @@ function $t(e) {
         a
     )
 }
-let At = class e extends Ho {
+let $t = class e extends Vo {
     constructor(e, r = {}) {
         super(),
             (this.binaryType = 'arraybuffer'),
             (this.writeBuffer = []),
             e && 'object' == typeof e && ((r = e), (e = null)),
             e
-                ? ((e = $t(e)),
+                ? ((e = vt(e)),
                   (r.hostname = e.host),
                   (r.secure = 'https' === e.protocol || 'wss' === e.protocol),
                   (r.port = e.port),
                   e.query && (r.query = e.query))
-                : r.host && (r.hostname = $t(r.host).host),
-            Zo(this, r),
+                : r.host && (r.hostname = vt(r.host).host),
+            Qo(this, r),
             (this.secure = null != r.secure ? r.secure : 'undefined' != typeof location && 'https:' === location.protocol),
             r.hostname && !r.port && (r.port = this.secure ? '443' : '80'),
             (this.hostname = r.hostname || ('undefined' != typeof location ? location.hostname : 'localhost')),
@@ -3901,7 +3854,7 @@ let At = class e extends Ho {
                 { query: r, socket: this, hostname: this.hostname, secure: this.secure, port: this.port },
                 this.opts.transportOptions[e]
             ))
-        return new pt[e](r)
+        return new St[e](r)
     }
     open() {
         let r
@@ -4054,7 +4007,7 @@ let At = class e extends Ho {
             let r = 1
             for (let o = 0; o < this.writeBuffer.length; o++) {
                 var e = this.writeBuffer[o].data
-                if ((e && (r += Yo(e)), 0 < o && r > this.maxPayload)) return this.writeBuffer.slice(0, o)
+                if ((e && (r += Zo(e)), 0 < o && r > this.maxPayload)) return this.writeBuffer.slice(0, o)
                 r += 2
             }
         }
@@ -4123,60 +4076,60 @@ let At = class e extends Ho {
         return r
     }
 }
-At.protocol = 4
-const Mt = 'function' == typeof ArrayBuffer,
-    Pt = (e) => ('function' == typeof ArrayBuffer.isView ? ArrayBuffer.isView(e) : e.buffer instanceof ArrayBuffer),
-    Tt = Object.prototype.toString,
-    bt = 'function' == typeof Blob || ('undefined' != typeof Blob && '[object BlobConstructor]' === Tt.call(Blob)),
-    Gt = 'function' == typeof File || ('undefined' != typeof File && '[object FileConstructor]' === Tt.call(File))
-function _t(e) {
-    return (Mt && (e instanceof ArrayBuffer || Pt(e))) || (bt && e instanceof Blob) || (Gt && e instanceof File)
+$t.protocol = 4
+const At = 'function' == typeof ArrayBuffer,
+    Mt = (e) => ('function' == typeof ArrayBuffer.isView ? ArrayBuffer.isView(e) : e.buffer instanceof ArrayBuffer),
+    Pt = Object.prototype.toString,
+    Tt = 'function' == typeof Blob || ('undefined' != typeof Blob && '[object BlobConstructor]' === Pt.call(Blob)),
+    bt = 'function' == typeof File || ('undefined' != typeof File && '[object FileConstructor]' === Pt.call(File))
+function Gt(e) {
+    return (At && (e instanceof ArrayBuffer || Mt(e))) || (Tt && e instanceof Blob) || (bt && e instanceof File)
 }
-function Lt(e, r) {
+function _t(e, r) {
     if (e && 'object' == typeof e)
         if (Array.isArray(e)) {
-            for (let r = 0, o = e.length; r < o; r++) if (Lt(e[r])) return !0
+            for (let r = 0, o = e.length; r < o; r++) if (_t(e[r])) return !0
         } else {
-            if (_t(e)) return !0
-            if (e.toJSON && 'function' == typeof e.toJSON && 1 === arguments.length) return Lt(e.toJSON(), !0)
-            for (const r in e) if (Object.prototype.hasOwnProperty.call(e, r) && Lt(e[r])) return !0
+            if (Gt(e)) return !0
+            if (e.toJSON && 'function' == typeof e.toJSON && 1 === arguments.length) return _t(e.toJSON(), !0)
+            for (const r in e) if (Object.prototype.hasOwnProperty.call(e, r) && _t(e[r])) return !0
         }
     return !1
 }
-function wt(e) {
+function Lt(e) {
     var r = [],
         o = e.data
-    return (e.data = yt(o, r)), (e.attachments = r.length), { packet: e, buffers: r }
+    return (e.data = wt(o, r)), (e.attachments = r.length), { packet: e, buffers: r }
 }
-function yt(e, r) {
+function wt(e, r) {
     if (!e) return e
     var o
-    if (_t(e)) return (o = { _placeholder: !0, num: r.length }), r.push(e), o
+    if (Gt(e)) return (o = { _placeholder: !0, num: r.length }), r.push(e), o
     if (Array.isArray(e)) {
         var t = new Array(e.length)
-        for (let o = 0; o < e.length; o++) t[o] = yt(e[o], r)
+        for (let o = 0; o < e.length; o++) t[o] = wt(e[o], r)
         return t
     }
     if ('object' != typeof e || e instanceof Date) return e
     var l = {}
-    for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (l[o] = yt(e[o], r))
+    for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (l[o] = wt(e[o], r))
     return l
 }
-function Bt(e, r) {
-    return (e.data = Ct(e.data, r)), delete e.attachments, e
+function yt(e, r) {
+    return (e.data = Bt(e.data, r)), delete e.attachments, e
 }
-function Ct(e, r) {
+function Bt(e, r) {
     if (e) {
         if (e && !0 === e._placeholder) {
             if ('number' == typeof e.num && 0 <= e.num && e.num < r.length) return r[e.num]
             throw new Error('illegal attachments')
         }
-        if (Array.isArray(e)) for (let o = 0; o < e.length; o++) e[o] = Ct(e[o], r)
-        else if ('object' == typeof e) for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (e[o] = Ct(e[o], r))
+        if (Array.isArray(e)) for (let o = 0; o < e.length; o++) e[o] = Bt(e[o], r)
+        else if ('object' == typeof e) for (const o in e) Object.prototype.hasOwnProperty.call(e, o) && (e[o] = Bt(e[o], r))
     }
     return e
 }
-const Et = ['connect', 'connect_error', 'disconnect', 'disconnecting', 'newListener', 'removeListener']
+const Ct = ['connect', 'connect_error', 'disconnect', 'disconnecting', 'newListener', 'removeListener']
 !(function (e) {
     ;(e[(e.CONNECT = 0)] = 'CONNECT'),
         (e[(e.DISCONNECT = 1)] = 'DISCONNECT'),
@@ -4186,10 +4139,10 @@ const Et = ['connect', 'connect_error', 'disconnect', 'disconnecting', 'newListe
         (e[(e.BINARY_EVENT = 5)] = 'BINARY_EVENT'),
         (e[(e.BINARY_ACK = 6)] = 'BINARY_ACK')
 })((Ne = Ne || {}))
-function Nt(e) {
+function Et(e) {
     return '[object Object]' === Object.prototype.toString.call(e)
 }
-class Ot extends Ho {
+class Nt extends Vo {
     constructor(e) {
         super(), (this.reviver = e)
     }
@@ -4202,7 +4155,7 @@ class Ot extends Ho {
                 ((r.type = o ? Ne.EVENT : Ne.ACK), (this.reconstructor = new ft(r)), 0 === r.attachments)) &&
                 super.emitReserved('decoded', r)
         } else {
-            if (!_t(e) && !e.base64) throw new Error('Unknown type: ' + e)
+            if (!Gt(e) && !e.base64) throw new Error('Unknown type: ' + e)
             if (!this.reconstructor) throw new Error('got binary data when not reconstructing a packet')
             ;(r = this.reconstructor.takeBinaryData(e)) && ((this.reconstructor = null), super.emitReserved('decoded', r))
         }
@@ -4232,7 +4185,7 @@ class Ot extends Ho {
             o.id = Number(e.substring(t, r + 1))
         }
         if (e.charAt(++r)) {
-            if (((t = this.tryParse(e.substr(r))), !Ot.isPayloadValid(o.type, t))) throw new Error('invalid payload')
+            if (((t = this.tryParse(e.substr(r))), !Nt.isPayloadValid(o.type, t))) throw new Error('invalid payload')
             o.data = t
         }
         return o
@@ -4247,14 +4200,14 @@ class Ot extends Ho {
     static isPayloadValid(e, r) {
         switch (e) {
             case Ne.CONNECT:
-                return Nt(r)
+                return Et(r)
             case Ne.DISCONNECT:
                 return void 0 === r
             case Ne.CONNECT_ERROR:
-                return 'string' == typeof r || Nt(r)
+                return 'string' == typeof r || Et(r)
             case Ne.EVENT:
             case Ne.BINARY_EVENT:
-                return Array.isArray(r) && ('number' == typeof r[0] || ('string' == typeof r[0] && -1 === Et.indexOf(r[0])))
+                return Array.isArray(r) && ('number' == typeof r[0] || ('string' == typeof r[0] && -1 === Ct.indexOf(r[0])))
             case Ne.ACK:
             case Ne.BINARY_ACK:
                 return Array.isArray(r)
@@ -4272,7 +4225,7 @@ class ft {
         return (
             this.buffers.push(e),
             this.buffers.length === this.reconPack.attachments
-                ? ((e = Bt(this.reconPack, this.buffers)), this.finishedReconstruction(), e)
+                ? ((e = yt(this.reconPack, this.buffers)), this.finishedReconstruction(), e)
                 : null
         )
     }
@@ -4280,15 +4233,15 @@ class ft {
         ;(this.reconPack = null), (this.buffers = [])
     }
 }
-var It = Object.freeze({
+var Ot = Object.freeze({
     __proto__: null,
-    Decoder: Ot,
+    Decoder: Nt,
     Encoder: class {
         constructor(e) {
             this.replacer = e
         }
         encode(e) {
-            return (e.type !== Ne.EVENT && e.type !== Ne.ACK) || !Lt(e)
+            return (e.type !== Ne.EVENT && e.type !== Ne.ACK) || !_t(e)
                 ? [this.encodeAsString(e)]
                 : this.encodeAsBinary({ type: e.type === Ne.EVENT ? Ne.BINARY_EVENT : Ne.BINARY_ACK, nsp: e.nsp, data: e.data, id: e.id })
         }
@@ -4303,7 +4256,7 @@ var It = Object.freeze({
             )
         }
         encodeAsBinary(e) {
-            e = wt(e)
+            e = Lt(e)
             var r = this.encodeAsString(e.packet)
             return (e = e.buffers).unshift(r), e
         }
@@ -4313,7 +4266,7 @@ var It = Object.freeze({
     },
     protocol: 5
 })
-function Xt(e, r, o) {
+function It(e, r, o) {
     return (
         e.on(r, o),
         function () {
@@ -4321,8 +4274,8 @@ function Xt(e, r, o) {
         }
     )
 }
-const Dt = Object.freeze({ connect: 1, connect_error: 1, disconnect: 1, disconnecting: 1, newListener: 1, removeListener: 1 })
-class Rt extends Ho {
+const Xt = Object.freeze({ connect: 1, connect_error: 1, disconnect: 1, disconnecting: 1, newListener: 1, removeListener: 1 })
+class Dt extends Vo {
     constructor(e, r, o) {
         super(),
             (this.connected = !1),
@@ -4348,10 +4301,10 @@ class Rt extends Ho {
         this.subs ||
             ((e = this.io),
             (this.subs = [
-                Xt(e, 'open', this.onopen.bind(this)),
-                Xt(e, 'packet', this.onpacket.bind(this)),
-                Xt(e, 'error', this.onerror.bind(this)),
-                Xt(e, 'close', this.onclose.bind(this))
+                It(e, 'open', this.onopen.bind(this)),
+                It(e, 'packet', this.onpacket.bind(this)),
+                It(e, 'error', this.onerror.bind(this)),
+                It(e, 'close', this.onclose.bind(this))
             ]))
     }
     get active() {
@@ -4370,7 +4323,7 @@ class Rt extends Ho {
         return e.unshift('message'), this.emit.apply(this, e), this
     }
     emit(e, ...r) {
-        if (Dt.hasOwnProperty(e)) throw new Error('"' + e.toString() + '" is a reserved event name')
+        if (Xt.hasOwnProperty(e)) throw new Error('"' + e.toString() + '" is a reserved event name')
         var o, t
         return (
             r.unshift(e),
@@ -4394,16 +4347,15 @@ class Rt extends Ho {
                 for (let r = 0; r < this.sendBuffer.length; r++) this.sendBuffer[r].id === e && this.sendBuffer.splice(r, 1)
                 r.call(this, new Error('operation has timed out'))
             }, o)
-            ;((o = (...e) => {
-                this.io.clearTimeoutFn(t), r.apply(this, e)
-            }).withError = !0),
-                (this.acks[e] = o)
+            this.acks[e] = (...e) => {
+                this.io.clearTimeoutFn(t), r.apply(this, [null, ...e])
+            }
         }
     }
     emitWithAck(e, ...r) {
-        return new Promise((o, t) => {
-            var l = (e, r) => (e ? t(e) : o(r))
-            ;(l.withError = !0), r.push(l), this.emit(e, ...r)
+        const o = void 0 !== this.flags.timeout || void 0 !== this._opts.ackTimeout
+        return new Promise((t, l) => {
+            r.push((e, r) => (o ? (e ? l(e) : t(r)) : t(e))), this.emit(e, ...r)
         })
     }
     _addToQueue(e) {
@@ -4447,14 +4399,7 @@ class Rt extends Ho {
         this.connected || this.emitReserved('connect_error', e)
     }
     onclose(e, r) {
-        ;(this.connected = !1), delete this.id, this.emitReserved('disconnect', e, r), this._clearAcks()
-    }
-    _clearAcks() {
-        Object.keys(this.acks).forEach((e) => {
-            var r
-            this.sendBuffer.some((r) => String(r.id) === e) ||
-                ((r = this.acks[e]), delete this.acks[e], r.withError && r.call(this, new Error('socket has been disconnected')))
-        })
+        ;(this.connected = !1), delete this.id, this.emitReserved('disconnect', e, r)
     }
     onpacket(e) {
         if (e.nsp === this.nsp)
@@ -4503,7 +4448,7 @@ class Rt extends Ho {
     }
     onack(e) {
         var r = this.acks[e.id]
-        'function' == typeof r && (delete this.acks[e.id], r.withError && e.data.unshift(null), r.apply(this, e.data))
+        'function' == typeof r && (r.apply(this, e.data), delete this.acks[e.id])
     }
     onconnect(e, r) {
         ;(this.id = e),
@@ -4587,35 +4532,35 @@ class Rt extends Ho {
             for (const r of this._anyOutgoingListeners.slice()) r.apply(this, e.data)
     }
 }
-function Ft(e) {
+function Rt(e) {
     ;(this.ms = (e = e || {}).min || 100),
         (this.max = e.max || 1e4),
         (this.factor = e.factor || 2),
         (this.jitter = 0 < e.jitter && e.jitter <= 1 ? e.jitter : 0),
         (this.attempts = 0)
 }
-;(Ft.prototype.duration = function () {
+;(Rt.prototype.duration = function () {
     var e,
         r,
         o = this.ms * Math.pow(this.factor, this.attempts++)
     return (
-        this.jitter && ((e = Math.random()), (r = Math.floor(e * this.jitter * o)), (o = 1 & Math.floor(10 * e) ? o + r : o - r)),
+        this.jitter && ((e = Math.random()), (r = Math.floor(e * this.jitter * o)), (o = 0 == (1 & Math.floor(10 * e)) ? o - r : o + r)),
         0 | Math.min(o, this.max)
     )
 }),
-    (Ft.prototype.reset = function () {
+    (Rt.prototype.reset = function () {
         this.attempts = 0
     }),
-    (Ft.prototype.setMin = function (e) {
+    (Rt.prototype.setMin = function (e) {
         this.ms = e
     }),
-    (Ft.prototype.setMax = function (e) {
+    (Rt.prototype.setMax = function (e) {
         this.max = e
     }),
-    (Ft.prototype.setJitter = function (e) {
+    (Rt.prototype.setJitter = function (e) {
         this.jitter = e
     })
-class kt extends Ho {
+class Ft extends Vo {
     constructor(e, r) {
         super(),
             (this.nsps = {}),
@@ -4623,13 +4568,13 @@ class kt extends Ho {
             e && 'object' == typeof e && ((r = e), (e = void 0)),
             ((r = r || {}).path = r.path || '/socket.io'),
             (this.opts = r),
-            Zo(this, r),
+            Qo(this, r),
             this.reconnection(!1 !== r.reconnection),
             this.reconnectionAttempts(r.reconnectionAttempts || 1 / 0),
             this.reconnectionDelay(r.reconnectionDelay || 1e3),
             this.reconnectionDelayMax(r.reconnectionDelayMax || 5e3),
             this.randomizationFactor(null != (o = r.randomizationFactor) ? o : 0.5),
-            (this.backoff = new Ft({
+            (this.backoff = new Rt({
                 min: this.reconnectionDelay(),
                 max: this.reconnectionDelayMax(),
                 jitter: this.randomizationFactor()
@@ -4637,7 +4582,7 @@ class kt extends Ho {
             this.timeout(null == r.timeout ? 2e4 : r.timeout),
             (this._readyState = 'closed'),
             (this.uri = e)
-        var o = r.parser || It
+        var o = r.parser || Ot
         ;(this.encoder = new o.Encoder()),
             (this.decoder = new o.Decoder()),
             (this._autoConnect = !1 !== r.autoConnect),
@@ -4673,19 +4618,19 @@ class kt extends Ho {
     }
     open(e) {
         if (!~this._readyState.indexOf('open')) {
-            this.engine = new At(this.uri, this.opts)
+            this.engine = new $t(this.uri, this.opts)
             const t = this.engine,
                 l = this,
                 a =
                     ((this._readyState = 'opening'),
                     (this.skipReconnect = !1),
-                    Xt(t, 'open', function () {
+                    It(t, 'open', function () {
                         l.onopen(), e && e()
                     })),
                 i = (r) => {
                     this.cleanup(), (this._readyState = 'closed'), this.emitReserved('error', r), e ? e(r) : this.maybeReconnectOnOpen()
                 }
-            var r = Xt(t, 'error', i)
+            var r = It(t, 'error', i)
             if (!1 !== this._timeout) {
                 var o = this._timeout
                 const e = this.setTimeoutFn(() => {
@@ -4707,11 +4652,11 @@ class kt extends Ho {
         this.cleanup(), (this._readyState = 'open'), this.emitReserved('open')
         var e = this.engine
         this.subs.push(
-            Xt(e, 'ping', this.onping.bind(this)),
-            Xt(e, 'data', this.ondata.bind(this)),
-            Xt(e, 'error', this.onerror.bind(this)),
-            Xt(e, 'close', this.onclose.bind(this)),
-            Xt(this.decoder, 'decoded', this.ondecoded.bind(this))
+            It(e, 'ping', this.onping.bind(this)),
+            It(e, 'data', this.ondata.bind(this)),
+            It(e, 'error', this.onerror.bind(this)),
+            It(e, 'close', this.onclose.bind(this)),
+            It(this.decoder, 'decoded', this.ondecoded.bind(this))
         )
     }
     onping() {
@@ -4725,7 +4670,7 @@ class kt extends Ho {
         }
     }
     ondecoded(e) {
-        ct(() => {
+        xt(() => {
             this.emitReserved('packet', e)
         }, this.setTimeoutFn)
     }
@@ -4734,7 +4679,7 @@ class kt extends Ho {
     }
     socket(e, r) {
         let o = this.nsps[e]
-        return o ? this._autoConnect && !o.active && o.connect() : ((o = new Rt(this, e, r)), (this.nsps[e] = o)), o
+        return o ? this._autoConnect && !o.active && o.connect() : ((o = new Dt(this, e, r)), (this.nsps[e] = o)), o
     }
     _destroy(e) {
         for (const e of Object.keys(this.nsps)) {
@@ -4788,8 +4733,8 @@ class kt extends Ho {
         ;(this._reconnecting = !1), this.backoff.reset(), this.emitReserved('reconnect', e)
     }
 }
-const Vt = {}
-function Ht(e, r) {
+const kt = {}
+function Vt(e, r) {
     'object' == typeof e && ((r = e), (e = void 0))
     e = (function (e, r = '', o) {
         let t = e
@@ -4798,7 +4743,7 @@ function Ht(e, r) {
             'string' == typeof (e = null == e ? o.protocol + '//' + o.host : e) &&
                 ('/' === e.charAt(0) && (e = '/' === e.charAt(1) ? o.protocol + e : o.host + e),
                 /^(https?|wss?):\/\//.test(e) || (e = void 0 !== o ? o.protocol + '//' + e : 'https://' + e),
-                (t = $t(e))),
+                (t = vt(e))),
             t.port || (/^(http|ws)$/.test(t.protocol) ? (t.port = '80') : /^(http|ws)s$/.test(t.protocol) && (t.port = '443')),
             (t.path = t.path || '/'),
             (e = -1 !== t.host.indexOf(':') ? '[' + t.host + ']' : t.host),
@@ -4810,23 +4755,23 @@ function Ht(e, r) {
     var o = e.source,
         t = e.id,
         l = e.path
-    l = Vt[t] && l in Vt[t].nsps
+    l = kt[t] && l in kt[t].nsps
     let a
     return (
         (a = (l = r.forceNew || r['force new connection'] || !1 === r.multiplex || l)
-            ? new kt(o, r)
-            : (Vt[t] || (Vt[t] = new kt(o, r)), Vt[t])),
+            ? new Ft(o, r)
+            : (kt[t] || (kt[t] = new Ft(o, r)), kt[t])),
         e.query && !r.query && (r.query = e.queryKey),
         a.socket(e.path, r)
     )
 }
-Object.assign(Ht, { Manager: kt, Socket: Rt, io: Ht, connect: Ht })
-const Ut = te('<style>'),
-    Kt = te(
+Object.assign(Vt, { Manager: Ft, Socket: Dt, io: Vt, connect: Vt })
+const Ht = te('<style>'),
+    Ut = te(
         '<div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true"><style></style><div class="fixed inset-0 bg-black bg-opacity-50 transition-opacity animate-fade-in"></div><div class="fixed inset-0 z-10 overflow-y-auto"><div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0"><div class="relative transform overflow-hidden rounded-lg text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">'
     ),
-    Wt = te('<div><pre>')
-const Qt = (e) => {
+    Kt = te('<div><pre>')
+const Wt = (e) => {
         let r
         const [o] = Q(e, ['onOpen', 'onClose', 'isOpen', 'value']),
             [t, l] =
@@ -4872,8 +4817,8 @@ const Qt = (e) => {
             },
             get children() {
                 return [
-                    (me((l = Ut()), Ae), l),
-                    ((l = Kt()),
+                    (me((l = Ht()), Ae), l),
+                    ((l = Ut()),
                     (o = l.firstChild),
                     (t = o.nextSibling.nextSibling.firstChild.firstChild),
                     l.style.setProperty('z-index', '1100'),
@@ -4891,7 +4836,7 @@ const Qt = (e) => {
                             return () => {
                                 return (
                                     o() &&
-                                    ((t = (e = Wt()).firstChild),
+                                    ((t = (e = Kt()).firstChild),
                                     e.style.setProperty('background', 'white'),
                                     e.style.setProperty('margin', 'auto'),
                                     e.style.setProperty('padding', '7px'),
@@ -4908,11 +4853,11 @@ const Qt = (e) => {
             }
         })
     },
-    Zt = te('<button type="submit">'),
-    Yt = (e) => {
+    Qt = te('<button type="submit">'),
+    Zt = (e) => {
         return (
             de(
-                (r = Zt()),
+                (r = Qt()),
                 W(
                     {
                         get disabled() {
@@ -4945,7 +4890,7 @@ const Qt = (e) => {
         )
         var r
     }
-var zt =
+var Yt =
     'undefined' != typeof globalThis
         ? globalThis
         : 'undefined' != typeof window
@@ -4955,19 +4900,19 @@ var zt =
         : 'undefined' != typeof self
         ? self
         : {}
-var Jt = {},
+var zt = {},
+    Jt = {},
     jt = {},
-    qt = {},
-    el = {}
-Object.defineProperty(el, '__esModule', { value: !0 }),
-    (el.trim = (e, r) => e.replace(new RegExp('^[' + r + ']+|[' + r + ']+$', 'g'), '')),
-    Object.defineProperty(qt, '__esModule', { value: !0 })
-const rl = el
-;(qt.formatVersion = (e, r) => {
+    qt = {}
+Object.defineProperty(qt, '__esModule', { value: !0 }),
+    (qt.trim = (e, r) => e.replace(new RegExp('^[' + r + ']+|[' + r + ']+$', 'g'), '')),
+    Object.defineProperty(jt, '__esModule', { value: !0 })
+const el = qt
+;(jt.formatVersion = (e, r) => {
     var o
     return void 0 === e
         ? ''
-        : ((o = (e = rl.trim(e, '. ').replace(new RegExp('_', 'g'), '.')).split('.')),
+        : ((o = (e = el.trim(e, '. ').replace(new RegExp('_', 'g'), '.')).split('.')),
           /^\d+$/.test(o.join(''))
               ? 0 !== r && Number.isInteger(parseFloat(e))
                   ? parseInt(e, 10).toFixed(1)
@@ -4976,7 +4921,7 @@ const rl = el
                   : e
               : e)
 }),
-    (qt.parseBrowserEngineVersion = (e, r) => {
+    (jt.parseBrowserEngineVersion = (e, r) => {
         if (!r) return ''
         if ('Gecko' === r) {
             const r = e.match(/[ ](?:rv[: ]([0-9\.]+)).*gecko\/[0-9]{8,10}/i)
@@ -4986,17 +4931,17 @@ const rl = el
         const o = e.match(r)
         return o ? o.pop() : ''
     })
-var ol = {},
-    tl =
-        (Object.defineProperty(ol, '__esModule', { value: !0 }),
-        (ol.variableReplacement = (e, r) => {
+var rl = {},
+    ol =
+        (Object.defineProperty(rl, '__esModule', { value: !0 }),
+        (rl.variableReplacement = (e, r) => {
             var o = new RegExp('\\$\\d', 'g')
             return null == e ? '' : e.replace(o, (e) => ((e = parseInt(e.substr(1), 10)), r[e - 1] || ''))
         }),
         {}),
-    ll = {}
-Object.defineProperty(ll, '__esModule', { value: !0 }),
-    (ll.memoryCache = () => {
+    tl = {}
+Object.defineProperty(tl, '__esModule', { value: !0 }),
+    (tl.memoryCache = () => {
         const e = {}
         return {
             set: (r, o) => {
@@ -5007,20 +4952,20 @@ Object.defineProperty(ll, '__esModule', { value: !0 }),
             }
         }
     }),
-    Object.defineProperty(tl, '__esModule', { value: !0 })
-const al = ll.memoryCache()
-tl.userAgentParser = (e, r) => {
+    Object.defineProperty(ol, '__esModule', { value: !0 })
+const ll = tl.memoryCache()
+ol.userAgentParser = (e, r) => {
     try {
         var o = ((e) => {
-            var r = al.get(e)
-            return r ? r.value : ((r = RegExp(`(?:^|[^A-Z0-9-_]|[^A-Z0-9-]_|sprd-)(?:${e})`, 'i')), al.set(e, { value: r }), r)
+            var r = ll.get(e)
+            return r ? r.value : ((r = RegExp(`(?:^|[^A-Z0-9-_]|[^A-Z0-9-]_|sprd-)(?:${e})`, 'i')), ll.set(e, { value: r }), r)
         })(e).exec(r)
         return o ? o.slice(1) : null
     } catch (e) {
         return null
     }
 }
-var il = {
+var al = {
         36: '360 Phone Browser',
         '1B': '115 Browser',
         '2B': '2345 Browser',
@@ -5345,16 +5290,16 @@ var il = {
         ZE: 'Zetakey',
         ZV: 'Zvu'
     },
-    dl =
-        (zt && zt.__importDefault) ||
+    il =
+        (Yt && Yt.__importDefault) ||
         function (e) {
             return e && e.__esModule ? e : { default: e }
         }
-Object.defineProperty(jt, '__esModule', { value: !0 })
-const nl = qt,
+Object.defineProperty(Jt, '__esModule', { value: !0 })
+const dl = jt,
+    nl = rl,
     ml = ol,
-    sl = tl,
-    gl = dl([
+    sl = il([
         { regex: 'Helio/(\\d+[\\.\\d]+)', name: 'Helio', version: '$1', engine: { default: 'Blink' } },
         { regex: '7654Browser/(\\d+[\\.\\d]+)', name: '7654 Browser', version: '$1', engine: { default: 'Blink' } },
         { regex: 'Qazweb/(\\d+[\\.\\d]+)', name: 'Qazweb', version: '$1', engine: { default: 'Gecko' } },
@@ -5852,7 +5797,7 @@ const nl = qt,
         { regex: 'WAP Browser/MAUI|(?:\\w+)?Maui Wap Browser|MAUI[- ]Browser', name: 'MAUI WAP Browser', version: '' },
         { regex: 'SP%20Browser/(\\d+[\\.\\d]+)', name: 'SP Browser', version: '$1', engine: { default: 'WebKit' } }
     ]),
-    xl = dl([
+    gl = il([
         { regex: 'NetFront', name: 'NetFront' },
         { regex: 'Edge', name: 'Edge' },
         { regex: 'Trident', name: 'Trident' },
@@ -5867,8 +5812,8 @@ const nl = qt,
         { regex: 'Goanna', name: 'Goanna' },
         { regex: 'Ekioh(?:Flow)?', name: 'EkiohFlow' }
     ]),
-    cl = dl(il),
-    ul = dl([
+    xl = il(al),
+    cl = il([
         '36',
         'OC',
         'PU',
@@ -5923,28 +5868,28 @@ const nl = qt,
         'GI',
         'VE'
     ])
-class Sl {
+class ul {
     constructor(e) {
         ;(this.options = { versionTruncation: 1 }),
             (this.parse = (e) => {
                 var r = { type: '', name: '', version: '', engine: '', engineVersion: '' }
-                for (const n of gl.default) {
-                    var o = sl.userAgentParser(n.regex, e)
+                for (const n of sl.default) {
+                    var o = ml.userAgentParser(n.regex, e)
                     if (o) {
                         var t,
                             l,
-                            a = ml.variableReplacement(n.version, o),
-                            i = nl.formatVersion(a, this.options.versionTruncation),
-                            d = (i && parseFloat(nl.formatVersion(a, 1))) || ''
+                            a = nl.variableReplacement(n.version, o),
+                            i = dl.formatVersion(a, this.options.versionTruncation),
+                            d = (i && parseFloat(dl.formatVersion(a, 1))) || ''
                         if (n.engine && ((r.engine = n.engine.default), n.engine && n.engine.versions && d))
                             for ([t, l] of Object.entries(n.engine.versions).sort((e, r) => (parseFloat(e[0]) > parseFloat(r[0]) ? 1 : -1)))
                                 parseFloat(t) <= d && (r.engine = l || '')
-                        ;(r.type = 'browser'), (r.name = ml.variableReplacement(n.name, o)), (r.version = i)
+                        ;(r.type = 'browser'), (r.name = nl.variableReplacement(n.name, o)), (r.version = i)
                         break
                     }
                 }
                 if (!r.engine)
-                    for (const t of xl.default) {
+                    for (const t of gl.default) {
                         let l = null
                         try {
                             l = RegExp(t.regex, 'i').exec(e)
@@ -5954,24 +5899,24 @@ class Sl {
                             break
                         }
                     }
-                return (r.engineVersion = nl.formatVersion(nl.parseBrowserEngineVersion(e, r.engine), this.options.versionTruncation)), r
+                return (r.engineVersion = dl.formatVersion(dl.parseBrowserEngineVersion(e, r.engine), this.options.versionTruncation)), r
             }),
             (this.options = Object.assign(Object.assign({}, this.options), e))
     }
 }
-;((jt.default = Sl).getBrowserShortName = (e) => {
-    for (var [r, o] of Object.entries(cl.default)) if (o === e) return r
+;((Jt.default = ul).getBrowserShortName = (e) => {
+    for (var [r, o] of Object.entries(xl.default)) if (o === e) return r
     return ''
 }),
-    (Sl.isMobileOnlyBrowser = (e) => ul.default.includes(Sl.getBrowserShortName(e)))
-var pl = {},
-    hl =
-        (zt && zt.__importDefault) ||
+    (ul.isMobileOnlyBrowser = (e) => cl.default.includes(ul.getBrowserShortName(e)))
+var Sl = {},
+    pl =
+        (Yt && Yt.__importDefault) ||
         function (e) {
             return e && e.__esModule ? e : { default: e }
         }
-Object.defineProperty(pl, '__esModule', { value: !0 })
-const vl = hl([
+Object.defineProperty(Sl, '__esModule', { value: !0 })
+const hl = pl([
         { regex: 'AndroidDownloadManager(?:[ /]([\\d\\.]+))?', name: 'AndroidDownloadManager', version: '$1' },
         { regex: '(?:Apple)?News(?:[ /][\\d\\.]+)? Version(?:[ /]([\\d\\.]+))?', name: 'Apple News', version: '$1' },
         { regex: 'bPod', name: 'bPod', version: '' },
@@ -6101,20 +6046,20 @@ const vl = hl([
         { regex: 'twinkle/(\\d+[\\.\\d]+)', name: 'twinkle', version: '$1' },
         { regex: 'JaneStyle_iOS/(\\d+[\\.\\d]+)', name: 'JaneStyle', version: '$1' }
     ]),
-    $l = qt,
-    Al = ol,
-    Ml = tl
-pl.default = class {
+    vl = jt,
+    $l = rl,
+    Al = ol
+Sl.default = class {
     constructor(e) {
         ;(this.options = { versionTruncation: 1 }),
             (this.parse = (e) => {
                 var r = { type: '', name: '', version: '' }
-                for (const t of vl.default) {
-                    var o = Ml.userAgentParser(t.regex, e)
+                for (const t of hl.default) {
+                    var o = Al.userAgentParser(t.regex, e)
                     if (o) {
                         ;(r.type = 'mobile app'),
-                            (r.name = Al.variableReplacement(t.name, o)),
-                            (r.version = $l.formatVersion(Al.variableReplacement(t.version, o), this.options.versionTruncation))
+                            (r.name = $l.variableReplacement(t.name, o)),
+                            (r.version = vl.formatVersion($l.variableReplacement(t.version, o), this.options.versionTruncation))
                         break
                     }
                 }
@@ -6123,14 +6068,14 @@ pl.default = class {
             (this.options = Object.assign(Object.assign({}, this.options), e))
     }
 }
-var Pl = {},
-    Tl =
-        (zt && zt.__importDefault) ||
+var Ml = {},
+    Pl =
+        (Yt && Yt.__importDefault) ||
         function (e) {
             return e && e.__esModule ? e : { default: e }
         }
-Object.defineProperty(Pl, '__esModule', { value: !0 })
-const bl = Tl([
+Object.defineProperty(Ml, '__esModule', { value: !0 })
+const Tl = Pl([
         {
             regex: 'Akregator(?:/(\\d+[\\.\\d]+))?',
             name: 'Akregator',
@@ -6227,20 +6172,20 @@ const bl = Tl([
         { regex: 'RSSOwl(?:[/ ](\\d+[\\.\\d]+))?', name: 'RSSOwl', version: '$1', url: 'http://www.rssowl.org/', type: 'Feed Reader' },
         { regex: 'Stringer', name: 'Stringer', version: '', url: 'https://github.com/swanson/stringer', type: 'Feed Reader' }
     ]),
-    Gl = qt,
-    _l = ol,
-    Ll = tl
-Pl.default = class {
+    bl = jt,
+    Gl = rl,
+    _l = ol
+Ml.default = class {
     constructor(e) {
         ;(this.options = { versionTruncation: 1 }),
             (this.parse = (e) => {
                 var r = { type: '', name: '', version: '', url: '' }
-                for (const t of bl.default) {
-                    var o = Ll.userAgentParser(t.regex, e)
+                for (const t of Tl.default) {
+                    var o = _l.userAgentParser(t.regex, e)
                     if (o) {
                         ;(r.type = 'feed reader'),
-                            (r.name = _l.variableReplacement(t.name, o)),
-                            (r.version = Gl.formatVersion(_l.variableReplacement(t.version, o), this.options.versionTruncation)),
+                            (r.name = Gl.variableReplacement(t.name, o)),
+                            (r.version = bl.formatVersion(Gl.variableReplacement(t.version, o), this.options.versionTruncation)),
                             (r.url = t.url)
                         break
                     }
@@ -6250,14 +6195,14 @@ Pl.default = class {
             (this.options = Object.assign(Object.assign({}, this.options), e))
     }
 }
-var wl = {},
-    yl =
-        (zt && zt.__importDefault) ||
+var Ll = {},
+    wl =
+        (Yt && Yt.__importDefault) ||
         function (e) {
             return e && e.__esModule ? e : { default: e }
         }
-Object.defineProperty(wl, '__esModule', { value: !0 })
-const Bl = yl([
+Object.defineProperty(Ll, '__esModule', { value: !0 })
+const yl = wl([
         { regex: 'Wget(?:/(\\d+[\\.\\d]+))?', name: 'Wget', version: '$1' },
         { regex: 'Guzzle(?:/(\\d+[\\.\\d]+))?', name: 'Guzzle (PHP HTTP Client)', version: '$1' },
         { regex: '(?:lib)?curl(?:/(\\d+[\\.\\d]+))?', name: 'curl', version: '$1' },
@@ -6306,20 +6251,20 @@ const Bl = yl([
         { regex: 'GRequests(?:/(\\d+[\\.\\d]+))?', name: 'GRequests', version: '$1' },
         { regex: 'akka-http/([\\.\\d]+)', name: 'Akka HTTP', version: '$1' }
     ]),
-    Cl = qt,
-    El = ol,
-    Nl = tl
-wl.default = class {
+    Bl = jt,
+    Cl = rl,
+    El = ol
+Ll.default = class {
     constructor(e) {
         ;(this.options = { versionTruncation: 1 }),
             (this.parse = (e) => {
                 var r = { type: '', name: '', version: '', url: '' }
-                for (const t of Bl.default) {
-                    var o = Nl.userAgentParser(t.regex, e)
+                for (const t of yl.default) {
+                    var o = El.userAgentParser(t.regex, e)
                     if (o) {
                         ;(r.type = 'library'),
-                            (r.name = El.variableReplacement(t.name, o)),
-                            (r.version = Cl.formatVersion(El.variableReplacement(t.version, o), this.options.versionTruncation)),
+                            (r.name = Cl.variableReplacement(t.name, o)),
+                            (r.version = Bl.formatVersion(Cl.variableReplacement(t.version, o), this.options.versionTruncation)),
                             (r.url = t.url || '')
                         break
                     }
@@ -6329,14 +6274,14 @@ wl.default = class {
             (this.options = Object.assign(Object.assign({}, this.options), e))
     }
 }
-var Ol = {},
+var Nl = {},
     fl =
-        (zt && zt.__importDefault) ||
+        (Yt && Yt.__importDefault) ||
         function (e) {
             return e && e.__esModule ? e : { default: e }
         }
-Object.defineProperty(Ol, '__esModule', { value: !0 })
-const Il = fl([
+Object.defineProperty(Nl, '__esModule', { value: !0 })
+const Ol = fl([
         { regex: 'Audacious(?:[ /]([\\d\\.]+))?', name: 'Audacious', version: '$1' },
         { regex: 'Banshee(?:[ /]([\\d\\.]+))?', name: 'Banshee', version: '$1' },
         { regex: 'Boxee(?:[ /]([\\d\\.]+))?', name: 'Boxee', version: '$1' },
@@ -6363,20 +6308,20 @@ const Il = fl([
         { regex: 'Music Player Daemon (?:(\\d+[\\.\\d]+))?', name: 'Music Player Daemon', version: '$1' },
         { regex: 'mpv (?:(\\d+[\\.\\d]+))?', name: 'mpv', version: '$1' }
     ]),
-    Xl = qt,
-    Dl = ol,
-    Rl = tl
-Ol.default = class {
+    Il = jt,
+    Xl = rl,
+    Dl = ol
+Nl.default = class {
     constructor(e) {
         ;(this.options = { versionTruncation: 1 }),
             (this.parse = (e) => {
                 var r = { type: '', name: '', version: '' }
-                for (const t of Il.default) {
-                    var o = Rl.userAgentParser(t.regex, e)
+                for (const t of Ol.default) {
+                    var o = Dl.userAgentParser(t.regex, e)
                     if (o) {
                         ;(r.type = 'media player'),
-                            (r.name = Dl.variableReplacement(t.name, o)),
-                            (r.version = Xl.formatVersion(Dl.variableReplacement(t.version, o), this.options.versionTruncation))
+                            (r.name = Xl.variableReplacement(t.name, o)),
+                            (r.version = Il.formatVersion(Xl.variableReplacement(t.version, o), this.options.versionTruncation))
                         break
                     }
                 }
@@ -6385,14 +6330,14 @@ Ol.default = class {
             (this.options = Object.assign(Object.assign({}, this.options), e))
     }
 }
-var Fl = {},
-    kl =
-        (zt && zt.__importDefault) ||
+var Rl = {},
+    Fl =
+        (Yt && Yt.__importDefault) ||
         function (e) {
             return e && e.__esModule ? e : { default: e }
         }
-Object.defineProperty(Fl, '__esModule', { value: !0 })
-const Vl = kl([
+Object.defineProperty(Rl, '__esModule', { value: !0 })
+const kl = Fl([
         { regex: 'Outlook-Express(?:/(\\d+[\\.\\d]+))?', name: 'Outlook Express', version: '$1' },
         { regex: 'Microsoft Outlook(?:[/ ](\\d+[\\.\\d]+))?', name: 'Microsoft Outlook', version: '$1' },
         { regex: '(?:Thunderbird|Icedove|Shredder)(?:/(\\d+[\\.\\d]+))?', name: 'Thunderbird', version: '$1' },
@@ -6408,20 +6353,20 @@ const Vl = kl([
         { regex: 'JaneView/', name: 'JaneView', version: '' },
         { regex: 'BathyScaphe/', name: 'BathyScaphe', version: '' }
     ]),
-    Hl = qt,
-    Ul = ol,
-    Kl = tl
-Fl.default = class {
+    Vl = jt,
+    Hl = rl,
+    Ul = ol
+Rl.default = class {
     constructor(e) {
         ;(this.options = { versionTruncation: 1 }),
             (this.parse = (e) => {
                 var r = { type: '', name: '', version: '' }
-                for (const t of Vl.default) {
-                    var o = Kl.userAgentParser(t.regex, e)
+                for (const t of kl.default) {
+                    var o = Ul.userAgentParser(t.regex, e)
                     if (o) {
                         ;(r.type = 'personal information manager'),
-                            (r.name = Ul.variableReplacement(t.name, o)),
-                            (r.version = Hl.formatVersion(Ul.variableReplacement(t.version, o), this.options.versionTruncation))
+                            (r.name = Hl.variableReplacement(t.name, o)),
+                            (r.version = Vl.formatVersion(Hl.variableReplacement(t.version, o), this.options.versionTruncation))
                         break
                     }
                 }
@@ -6430,24 +6375,24 @@ Fl.default = class {
             (this.options = Object.assign(Object.assign({}, this.options), e))
     }
 }
-var Wl =
-    (zt && zt.__importDefault) ||
+var Kl =
+    (Yt && Yt.__importDefault) ||
     function (e) {
         return e && e.__esModule ? e : { default: e }
     }
-Object.defineProperty(Jt, '__esModule', { value: !0 })
-const Ql = Wl(jt),
-    Zl = Wl(pl),
-    Yl = Wl(Pl),
-    zl = Wl(wl),
-    Jl = Wl(Ol),
-    jl = Wl(Fl),
-    ql = [Yl.default, Zl.default, Jl.default, jl.default, Ql.default, zl.default]
-Jt.default = class {
+Object.defineProperty(zt, '__esModule', { value: !0 })
+const Wl = Kl(Jt),
+    Ql = Kl(Sl),
+    Zl = Kl(Ml),
+    Yl = Kl(Ll),
+    zl = Kl(Nl),
+    Jl = Kl(Rl),
+    jl = [Zl.default, Ql.default, zl.default, Jl.default, Wl.default, Yl.default]
+zt.default = class {
     constructor(e) {
         ;(this.options = { versionTruncation: 1 }),
             (this.parse = (e) => {
-                for (const o of ql) {
+                for (const o of jl) {
                     var r = new o(this.options).parse(e)
                     if ('' !== r.type) return r
                 }
@@ -6456,9 +6401,9 @@ Jt.default = class {
             (this.options = Object.assign(Object.assign({}, this.options), e))
     }
 }
-var ea = {},
-    ra = {},
-    oa = {
+var ql = {},
+    ea = {},
+    ra = {
         Nikon: { regex: 'Coolpix S800c', device: 'camera', model: 'Coolpix S800c' },
         Samsung: {
             regex: 'EK-G[CN][0-9]{3}',
@@ -6472,30 +6417,30 @@ var ea = {},
             ]
         }
     },
-    ta =
-        (zt && zt.__importDefault) ||
+    oa =
+        (Yt && Yt.__importDefault) ||
         function (e) {
             return e && e.__esModule ? e : { default: e }
         }
-Object.defineProperty(ra, '__esModule', { value: !0 })
-const la = ta(oa),
-    aa = ol,
-    ia = tl
-ra.default = class {
+Object.defineProperty(ea, '__esModule', { value: !0 })
+const ta = oa(ra),
+    la = rl,
+    aa = ol
+ea.default = class {
     constructor() {
         this.parse = (e) => {
             var r,
                 o,
                 t = { type: '', brand: '', model: '' }
-            for ([r, o] of Object.entries(la.default)) {
-                var l = ia.userAgentParser(o.regex, e)
+            for ([r, o] of Object.entries(ta.default)) {
+                var l = aa.userAgentParser(o.regex, e)
                 if (l) {
-                    if (((t.type = 'camera'), (t.brand = r), 'model' in o && o.model)) t.model = aa.variableReplacement(o.model, l).trim()
+                    if (((t.type = 'camera'), (t.brand = r), 'model' in o && o.model)) t.model = la.variableReplacement(o.model, l).trim()
                     else if ('models' in o && o.models)
                         for (const r of o.models) {
-                            var a = ia.userAgentParser(r.regex, e)
+                            var a = aa.userAgentParser(r.regex, e)
                             if (a) {
-                                t.model = aa.variableReplacement(r.model, a).trim()
+                                t.model = la.variableReplacement(r.model, a).trim()
                                 break
                             }
                         }
@@ -6506,8 +6451,8 @@ ra.default = class {
         }
     }
 }
-var da = {},
-    na = {
+var ia = {},
+    da = {
         360: {
             regex: '(?:180[1379]-A01|1713-A01|1707-A01|1509-A00|1603-A03|1607-A01|1503-A01)(?:[);/ ]|$)',
             device: 'smartphone',
@@ -17878,36 +17823,36 @@ var da = {},
             ]
         }
     },
-    ma = {},
-    sa =
-        (Object.defineProperty(ma, '__esModule', { value: !0 }),
-        (ma.buildModel = (e) => ('Build' === (e = (e = e.replace(/_/g, ' ')).replace(RegExp(' TD$', 'i'), '')) ? '' : e)),
-        (zt && zt.__importDefault) ||
+    na = {},
+    ma =
+        (Object.defineProperty(na, '__esModule', { value: !0 }),
+        (na.buildModel = (e) => ('Build' === (e = (e = e.replace(/_/g, ' ')).replace(RegExp(' TD$', 'i'), '')) ? '' : e)),
+        (Yt && Yt.__importDefault) ||
             function (e) {
                 return e && e.__esModule ? e : { default: e }
             })
-Object.defineProperty(da, '__esModule', { value: !0 })
-const ga = sa(na),
+Object.defineProperty(ia, '__esModule', { value: !0 })
+const sa = ma(da),
+    ga = rl,
     xa = ol,
-    ca = tl,
-    ua = ma
-da.default = class {
+    ca = na
+ia.default = class {
     constructor() {
         this.parse = (e) => {
             var r,
                 o,
                 t = { type: '', brand: '', model: '' }
             let l = ''
-            for ([r, o] of Object.entries(ga.default)) {
-                var a = ca.userAgentParser(o.regex, e)
+            for ([r, o] of Object.entries(sa.default)) {
+                var a = xa.userAgentParser(o.regex, e)
                 if (a) {
                     if (((l = ('device' in o && o.device) || ''), (t.brand = r), 'model' in o && o.model))
-                        t.model = ua.buildModel(xa.variableReplacement(o.model, a)).trim()
+                        t.model = ca.buildModel(ga.variableReplacement(o.model, a)).trim()
                     else if ('models' in o && o.models)
                         for (const r of o.models) {
-                            var i = ca.userAgentParser(r.regex, e)
+                            var i = xa.userAgentParser(r.regex, e)
                             if (i) {
-                                ;(t.model = ua.buildModel(xa.variableReplacement(r.model, i)).trim()),
+                                ;(t.model = ca.buildModel(ga.variableReplacement(r.model, i)).trim()),
                                     'device' in r && r.device && (l = r.device),
                                     'brand' in r && (t.brand = r.brand || '')
                                 break
@@ -17920,8 +17865,8 @@ da.default = class {
         }
     }
 }
-var Sa = {},
-    pa = {
+var ua = {},
+    Sa = {
         Airties: { regex: 'Airties', device: 'tv', models: [{ regex: 'Airties; ?([^);/]+)', model: '$1' }] },
         'ALDI NORD': { regex: 'ALDINORD[;,]', device: 'tv', model: '' },
         'ALDI SÜD': { regex: 'ALDISUED[;,]', device: 'tv', model: '' },
@@ -18152,30 +18097,30 @@ var Sa = {},
         'X.Vision': { regex: 'X-VISION[;,]', device: 'tv', model: '' },
         Vestel: { regex: '(?:Vestel.+VESTEL|VESTEL;)', device: 'tv', model: '' }
     },
-    ha =
-        (zt && zt.__importDefault) ||
+    pa =
+        (Yt && Yt.__importDefault) ||
         function (e) {
             return e && e.__esModule ? e : { default: e }
         }
-Object.defineProperty(Sa, '__esModule', { value: !0 })
-const va = ha(pa),
+Object.defineProperty(ua, '__esModule', { value: !0 })
+const ha = pa(Sa),
+    va = rl,
     $a = ol,
-    Aa = tl,
-    Ma = ma
-Sa.default = class {
+    Aa = na
+ua.default = class {
     constructor() {
         ;(this.parse = (e) => {
             var r = { type: '', brand: '', model: '' }
             if (this.isHbbTv(e))
-                for (var [o, t] of ((r.type = 'television'), Object.entries(va.default))) {
-                    var l = Aa.userAgentParser(t.regex, e)
+                for (var [o, t] of ((r.type = 'television'), Object.entries(ha.default))) {
+                    var l = $a.userAgentParser(t.regex, e)
                     if (l) {
-                        if (((r.brand = o), 'model' in t && t.model)) r.model = Ma.buildModel($a.variableReplacement(t.model, l)).trim()
+                        if (((r.brand = o), 'model' in t && t.model)) r.model = Aa.buildModel(va.variableReplacement(t.model, l)).trim()
                         else if ('models' in t && t.models)
                             for (const o of t.models) {
-                                var a = Aa.userAgentParser(o.regex, e)
+                                var a = $a.userAgentParser(o.regex, e)
                                 if (a) {
-                                    r.model = Ma.buildModel($a.variableReplacement(o.model, a)).trim()
+                                    r.model = Aa.buildModel(va.variableReplacement(o.model, a)).trim()
                                     break
                                 }
                             }
@@ -18184,11 +18129,11 @@ Sa.default = class {
                 }
             return r
         }),
-            (this.isHbbTv = (e) => Aa.userAgentParser('HbbTV/([1-9]{1}(?:.[0-9]{1}){1,2})', e))
+            (this.isHbbTv = (e) => $a.userAgentParser('HbbTV/([1-9]{1}(?:.[0-9]{1}){1,2})', e))
     }
 }
-var Pa = {},
-    Ta = {
+var Ma = {},
+    Pa = {
         Tesla: {
             regex: '(?:Tesla/[0-9.]+|QtCarBrowser)',
             device: 'car browser',
@@ -18200,27 +18145,27 @@ var Pa = {},
         'MAC AUDIO': { regex: 'Mac Audio Spro', device: 'car browser', models: [{ regex: 'Spro', model: 'S Pro' }] },
         Topway: { regex: 'sp9853i_1h10_vmm', device: 'car browser', models: [{ regex: 'sp9853i_1h10_vmm', model: 'TS9' }] }
     },
-    ba =
-        (zt && zt.__importDefault) ||
+    Ta =
+        (Yt && Yt.__importDefault) ||
         function (e) {
             return e && e.__esModule ? e : { default: e }
         }
-Object.defineProperty(Pa, '__esModule', { value: !0 })
-const Ga = ba(Ta),
-    _a = ol,
-    La = tl
-Pa.default = class {
+Object.defineProperty(Ma, '__esModule', { value: !0 })
+const ba = Ta(Pa),
+    Ga = rl,
+    _a = ol
+Ma.default = class {
     constructor() {
         this.parse = (e) => {
             var r,
                 o,
                 t = { type: '', brand: '', model: '' }
-            for ([r, o] of Object.entries(Ga.default))
-                if (La.userAgentParser(o.regex, e)) {
+            for ([r, o] of Object.entries(ba.default))
+                if (_a.userAgentParser(o.regex, e)) {
                     ;(t.type = 'car'), (t.brand = r)
                     for (const r of o.models) {
-                        var l = La.userAgentParser(r.regex, e)
-                        l && (t.model = _a.variableReplacement(r.model, l).trim())
+                        var l = _a.userAgentParser(r.regex, e)
+                        l && (t.model = Ga.variableReplacement(r.model, l).trim())
                     }
                     break
                 }
@@ -18228,8 +18173,8 @@ Pa.default = class {
         }
     }
 }
-var wa = {},
-    ya = {
+var La = {},
+    wa = {
         Archos: { regex: 'Archos.*GAMEPAD([2]?)', device: 'console', model: 'Gamepad $1' },
         Microsoft: {
             regex: 'Xbox',
@@ -18247,30 +18192,30 @@ var wa = {},
         Sega: { regex: 'Dreamcast', device: 'console', model: 'Dreamcast' },
         Sony: { regex: 'PlayStation (3|4 Pro|4|Portable|Vita)', device: 'console', model: 'PlayStation $1' }
     },
-    Ba =
-        (zt && zt.__importDefault) ||
+    ya =
+        (Yt && Yt.__importDefault) ||
         function (e) {
             return e && e.__esModule ? e : { default: e }
         }
-Object.defineProperty(wa, '__esModule', { value: !0 })
-const Ca = Ba(ya),
-    Ea = ol,
-    Na = tl
-wa.default = class {
+Object.defineProperty(La, '__esModule', { value: !0 })
+const Ba = ya(wa),
+    Ca = rl,
+    Ea = ol
+La.default = class {
     constructor() {
         this.parse = (e) => {
             var r,
                 o,
                 t = { type: '', brand: '', model: '' }
-            for ([r, o] of Object.entries(Ca.default)) {
-                var l = Na.userAgentParser(o.regex, e)
+            for ([r, o] of Object.entries(Ba.default)) {
+                var l = Ea.userAgentParser(o.regex, e)
                 if (l) {
-                    if (((t.type = o.device), (t.brand = r), 'model' in o && o.model)) t.model = Ea.variableReplacement(o.model, l).trim()
+                    if (((t.type = o.device), (t.brand = r), 'model' in o && o.model)) t.model = Ca.variableReplacement(o.model, l).trim()
                     else if ('models' in o && o.models)
                         for (const r of o.models) {
-                            var a = Na.userAgentParser(r.regex, e)
+                            var a = Ea.userAgentParser(r.regex, e)
                             if (a) {
-                                t.model = Ea.variableReplacement(r.model, a).trim()
+                                t.model = Ca.variableReplacement(r.model, a).trim()
                                 break
                             }
                         }
@@ -18281,7 +18226,7 @@ wa.default = class {
         }
     }
 }
-var Oa = {},
+var Na = {},
     fa = {
         Acer: {
             regex: 'FBMD/(?:Aspire E5-421G|Z5WAL|One S1003);',
@@ -18355,30 +18300,30 @@ var Oa = {},
             ]
         }
     },
-    Ia =
-        (zt && zt.__importDefault) ||
+    Oa =
+        (Yt && Yt.__importDefault) ||
         function (e) {
             return e && e.__esModule ? e : { default: e }
         }
-Object.defineProperty(Oa, '__esModule', { value: !0 })
-const Xa = Ia(fa),
+Object.defineProperty(Na, '__esModule', { value: !0 })
+const Ia = Oa(fa),
+    Xa = rl,
     Da = ol,
-    Ra = tl,
-    Fa = ma
-Oa.default = class {
+    Ra = na
+Na.default = class {
     constructor() {
         this.parse = (e) => {
             var r = { type: '', brand: '', model: '' }
-            if (Ra.userAgentParser('FBMD/', e))
-                for (var [o, t] of Object.entries(Xa.default)) {
-                    var l = Ra.userAgentParser(t.regex, e)
+            if (Da.userAgentParser('FBMD/', e))
+                for (var [o, t] of Object.entries(Ia.default)) {
+                    var l = Da.userAgentParser(t.regex, e)
                     if (l) {
                         if (((r.type = 'desktop'), (r.brand = o), 'model' in t && t.model))
-                            r.model = Fa.buildModel(Da.variableReplacement(t.model, l)).trim()
+                            r.model = Ra.buildModel(Xa.variableReplacement(t.model, l)).trim()
                         else if ('models' in t && t.models)
                             for (const o of t.models) {
-                                var a = Ra.userAgentParser(o.regex, e)
-                                a && (r.model = Da.variableReplacement(o.model, a).trim())
+                                var a = Da.userAgentParser(o.regex, e)
+                                a && (r.model = Xa.variableReplacement(o.model, a).trim())
                             }
                         break
                     }
@@ -18387,8 +18332,8 @@ Oa.default = class {
         }
     }
 }
-var ka = {},
-    Va = {
+var Fa = {},
+    ka = {
         Apple: {
             regex: '(?:Apple-)?iPod',
             device: 'portable media player',
@@ -18429,30 +18374,30 @@ var ka = {},
             ]
         }
     },
-    Ha =
-        (zt && zt.__importDefault) ||
+    Va =
+        (Yt && Yt.__importDefault) ||
         function (e) {
             return e && e.__esModule ? e : { default: e }
         }
-Object.defineProperty(ka, '__esModule', { value: !0 })
-const Ua = Ha(Va),
-    Ka = ol,
-    Wa = tl
-ka.default = class {
+Object.defineProperty(Fa, '__esModule', { value: !0 })
+const Ha = Va(ka),
+    Ua = rl,
+    Ka = ol
+Fa.default = class {
     constructor() {
         this.parse = (e) => {
             var r,
                 o,
                 t = { type: '', brand: '', model: '' }
-            for ([r, o] of Object.entries(Ua.default)) {
-                var l = Wa.userAgentParser(o.regex, e)
+            for ([r, o] of Object.entries(Ha.default)) {
+                var l = Ka.userAgentParser(o.regex, e)
                 if (l) {
-                    if (((t.type = o.device), (t.brand = r), 'model' in o && o.model)) t.model = Ka.variableReplacement(o.model, l).trim()
+                    if (((t.type = o.device), (t.brand = r), 'model' in o && o.model)) t.model = Ua.variableReplacement(o.model, l).trim()
                     else if ('models' in o && o.models)
                         for (const r of o.models) {
-                            var a = Wa.userAgentParser(r.regex, e)
+                            var a = Ka.userAgentParser(r.regex, e)
                             if (a) {
-                                t.model = Ka.variableReplacement(r.model, a).trim()
+                                t.model = Ua.variableReplacement(r.model, a).trim()
                                 break
                             }
                         }
@@ -18463,24 +18408,24 @@ ka.default = class {
         }
     }
 }
-var Qa =
-    (zt && zt.__importDefault) ||
+var Wa =
+    (Yt && Yt.__importDefault) ||
     function (e) {
         return e && e.__esModule ? e : { default: e }
     }
-Object.defineProperty(ea, '__esModule', { value: !0 })
-const Za = Qa(ra),
-    Ya = Qa(da),
-    za = Qa(Sa),
-    Ja = Qa(Pa),
-    ja = Qa(wa),
-    qa = Qa(Oa),
-    ei = Qa(ka),
-    ri = [ja.default, Ja.default, Za.default, za.default, ei.default, Ya.default, qa.default]
-ea.default = class {
+Object.defineProperty(ql, '__esModule', { value: !0 })
+const Qa = Wa(ea),
+    Za = Wa(ia),
+    Ya = Wa(ua),
+    za = Wa(Ma),
+    Ja = Wa(La),
+    ja = Wa(Na),
+    qa = Wa(Fa),
+    ei = [Ja.default, za.default, Qa.default, Ya.default, qa.default, Za.default, ja.default]
+ql.default = class {
     constructor() {
         this.parse = (e) => {
-            for (const o of ri) {
+            for (const o of ei) {
                 var r = new o().parse(e)
                 if ('' !== r.type) return r
             }
@@ -18488,8 +18433,8 @@ ea.default = class {
         }
     }
 }
-var oi = {},
-    ti = {
+var ri = {},
+    oi = {
         operatingSystem: {
             AIX: 'AIX',
             AND: 'Android',
@@ -18635,13 +18580,13 @@ var oi = {},
             'Other Smart TV': ['WHS']
         }
     },
-    li =
-        (zt && zt.__importDefault) ||
+    ti =
+        (Yt && Yt.__importDefault) ||
         function (e) {
             return e && e.__esModule ? e : { default: e }
         }
-Object.defineProperty(oi, '__esModule', { value: !0 })
-const ai = li([
+Object.defineProperty(ri, '__esModule', { value: !0 })
+const li = ti([
         { regex: 'Grid OS (\\d+[\\.\\d]+)', name: 'GridOS', version: '$1' },
         { regex: 'CaixaMagica', name: 'Caixa Mágica', version: '' },
         { regex: 'Mageia; Linux', name: 'Mageia', version: '' },
@@ -18914,24 +18859,24 @@ const ai = li([
         { regex: 'OS/2', name: 'OS/2', version: '' },
         { regex: 'Linux(?:OS)?[^a-z]', name: 'GNU/Linux', version: '' }
     ]),
-    ii = qt,
+    ai = jt,
+    ii = rl,
     di = ol,
-    ni = tl,
-    mi = li(ti),
-    si = ['AmigaOS', 'IBM', 'GNU/Linux', 'Mac', 'Unix', 'Windows', 'BeOS', 'Chrome OS'],
-    gi = mi.default.operatingSystem,
-    xi = mi.default.osFamilies
-class ci {
+    ni = ti(oi),
+    mi = ['AmigaOS', 'IBM', 'GNU/Linux', 'Mac', 'Unix', 'Windows', 'BeOS', 'Chrome OS'],
+    si = ni.default.operatingSystem,
+    gi = ni.default.osFamilies
+class xi {
     constructor(e) {
         ;(this.options = { versionTruncation: 1 }),
             (this.parse = (e) => {
                 var r = { name: '', version: '', platform: this.parsePlatform(e) }
-                for (const t of ai.default) {
-                    var o = ni.userAgentParser(t.regex, e)
+                for (const t of li.default) {
+                    var o = di.userAgentParser(t.regex, e)
                     if (o)
                         return (
-                            (r.name = di.variableReplacement(t.name, o)),
-                            (r.version = ii.formatVersion(di.variableReplacement(t.version, o), this.options.versionTruncation)),
+                            (r.name = ii.variableReplacement(t.name, o)),
+                            (r.version = ai.formatVersion(ii.variableReplacement(t.version, o), this.options.versionTruncation)),
                             'lubuntu' === r.name && (r.name = 'Lubuntu'),
                             'debian' === r.name && (r.name = 'Debian'),
                             'YunOS' === r.name && (r.name = 'YunOs'),
@@ -18941,34 +18886,34 @@ class ci {
                 return null
             }),
             (this.parsePlatform = (e) =>
-                ni.userAgentParser('arm|aarch64|Watch ?OS|Watch1,[12]', e)
+                di.userAgentParser('arm|aarch64|Watch ?OS|Watch1,[12]', e)
                     ? 'ARM'
-                    : ni.userAgentParser('mips', e)
+                    : di.userAgentParser('mips', e)
                     ? 'MIPS'
-                    : ni.userAgentParser('sh4', e)
+                    : di.userAgentParser('sh4', e)
                     ? 'SuperH'
-                    : ni.userAgentParser('WOW64|x64|win64|amd64|x86_?64', e)
+                    : di.userAgentParser('WOW64|x64|win64|amd64|x86_?64', e)
                     ? 'x64'
-                    : ni.userAgentParser('(?:i[0-9]|x)86|i86pc', e)
+                    : di.userAgentParser('(?:i[0-9]|x)86|i86pc', e)
                     ? 'x86'
                     : ''),
             (this.options = Object.assign(Object.assign({}, this.options), e))
     }
 }
-;((oi.default = ci).getDesktopOsArray = () => si),
-    (ci.getOsFamily = (e) => {
+;((ri.default = xi).getDesktopOsArray = () => mi),
+    (xi.getOsFamily = (e) => {
         var r,
             o,
-            t = ci.getOsShortName(e)
-        for ([r, o] of Object.entries(xi)) if (o.includes(t)) return r
+            t = xi.getOsShortName(e)
+        for ([r, o] of Object.entries(gi)) if (o.includes(t)) return r
         return ''
     }),
-    (ci.getOsShortName = (e) => {
-        for (var [r, o] of Object.entries(gi)) if (o === e) return r
+    (xi.getOsShortName = (e) => {
+        for (var [r, o] of Object.entries(si)) if (o === e) return r
         return ''
     })
-var ui = {},
-    Si = {
+var ci = {},
+    ui = {
         Dell: ['MDDR(JS)?', 'MDDC(JS)?', 'MDDS(JS)?'],
         Acer: ['MAAR(JS)?'],
         Sony: ['MASE(JS)?', 'MASP(JS)?', 'MASA(JS)?'],
@@ -18985,28 +18930,28 @@ var ui = {},
         Hyrican: ['MANM(JS)?'],
         Ordissimo: ['Ordissimo', 'webissimo3']
     },
-    pi =
-        (zt && zt.__importDefault) ||
+    Si =
+        (Yt && Yt.__importDefault) ||
         function (e) {
             return e && e.__esModule ? e : { default: e }
         }
-Object.defineProperty(ui, '__esModule', { value: !0 })
-const hi = pi(Si),
-    vi = tl
-ui.default = class {
+Object.defineProperty(ci, '__esModule', { value: !0 })
+const pi = Si(ui),
+    hi = ol
+ci.default = class {
     constructor() {
         this.parse = (e) => {
-            for (var [r, o] of Object.entries(hi.default)) for (const t of o) if (vi.userAgentParser(t, e)) return r
+            for (var [r, o] of Object.entries(pi.default)) for (const t of o) if (hi.userAgentParser(t, e)) return r
             return ''
         }
     }
 }
-var $i =
-    (zt && zt.__importDefault) ||
+var vi =
+    (Yt && Yt.__importDefault) ||
     function (e) {
         return e && e.__esModule ? e : { default: e }
     }
-const Ai = $i([
+const $i = vi([
         {
             regex: '360Spider(-Image|-Video)?',
             name: '360Spider',
@@ -20821,13 +20766,13 @@ const Ai = $i([
             name: 'Generic Bot'
         }
     ]),
-    Mi = tl
-var Pi = class {
+    Ai = ol
+var Mi = class {
         constructor() {
             this.parse = (e) => {
                 var r
-                for (const o of Ai.default)
-                    if (Mi.userAgentParser(o.regex, e))
+                for (const o of $i.default)
+                    if (Ai.userAgentParser(o.regex, e))
                         return {
                             name: o.name,
                             category: o.category || '',
@@ -20841,10 +20786,10 @@ var Pi = class {
             }
         }
     },
-    Ti = {},
-    bi =
-        (Object.defineProperty(Ti, '__esModule', { value: !0 }),
-        (Ti.versionCompare = (e, r, o) => {
+    Pi = {},
+    Ti =
+        (Object.defineProperty(Pi, '__esModule', { value: !0 }),
+        (Pi.versionCompare = (e, r, o) => {
             let t
             var l
             let a = 0
@@ -20892,19 +20837,19 @@ var Pi = class {
                     return null
             }
         }),
-        (zt && zt.__importDefault) ||
+        (Yt && Yt.__importDefault) ||
             function (e) {
                 return e && e.__esModule ? e : { default: e }
             })
-const Gi = bi(Jt),
-    _i = bi(ea),
-    Li = bi(oi),
-    wi = bi(ui),
-    yi = bi(jt),
-    Bi = Pi,
-    Ci = tl,
-    Ei = Ti
-class Ni {
+const bi = Ti(zt),
+    Gi = Ti(ql),
+    _i = Ti(ri),
+    Li = Ti(ci),
+    wi = Ti(Jt),
+    yi = Mi,
+    Bi = ol,
+    Ci = Pi
+class Ei {
     constructor(e) {
         ;(this.options = { skipBotDetection: !1, versionTruncation: 1 }),
             (this.parse = (e) => {
@@ -20916,7 +20861,7 @@ class Ni {
                     },
                     o = null == (o = r.os) ? void 0 : o.name,
                     t = null == (t = r.os) ? void 0 : t.version,
-                    l = Li.default.getOsFamily(o || ''),
+                    l = _i.default.getOsFamily(o || ''),
                     a =
                         ((null != (a = r.device) && a.brand) ||
                             ((a = this.vendorFragmentParser.parse(e)) &&
@@ -20926,13 +20871,13 @@ class Ni {
                             (r.device || (r.device = this.createDeviceObject()), (r.device.brand = 'Apple')),
                         (null != (a = r.device) && a.type) ||
                             'Android' !== l ||
-                            !Ci.userAgentParser('Chrome/[\\.0-9]*', e) ||
-                            (Ci.userAgentParser('Chrome/[.0-9]* (?:Mobile|eliboM)', e)
+                            !Bi.userAgentParser('Chrome/[\\.0-9]*', e) ||
+                            (Bi.userAgentParser('Chrome/[.0-9]* (?:Mobile|eliboM)', e)
                                 ? (r.device || (r.device = this.createDeviceObject()), (r.device.type = 'smartphone'))
-                                : Ci.userAgentParser('Chrome/[.0-9]* (?!Mobile)', e) &&
+                                : Bi.userAgentParser('Chrome/[.0-9]* (?!Mobile)', e) &&
                                   (r.device || (r.device = this.createDeviceObject()), (r.device.type = 'tablet'))),
                         (((null != (a = r.device) && a.type) || !this.hasAndroidTabletFragment(e)) &&
-                            !Ci.userAgentParser('Opera Tablet', e)) ||
+                            !Bi.userAgentParser('Opera Tablet', e)) ||
                             (r.device || (r.device = this.createDeviceObject()), (r.device.type = 'tablet')),
                         (null != (a = r.device) && a.type) ||
                             !this.hasAndroidMobileFragment(e) ||
@@ -20940,25 +20885,25 @@ class Ni {
                         (null != (a = r.device) && a.type) ||
                             'Android' !== o ||
                             '' === t ||
-                            (-1 === Ei.versionCompare(t, '2.0')
+                            (-1 === Ci.versionCompare(t, '2.0')
                                 ? (r.device || (r.device = this.createDeviceObject()), (r.device.type = 'smartphone'))
-                                : 0 <= Ei.versionCompare(t, '3.0') &&
-                                  -1 === Ei.versionCompare(t, '4.0') &&
+                                : 0 <= Ci.versionCompare(t, '3.0') &&
+                                  -1 === Ci.versionCompare(t, '4.0') &&
                                   (r.device || (r.device = this.createDeviceObject()), (r.device.type = 'tablet'))),
                         'feature phone' === (null == (a = r.device) ? void 0 : a.type) && 'Android' === l && (r.device.type = 'smartphone'),
                         (null != (a = r.device) && a.type) ||
                             !this.isToucheEnabled(e) ||
-                            !('Windows RT' === o || ('Windows' === o && 0 <= Ei.versionCompare(t, '8.0'))) ||
+                            !('Windows RT' === o || ('Windows' === o && 0 <= Ci.versionCompare(t, '8.0'))) ||
                             (r.device || (r.device = this.createDeviceObject()), (r.device.type = 'tablet')),
-                        Ci.userAgentParser('Opera TV Store', e) &&
+                        Bi.userAgentParser('Opera TV Store', e) &&
                             (r.device || (r.device = this.createDeviceObject()), (r.device.type = 'television')),
-                        Ci.userAgentParser('SmartTV|Tizen.+ TV .+$', e) &&
+                        Bi.userAgentParser('SmartTV|Tizen.+ TV .+$', e) &&
                             (r.device || (r.device = this.createDeviceObject()), (r.device.type = 'television')),
                         (null != (a = r.device) && a.type) ||
                             !['Kylo', 'Espial TV Browser'].includes((null == (o = r.client) ? void 0 : o.name) || '') ||
                             (r.device || (r.device = this.createDeviceObject()), (r.device.type = 'television')),
                         'desktop' !== (null == (t = r.device) ? void 0 : t.type) &&
-                            null !== Ci.userAgentParser('Desktop', e) &&
+                            null !== Bi.userAgentParser('Desktop', e) &&
                             this.hasDesktopFragment(e))
                 return (
                     a && (r.device || (r.device = this.createDeviceObject()), (r.device.type = 'desktop')),
@@ -20968,58 +20913,58 @@ class Ni {
                     r
                 )
             }),
-            (this.hasAndroidMobileFragment = (e) => Ci.userAgentParser('Android( [.0-9]+)?; Mobile;', e)),
-            (this.hasAndroidTabletFragment = (e) => Ci.userAgentParser('Android( [.0-9]+)?; Tablet;', e)),
-            (this.hasDesktopFragment = (e) => Ci.userAgentParser('Desktop (x(?:32|64)|WOW64);', e)),
-            (this.isDesktop = (e, r) => !!e.os && !this.usesMobileBrowser(e.client) && Li.default.getDesktopOsArray().includes(r)),
+            (this.hasAndroidMobileFragment = (e) => Bi.userAgentParser('Android( [.0-9]+)?; Mobile;', e)),
+            (this.hasAndroidTabletFragment = (e) => Bi.userAgentParser('Android( [.0-9]+)?; Tablet;', e)),
+            (this.hasDesktopFragment = (e) => Bi.userAgentParser('Desktop (x(?:32|64)|WOW64);', e)),
+            (this.isDesktop = (e, r) => !!e.os && !this.usesMobileBrowser(e.client) && _i.default.getDesktopOsArray().includes(r)),
             (this.usesMobileBrowser = (e) => {
                 var r
                 return (
                     !!e &&
                     'browser' === (null == (r = e) ? void 0 : r.type) &&
-                    yi.default.isMobileOnlyBrowser(null == (r = e) ? void 0 : r.name)
+                    wi.default.isMobileOnlyBrowser(null == (r = e) ? void 0 : r.name)
                 )
             }),
-            (this.isToucheEnabled = (e) => Ci.userAgentParser('Touch', e)),
+            (this.isToucheEnabled = (e) => Bi.userAgentParser('Touch', e)),
             (this.createDeviceObject = () => ({ type: '', brand: '', model: '' })),
             (this.options = Object.assign(Object.assign({}, this.options), e)),
-            (this.clientParser = new Gi.default(this.options)),
-            (this.deviceParser = new _i.default()),
-            (this.operatingSystemParser = new Li.default(this.options)),
-            (this.vendorFragmentParser = new wi.default()),
-            (this.botParser = new Bi())
+            (this.clientParser = new bi.default(this.options)),
+            (this.deviceParser = new Gi.default()),
+            (this.operatingSystemParser = new _i.default(this.options)),
+            (this.vendorFragmentParser = new Li.default()),
+            (this.botParser = new yi())
     }
 }
-var Oi = (function (e) {
+var Ni = (function (e) {
     return e && e.__esModule && Object.prototype.hasOwnProperty.call(e, 'default') ? e.default : e
-})(Ni)
+})(Ei)
 let fi,
-    Ii = '00:00'
-const Xi = 1
-let Di
-function Ri(e, r, o) {
-    Vi.start()
+    Oi = '00:00'
+const Ii = 1
+let Xi
+function Di(e, r, o) {
+    ki.start()
         .then(() => {
             e && e(!0),
                 (fi = new Date()),
                 (function (e) {
-                    ;(Ii = '00:00'),
-                        e(Ii),
-                        (Di = setInterval(() => {
-                            ;(Ii = (function (e) {
+                    ;(Oi = '00:00'),
+                        e(Oi),
+                        (Xi = setInterval(() => {
+                            ;(Oi = (function (e) {
                                 e = new Date().getTime() - e.getTime()
                                 var r = ((e /= 1e3), Math.floor(e % 60)),
                                     o = (e = Math.floor(e / 60)) % 60,
                                     t = (e = Math.floor(e / 60)) % 24
                                 ;(e = e = Math.floor(e / 24)), (t += 24 * e)
-                                return 0 == t ? ki(o, 2) + ':' + ki(r, 2) : ki(t, 2) + ':' + ki(o, 2) + ':' + ki(r, 2)
+                                return 0 == t ? Fi(o, 2) + ':' + Fi(r, 2) : Fi(t, 2) + ':' + Fi(o, 2) + ':' + Fi(r, 2)
                             })(fi)),
-                                e(Ii),
+                                e(Oi),
                                 (function () {
-                                    var e = Ii.split(':'),
-                                        r = '0' + Xi
+                                    var e = Oi.split(':'),
+                                        r = '0' + Ii
                                     return 3 === e.length && e[0] === r
-                                })() && Fi(null)
+                                })() && Ri(null)
                         }, 1e3))
                 })(o)
         })
@@ -21058,10 +21003,10 @@ function Ri(e, r, o) {
             }
         })
 }
-function Fi(e) {
-    Vi.stop()
+function Ri(e) {
+    ki.stop()
         .then((r) => {
-            clearInterval(Di), e && e(r)
+            clearInterval(Xi), e && e(r)
         })
         .catch((e) => {
             'InvalidStateError' === e.name
@@ -21069,96 +21014,96 @@ function Fi(e) {
                 : console.log('An error occurred with the error name ' + e.name)
         })
 }
-function ki(e, r) {
+function Fi(e, r) {
     return ('' + e).padStart(r, '0')
 }
-const Vi = {
+const ki = {
         audioBlobs: [],
         mediaRecorder: null,
         streamBeingCaptured: null,
         start: function () {
             if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-                var e = new Oi(),
+                var e = new Ni(),
                     r = navigator.userAgent
                 const o = 'Mobile Safari' === e.parse(r).client?.name
                 return navigator.mediaDevices.getUserMedia({ audio: !0 }).then((e) => {
-                    ;(Vi.streamBeingCaptured = e),
-                        (Vi.mediaRecorder = new MediaRecorder(e)),
-                        (Vi.audioBlobs = []),
-                        Vi.mediaRecorder.addEventListener('dataavailable', (e) => {
-                            Vi.audioBlobs.push(e.data)
+                    ;(ki.streamBeingCaptured = e),
+                        (ki.mediaRecorder = new MediaRecorder(e)),
+                        (ki.audioBlobs = []),
+                        ki.mediaRecorder.addEventListener('dataavailable', (e) => {
+                            ki.audioBlobs.push(e.data)
                         }),
-                        o ? Vi.mediaRecorder.start(1e3) : Vi.mediaRecorder.start()
+                        o ? ki.mediaRecorder.start(1e3) : ki.mediaRecorder.start()
                 })
             }
             return Promise.reject(new Error('mediaDevices API or getUserMedia method is not supported in this browser.'))
         },
         stop: function () {
             return new Promise((e) => {
-                const r = Vi.mediaRecorder?.mimeType
-                Vi.mediaRecorder?.addEventListener('stop', () => {
-                    var o = new Blob(Vi.audioBlobs, { type: r })
+                const r = ki.mediaRecorder?.mimeType
+                ki.mediaRecorder?.addEventListener('stop', () => {
+                    var o = new Blob(ki.audioBlobs, { type: r })
                     e(o)
                 }),
-                    Vi.cancel()
+                    ki.cancel()
             })
         },
         cancel: function () {
-            Vi.mediaRecorder?.stop(), Vi.stopStream(), Vi.resetRecordingProperties()
+            ki.mediaRecorder?.stop(), ki.stopStream(), ki.resetRecordingProperties()
         },
         stopStream: function () {
-            Vi.streamBeingCaptured?.getTracks().forEach((e) => e.stop())
+            ki.streamBeingCaptured?.getTracks().forEach((e) => e.stop())
         },
         resetRecordingProperties: function () {
-            ;(Vi.mediaRecorder = null), (Vi.streamBeingCaptured = null)
+            ;(ki.mediaRecorder = null), (ki.streamBeingCaptured = null)
         }
     },
-    Hi = te('<div class="w-full flex flex-row flex-wrap px-5 py-[10px] gap-2">'),
-    Ui = te('<div class="w-full flex items-center justify-start gap-2 px-5 pt-2 border-t border-[#eeeeee]">'),
-    Ki = te(
+    Vi = te('<div class="w-full flex flex-row flex-wrap px-5 py-[10px] gap-2">'),
+    Hi = te('<div class="w-full flex items-center justify-start gap-2 px-5 pt-2 border-t border-[#eeeeee]">'),
+    Ui = te(
         '<div><div class="flex flex-col w-full h-full justify-start z-0"><div class="overflow-y-scroll flex flex-col flex-grow min-w-full w-full px-3 pt-[70px] relative scrollable-container chatbot-chat-view scroll-smooth"></div><div class="w-full px-5 pt-2 pb-1">'
     ),
-    Wi = te('<div class="absolute top-0 left-0 bottom-0 right-0 w-full h-full z-50">'),
-    Qi = te(
+    Ki = te('<div class="absolute top-0 left-0 bottom-0 right-0 w-full h-full z-50">'),
+    Wi = te(
         '<div class="absolute top-0 left-0 bottom-0 right-0 flex flex-col items-center justify-center bg-black/60 backdrop-blur-sm text-white z-40 gap-2 border-2 border-dashed"><h2 class="text-xl font-semibold">Drop here to upload'
     ),
-    Zi = te('<span>'),
-    Yi = te('<span>Max Allowed Size: <!> MB'),
-    zi = te('<div>'),
-    Ji = te('<span class="px-3 whitespace-pre-wrap font-semibold max-w-full">'),
-    ji = te('<span>Clear'),
-    qi = te('<div class="flex flex-row items-center w-full h-[50px] absolute top-0 left-0 z-10"><div>'),
-    ed = te(
+    Qi = te('<span>'),
+    Zi = te('<span>Max Allowed Size: <!> MB'),
+    Yi = te('<div>'),
+    zi = te('<span class="px-3 whitespace-pre-wrap font-semibold max-w-full">'),
+    Ji = te('<span>Clear'),
+    ji = te('<div class="flex flex-row items-center w-full h-[50px] absolute top-0 left-0 z-10"><div>'),
+    qi = te(
         '<button class="group w-12 h-12 flex items-center justify-center relative rounded-[10px] overflow-hidden transition-colors duration-200"><img class="w-full h-full bg-cover"><span class="absolute hidden group-hover:flex items-center justify-center z-10 w-full h-full top-0 left-0 bg-black/10 rounded-[10px] transition-colors duration-200">'
     ),
-    rd = te(
+    ed = te(
         '<div class="inline-flex basis-auto flex-grow-0 flex-shrink-0 justify-between items-center rounded-xl h-12 p-1 mr-1 bg-gray-500"><audio class="block bg-cover bg-center w-full h-full rounded-none text-transparent" controls></audio><button class="w-7 h-7 flex items-center justify-center bg-transparent p-1">'
     ),
-    od = te(
+    rd = te(
         '<div class="w-full flex items-center justify-between p-4 border border-[#eeeeee]"><div class="w-full flex items-center justify-between gap-3"><span class="text-base">To record audio, use modern browsers like Chrome or Firefox that support audio recording.</span><button class="py-2 px-4 justify-center flex items-center bg-red-500 text-white rounded-md" type="button">Okay'
     ),
-    td = te('<span>Send'),
-    ld = te(
+    od = te('<span>Send'),
+    td = te(
         '<div class="h-[58px] flex items-center justify-between chatbot-input border border-[#eeeeee]" data-testid="input"><div class="flex items-center gap-3 px-4 py-2"><span></span><span></span></div><div class="flex items-center">'
     ),
-    ad = te('<span class="ml-1.5">Sending...'),
-    id = 'Hi there! How can I help?',
-    dd = (e) => {
+    ld = te('<span class="ml-1.5">Sending...'),
+    ad = 'Hi there! How can I help?',
+    id = (e) => {
         const r = W({ showTitle: !0 }, e)
         let o, t
         const [l, a] = M(''),
             [i, d] = M(!1),
             [n, m] = M(!1),
             [s, g] = M({}),
-            [x, c] = M([{ message: r.welcomeMessage ?? id, type: 'apiMessage' }], { equals: !1 }),
+            [x, c] = M([{ message: r.welcomeMessage ?? ad, type: 'apiMessage' }], { equals: !1 }),
             [u, S] = M(''),
             [p, h] = M(!1),
-            [v, $] = M(fe()),
+            [v, $] = M(r.chatflowConfig?.vars?.customerId ? r.chatflowConfig?.vars.customerId.toString() + '+' + Oe() : Oe()),
             [A, L] = M([], { equals: !1 }),
             [w, y] = M(!1),
             [B, C] = M(),
             [E, N] = M([]),
-            [O, f] = M('00:00'),
+            [f, O] = M('00:00'),
             [I, X] = M(!1),
             [D, R] = M(!1),
             [F, k] = M(!1),
@@ -21215,7 +21160,7 @@ const Vi = {
                     if (!(1 <= E().length && o)) return
                 }
                 d(!0), K()
-                const t = r.welcomeMessage ?? id
+                const t = r.welcomeMessage ?? ad
                 o = x().filter((e) => e.message !== t)
                 const l = E().map((e) => ({ data: e.data, type: e.type, name: e.name, mime: e.mime }))
                 if (
@@ -21270,8 +21215,8 @@ const Vi = {
             re = () => {
                 try {
                     localStorage.removeItem(r.chatflowid + '_EXTERNAL'),
-                        $(fe()),
-                        c([{ message: r.welcomeMessage ?? id, type: 'apiMessage' }])
+                        $(r.chatflowConfig?.vars?.customerId ? r.chatflowConfig?.vars.customerId.toString() + '+' + Oe() : Oe()),
+                        c([{ message: r.welcomeMessage ?? ad, type: 'apiMessage' }])
                 } catch (r) {
                     var e = r.response.data || r.response.status + ': ' + r.response.statusText
                     console.error('error: ' + e)
@@ -21320,7 +21265,7 @@ const Vi = {
                         }
                         r.chatFeedback && ((e = r.chatFeedback.status), y(e)), r.uploads && C(r.uploads)
                     }
-                    const o = Ht(r.apiHost)
+                    const o = Vt(r.apiHost)
                     return (
                         o.on('connect', () => {
                             S(o.id)
@@ -21331,7 +21276,7 @@ const Vi = {
                         o.on('sourceDocuments', J),
                         o.on('token', z),
                         () => {
-                            a(''), d(!1), c([{ message: r.welcomeMessage ?? id, type: 'apiMessage' }]), o && (o.disconnect(), S(''))
+                            a(''), d(!1), c([{ message: r.welcomeMessage ?? ad, type: 'apiMessage' }]), o && (o.disconnect(), S(''))
                         }
                     )
                 }),
@@ -21445,13 +21390,13 @@ const Vi = {
                 'file' === e.type && URL.revokeObjectURL(e.preview), N(E().filter((r) => r !== e))
             },
             ce = () => {
-                X(!0), Ri(X, R, f)
+                X(!0), Di(X, R, O)
             },
             ue = () => {
-                D || (Vi.cancel(), clearInterval(Di)), X(!1), R(!1)
+                D || (ki.cancel(), clearInterval(Xi)), X(!1), R(!1)
             },
             Se = async () => {
-                k(!0), Fi(te)
+                k(!0), Ri(te)
             }
         return (
             T(
@@ -21481,7 +21426,7 @@ const Vi = {
             ),
             [
                 (() => {
-                    const a = Ki(),
+                    const a = Ui(),
                         d = a.firstChild,
                         n = d.firstChild,
                         s = n.nextSibling
@@ -21495,7 +21440,7 @@ const Vi = {
                                 return () => {
                                     return (
                                         e() &&
-                                        ((r = Wi()).addEventListener('drop', ge),
+                                        ((r = Ki()).addEventListener('drop', ge),
                                         r.addEventListener('dragover', se),
                                         r.addEventListener('dragend', se),
                                         r.addEventListener('dragleave', se),
@@ -21514,7 +21459,7 @@ const Vi = {
                                 return () =>
                                     e() &&
                                     (() => {
-                                        const e = Qi()
+                                        const e = Wi()
                                         return (
                                             e.firstChild,
                                             me(
@@ -21525,8 +21470,8 @@ const Vi = {
                                                     },
                                                     children: (e) => {
                                                         return [
-                                                            (me((o = Zi()), () => e.fileTypes?.join(', ')), o),
-                                                            ((o = Yi()),
+                                                            (me((o = Qi()), () => e.fileTypes?.join(', ')), o),
+                                                            ((o = Zi()),
                                                             (r = o.firstChild.nextSibling).nextSibling,
                                                             me(o, () => e.maxUploadSize, r),
                                                             o)
@@ -21553,7 +21498,7 @@ const Vi = {
                                 const e = b(() => !!r.showTitle)
                                 return () => {
                                     if (e()) {
-                                        const e = qi(),
+                                        const e = ji(),
                                             o = e.firstChild
                                         return (
                                             me(
@@ -21564,7 +21509,7 @@ const Vi = {
                                                     },
                                                     get children() {
                                                         return [
-                                                            ((e = zi()).style.setProperty('width', '15px'), e),
+                                                            ((e = Yi()).style.setProperty('width', '15px'), e),
                                                             V(Br, {
                                                                 get initialAvatarSrc() {
                                                                     return r.titleAvatarSrc
@@ -21583,7 +21528,7 @@ const Vi = {
                                                         return r.title
                                                     },
                                                     get children() {
-                                                        var e = Ji()
+                                                        var e = zi()
                                                         return me(e, () => r.title), e
                                                     }
                                                 }),
@@ -21603,7 +21548,7 @@ const Vi = {
                                                     class: 'my-2 ml-2',
                                                     'on:click': re,
                                                     get children() {
-                                                        var e = ji()
+                                                        var e = Ji()
                                                         return e.style.setProperty('font-family', 'Poppins, sans-serif'), e
                                                     }
                                                 }),
@@ -21694,7 +21639,7 @@ const Vi = {
                                             const o = b(() => 'apiMessage' === e.type)
                                             return () =>
                                                 o() &&
-                                                V(go, {
+                                                V(xo, {
                                                     message: e,
                                                     get fileAnnotations() {
                                                         return e.fileAnnotations
@@ -21714,6 +21659,9 @@ const Vi = {
                                                     get textColor() {
                                                         return r.botMessage?.textColor
                                                     },
+                                                    get feedbackColor() {
+                                                        return r.feedback?.color
+                                                    },
                                                     get showAvatar() {
                                                         return r.botMessage?.showAvatar
                                                     },
@@ -21732,7 +21680,7 @@ const Vi = {
                                     b(
                                         (() => {
                                             const r = b(() => !('userMessage' !== e.type || !i() || o() !== x().length - 1))
-                                            return () => r() && V(So, {})
+                                            return () => r() && V(po, {})
                                         })()
                                     ),
                                     b(
@@ -21740,7 +21688,7 @@ const Vi = {
                                             const r = b(
                                                 () => !('apiMessage' !== e.type || '' !== e.message || !i() || o() !== x().length - 1)
                                             )
-                                            return () => r() && V(So, {})
+                                            return () => r() && V(po, {})
                                         })()
                                     ),
                                     b(
@@ -21749,7 +21697,7 @@ const Vi = {
                                             return () => {
                                                 return (
                                                     r() &&
-                                                    ((o = zi()).style.setProperty('display', 'flex'),
+                                                    ((o = Yi()).style.setProperty('display', 'flex'),
                                                     o.style.setProperty('flex-direction', 'row'),
                                                     o.style.setProperty('width', '100%'),
                                                     o.style.setProperty('flex-wrap', 'wrap'),
@@ -21774,7 +21722,7 @@ const Vi = {
                                                             },
                                                             children: (e) => {
                                                                 const r = oe(e.metadata.source)
-                                                                return V(ho, {
+                                                                return V(vo, {
                                                                     get pageContent() {
                                                                         return r ? r.pathname : e.pageContent
                                                                     },
@@ -21809,7 +21757,7 @@ const Vi = {
                                             return 0 < A().length
                                         },
                                         get children() {
-                                            var e = Hi()
+                                            var e = Vi()
                                             return (
                                                 me(
                                                     e,
@@ -21817,7 +21765,7 @@ const Vi = {
                                                         get each() {
                                                             return [...A()]
                                                         },
-                                                        children: (e) => V($o, { prompt: e, onPromptClick: () => q(e) })
+                                                        children: (e) => V(Ao, { prompt: e, onPromptClick: () => q(e) })
                                                     })
                                                 ),
                                                 e
@@ -21835,7 +21783,7 @@ const Vi = {
                                     return 0 < E().length
                                 },
                                 get children() {
-                                    var r = Ui()
+                                    var r = Hi()
                                     return (
                                         me(
                                             r,
@@ -21850,7 +21798,7 @@ const Vi = {
                                                             return () =>
                                                                 (t()
                                                                     ? () => {
-                                                                          const e = ed(),
+                                                                          const e = qi(),
                                                                               o = e.firstChild,
                                                                               t = o.nextSibling
                                                                           return (
@@ -21861,7 +21809,7 @@ const Vi = {
                                                                           )
                                                                       }
                                                                     : () => {
-                                                                          const t = rd(),
+                                                                          const t = ed(),
                                                                               l = t.firstChild,
                                                                               a = l.nextSibling
                                                                           return (
@@ -21911,9 +21859,9 @@ const Vi = {
                                               (() => {
                                                   const e = b(() => !!D())
                                                   return () => {
-                                                      if (e()) return ((o = od()).firstChild.firstChild.nextSibling.$$click = () => ue()), o
+                                                      if (e()) return ((o = rd()).firstChild.firstChild.nextSibling.$$click = () => ue()), o
                                                       {
-                                                          const e = ld(),
+                                                          const e = td(),
                                                               o = e.firstChild,
                                                               t = o.firstChild,
                                                               l = t.nextSibling,
@@ -21921,18 +21869,18 @@ const Vi = {
                                                           return (
                                                               e.style.setProperty('margin', 'auto'),
                                                               me(t, V(Je, { color: 'red' })),
-                                                              me(l, () => O() || '00:00'),
+                                                              me(l, () => f() || '00:00'),
                                                               me(
                                                                   o,
                                                                   (() => {
                                                                       const e = b(() => !!F())
-                                                                      return () => e() && ad()
+                                                                      return () => e() && ld()
                                                                   })(),
                                                                   null
                                                               ),
                                                               me(
                                                                   a,
-                                                                  V(Yt, {
+                                                                  V(Zt, {
                                                                       get buttonColor() {
                                                                           return r.textInput?.sendButtonColor
                                                                       },
@@ -21940,7 +21888,7 @@ const Vi = {
                                                                       class: 'm-0',
                                                                       'on:click': ue,
                                                                       get children() {
-                                                                          var e = td()
+                                                                          var e = od()
                                                                           return (
                                                                               e.style.setProperty('font-family', 'Poppins, sans-serif'), e
                                                                           )
@@ -21961,7 +21909,7 @@ const Vi = {
                                                                       class: 'm-0',
                                                                       'on:click': Se,
                                                                       get children() {
-                                                                          var e = td()
+                                                                          var e = od()
                                                                           return (
                                                                               e.style.setProperty('font-family', 'Poppins, sans-serif'), e
                                                                           )
@@ -22026,19 +21974,6 @@ const Vi = {
                                           })
                             })()
                         ),
-                        me(
-                            d,
-                            V(Mo, {
-                                get badgeBackgroundColor() {
-                                    return r.badgeBackgroundColor
-                                },
-                                get poweredByTextColor() {
-                                    return r.poweredByTextColor
-                                },
-                                botContainer: t
-                            }),
-                            null
-                        ),
                         P(() =>
                             ie(
                                 a,
@@ -22054,7 +21989,7 @@ const Vi = {
                         const e = b(() => !!n())
                         return () =>
                             e() &&
-                            V(Qt, {
+                            V(Wt, {
                                 get isOpen() {
                                     return n()
                                 },
@@ -22068,9 +22003,9 @@ const Vi = {
             ]
         )
     },
-    nd = (le(['click']), te('<style>')),
-    md = te('<div part="bot">'),
-    sd = (e) => {
+    dd = (le(['click']), te('<style>')),
+    nd = te('<div part="bot">'),
+    md = (e) => {
         const [r] = Q(e, ['theme']),
             [o, t] = M(!1),
             [l, a] = M(!1)
@@ -22080,7 +22015,7 @@ const Vi = {
                 a(!1)
             }),
             [
-                (me((i = nd()), Ae), i),
+                (me((i = dd()), Ae), i),
                 V(
                     Le,
                     W(() => r.theme?.button, {
@@ -22093,7 +22028,7 @@ const Vi = {
                     })
                 ),
                 (() => {
-                    const t = md()
+                    const t = nd()
                     return (
                         t.style.setProperty('transition', 'transform 200ms cubic-bezier(0, 1.2, 1, 1), opacity 150ms ease-out'),
                         t.style.setProperty('transform-origin', 'bottom right'),
@@ -22106,7 +22041,7 @@ const Vi = {
                                     return l()
                                 },
                                 get children() {
-                                    return V(dd, {
+                                    return V(id, {
                                         get badgeBackgroundColor() {
                                             return r.theme?.chatWindow?.backgroundColor
                                         },
@@ -22142,6 +22077,9 @@ const Vi = {
                                         },
                                         get userMessage() {
                                             return r.theme?.chatWindow?.userMessage
+                                        },
+                                        get feedback() {
+                                            return r.theme?.chatWindow?.feedback
                                         },
                                         get fontSize() {
                                             return r.theme?.chatWindow?.fontSize
@@ -22195,9 +22133,9 @@ const Vi = {
             ]
         )
     },
-    gd = te('<style>'),
-    xd = te('<div>'),
-    cd = (e, { element: r }) => {
+    sd = te('<style>'),
+    gd = te('<div>'),
+    xd = (e, { element: r }) => {
         const [o, t] = M(!1),
             l = new IntersectionObserver((e) => {
                 e.some((e) => e.isIntersecting) && t(!0)
@@ -22210,18 +22148,18 @@ const Vi = {
                 l.disconnect()
             }),
             [
-                (me((a = gd()), Ae), a),
+                (me((a = sd()), Ae), a),
                 V(Y, {
                     get when() {
                         return o()
                     },
                     get children() {
-                        const r = xd()
+                        const r = gd()
                         return (
                             r.style.setProperty('margin', '0px'),
                             me(
                                 r,
-                                V(dd, {
+                                V(id, {
                                     get badgeBackgroundColor() {
                                         return e.theme?.chatWindow?.backgroundColor
                                     },
@@ -22257,6 +22195,9 @@ const Vi = {
                                     },
                                     get userMessage() {
                                         return e.theme?.chatWindow?.userMessage
+                                    },
+                                    get feedback() {
+                                        return e.theme?.chatWindow?.feedback
                                     },
                                     get fontSize() {
                                         return e.theme?.chatWindow?.fontSize
@@ -22303,25 +22244,25 @@ const Vi = {
         )
         var a
     }
-let ud
-const Sd = (e) => {
-        hd()
+let cd
+const ud = (e) => {
+        pd()
         var r = e.id ? document.getElementById(e.id) : document.querySelector('flowise-fullchatbot')
         if (!r) throw new Error('<flowise-fullchatbot> element not found.')
-        Object.assign(r, e), (ud = r)
+        Object.assign(r, e), (cd = r)
     },
-    pd = (e) => {
-        hd()
+    Sd = (e) => {
+        pd()
         var r = document.createElement('flowise-chatbot')
-        Object.assign(r, e), document.body.appendChild(r), (ud = r)
+        Object.assign(r, e), document.body.appendChild(r), (cd = r)
     },
-    hd = () => {
-        ud?.remove()
+    pd = () => {
+        cd?.remove()
     },
-    vd =
-        ('undefined' != typeof window && (ve('flowise-fullchatbot', $e, cd), ve('flowise-chatbot', $e, sd)),
-        { initFull: Sd, init: pd, destroy: hd })
+    hd =
+        ('undefined' != typeof window && (ve('flowise-fullchatbot', $e, xd), ve('flowise-chatbot', $e, md)),
+        { initFull: ud, init: Sd, destroy: pd })
 ;((e) => {
     'undefined' != typeof window && (window.Chatbot = { ...e })
-})(vd)
-export { vd as default }
+})(hd)
+export { hd as default }
