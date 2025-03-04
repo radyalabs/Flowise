@@ -1,0 +1,8 @@
+- task: Docker@2
+  inputs:
+    containerRegistry: 'docker-hub'
+    repository: 'devradyalabs/flowise'
+    command: 'buildAndPush'
+    Dockerfile: 'Dockerfile'
+    buildContext: '.'
+    tags: 'white-label'
