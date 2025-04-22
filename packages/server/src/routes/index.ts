@@ -20,6 +20,7 @@ import internalChatmessagesRouter from './internal-chat-messages'
 import internalPredictionRouter from './internal-predictions'
 import leadsRouter from './leads'
 import loadPromptRouter from './load-prompts'
+
 import nodeConfigRouter from './node-configs'
 import nodeCustomFunctionRouter from './node-custom-functions'
 import nodeIconRouter from './node-icons'
@@ -41,6 +42,7 @@ import variablesRouter from './variables'
 import vectorRouter from './vectors'
 import verifyRouter from './verify'
 import versionRouter from './versions'
+import marketplacesRouter from './marketplaces'
 import nvidiaNimRouter from './nvidia-nim'
 
 const router = express.Router()
@@ -87,6 +89,8 @@ router.use('/vector', vectorRouter)
 router.use('/verify', verifyRouter)
 router.use('/version', versionRouter)
 router.use('/upsert-history', upsertHistoryRouter)
+router.use('/marketplaces', marketplacesRouter)
 router.use('/nvidia-nim', nvidiaNimRouter)
+
 
 export default router
