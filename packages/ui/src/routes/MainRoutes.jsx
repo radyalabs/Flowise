@@ -50,6 +50,10 @@ const MainRoutes = {
             element: <Chatflows />
         },
         {
+            path: '/chatflows',
+            element: <Chatflows />
+        },
+        {
             path: '/agentflows',
             element: <Agentflows />
         },
