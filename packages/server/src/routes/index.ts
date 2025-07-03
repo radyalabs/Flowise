@@ -26,7 +26,7 @@ import leadsRouter from './leads'
 import loadPromptRouter from './load-prompts'
 
 import logsRouter from './log'
-import marketplacesRouter from './marketplaces'
+// import marketplacesRouter from './marketplaces'
 import nodeConfigRouter from './node-configs'
 import nodeCustomFunctionRouter from './node-custom-functions'
 import nodeIconRouter from './node-icons'
